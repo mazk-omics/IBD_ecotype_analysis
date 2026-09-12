@@ -1,0 +1,11 @@
+EcoTyper upstream repository:
+https://github.com/digitalcytometry/ecotyper.git
+
+Local clone:
+/home/mazekai/software/ecotyper
+
+Branch:
+master
+
+Commit:
+11408e7
