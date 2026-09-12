@@ -1,0 +1,82 @@
+# ============================================================
+# IBD EcoTyper
+# ============================================================
+
+# ---------------- Raw data ----------------
+01_raw_data/
+
+# ---------------- Large omics files ----------------
+*.h5ad
+*.h5
+*.loom
+*.mtx
+*.mtx.gz
+*.rds
+*.RDS
+*.RData
+
+*.bam
+*.bai
+*.fastq
+*.fastq.gz
+*.fq
+*.fq.gz
+
+# ---------------- Archives ----------------
+*.tar
+*.tar.gz
+*.tgz
+*.zip
+*.7z
+
+# ---------------- Derived large outputs ----------------
+03_reference/**/output/
+03_reference/**/processed/
+
+04_CIBERSORTx/output/
+04_CIBERSORTx/fractions/
+04_CIBERSORTx/hires/
+
+05_EcoTyper/output/
+
+06_validation/**/output/
+07_spatial_ecotyper/**/output/
+
+# ---------------- Temporary / logs ----------------
+tmp/
+logs/
+*.log
+
+# ---------------- Python ----------------
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+
+# ---------------- R ----------------
+.Rhistory
+.RData
+.Ruserdata
+.Rproj.user/
+
+# ---------------- Environments ----------------
+.conda/
+.venv/
+venv/
+env/
+
+# ---------------- IDE / OS ----------------
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# ---------------- Secrets ----------------
+.env
+.env.*
+*.pem
+*.key
+id_rsa
+id_rsa.pub
+id_ed25519
+id_ed25519.pub
