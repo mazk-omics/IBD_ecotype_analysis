@@ -1,0 +1,752 @@
+========================================
+GSE282122 METADATA AUDIT
+========================================
+
+----------------------------------------
+COLUMN: final_analysis 
+----------------------------------------
+Attributes:
+$`encoding-type`
+[1] "categorical"
+
+$`encoding-version`
+[1] "0.2.0"
+
+$ordered
+[1] FALSE
+
+
+Internal structure:
+       name       otype  dclass    dim
+ categories H5I_DATASET  STRING    109
+      codes H5I_DATASET INTEGER 987743
+
+Category counts:
+ code                                  category n_cells
+   45                             IgApos plasma  111865
+   89               Non ileal undiff enterocyte   71446
+   82                              Non ileal TA   66406
+   76                   Non ileal CT colonocyte   43387
+    2                      Arterial endothelium   39146
+   80                    Non ileal LGR5pos stem   33568
+   85              Non ileal enterocyte PLCG2hi   31000
+   55                          Ileal enterocyte   28182
+   68                                  Memory B   27788
+    1        ABCA8pos WNT2Bpos FOSlo fibroblast   25444
+   11                              CD4 FOSpos T   19718
+   27                              CD8 IL7Rhi T   19687
+   10                               CD4 FOShi T   19508
+   47                     IgGpos CXCR4hi plasma   16859
+   21                               CD4 naive T   15590
+  104                        Venous endothelium   15564
+   86                          Non ileal goblet   15413
+   94               SOX6pos POSTNpos fibroblast   14934
+   40                                      Glia   14783
+   83            Non ileal enterocyte DUOXA2pos   13585
+  101                                      Th22   13268
+   75                     Non ileal BEST4 OTOP2   12555
+   32        CD74hi HLADRB1hi arterial pericyte   12546
+    0        ABCA8pos WNT2Bpos FOShi fibroblast   12244
+   25                              CD8 GZMKhi T   11952
+   38                              Follicular B   11559
+  103                         Tph Tfh CXCL13pos    9061
+    6                  C3hi RSPO3pos fibroblast    9006
+  102                                   Tph Tfh    8516
+   74                   NOTCH3hi TNClo pericyte    8455
+   26                             CD8 GZMKint T    7646
+   17                              CD4 KLF2hi T    7441
+   48                     IgGpos CXCR4lo plasma    6975
+   15               CD4 IKZF2hi TNFRSF18lo Treg    6546
+    9                                 CD1Chi DC    6466
+   23                              CD8 EGR1hi T    6181
+   16                  CD4 IKZF2lo LAG3pos Treg    6159
+   18                             CD4 KLF2int T    6141
+   92                          S100A8 A9hi mono    6050
+  100                                      Th17    6027
+   14               CD4 IKZF2hi TNFRSF18hi Treg    5809
+   62                            Intermediate B    5801
+   31                                 CD8 naive    5638
+   54                                  Ileal TA    4972
+   90                               Plasmablast    4896
+   34                                 Cycling B    4783
+   93 SOX6pos POSTNpos NRG1hi NPYpos fibroblast    4747
+   98                             Th1 17 GZMAhi    4622
+   70                                        NK    4367
+   84  Non ileal enterocyte DUOXA2pos CXCL11pos    4329
+   37                         FCRL4pos memory B    4296
+    3                        C1Qhi IL1Bhi macro    4255
+    4                        C1Qhi IL1Blo macro    4220
+   52                        Ileal LGR5pos stem    4100
+   71                NOTCH3hi MYH11pos pericyte    4035
+   67                                      Mast    3968
+   69                             Myofibroblast    3710
+   77              Non ileal EEC DDCpos CHGApos    3704
+   43                                       ILC    3680
+   99                            Th1 17 GZMApos    3600
+   58                  Ileal enterocyte PLCG2hi    3575
+  106                              gd SOX4pos T    3572
+   53                    Ileal RPShi enterocyte    3385
+   88                            Non ileal tuft    3347
+   20                           CD4 TWIST1 Treg    3168
+  107                                      gd T    3107
+   96                                       Th1    2956
+   24                           CD8 FGFBP2pos T    2881
+   13                            CD4 HSPhi Treg    2819
+   28           CD8 IL17Apos IL26pos IL23Rpos T    2690
+   19                          CD4 TNFSF13Bhi T    2668
+   66                                      MAIT    2547
+   78               Non ileal EEC GCGpos PYYpos    2529
+   22                     CD8 CTLA4hi TIGIThi T    2218
+   72          NOTCH3hi TNChi LOXL2pos pericyte    2128
+   81                          Non ileal M like    2021
+   73         NOTCH3hi TNCint CCL19pos pericyte    1989
+   56         Ileal enterocyte DUOX2pos LCN2pos    1947
+   36                            Cycling stroma    1748
+   29                 CD8 TNFhi IFNGhi IL2pos T    1670
+    5                  C3hi CCL19pos fibroblast    1640
+   95         THY1pos FAPpos PDPNpos fibroblast    1597
+   41                         IFN resp memory B    1582
+   79                  Non ileal EEC NEUROG3pos    1413
+   44                    IgApos IFN resp plasma    1356
+    8                         CCL22pos memory B    1342
+  105                                XCR1pos DC    1237
+   35                               Cycling MNP    1214
+   91             S100A8 A9hi TNFhi IL6pos mono    1182
+   87                          Non ileal paneth    1159
+   12                    CD4 HSPhi CD70pos Treg    1155
+   59                              Ileal goblet     985
+   39                                  GClike B     975
+   97                                 Th1 17 22     932
+   46                      IgGhi IgAhi memory B     889
+   63                               LAMP3pos DC     796
+  108                                       pDC     768
+   64                       LAMP3pos IL1Bpos DC     702
+   30                             CD8 cycling T     684
+    7              CCL3pos CCL4pos follicular B     627
+   61                                Ileal tuft     583
+   33          CD74hi HLADRB1hi venous pericyte     578
+   65                     Lymphatic endothelium     568
+   42                          IGLC6hi memory B     562
+   60                              Ileal paneth     556
+   50                   Ileal EEC CHGAhi CHGBhi     506
+   51                   Ileal EEC CHGAlo CHGBlo     491
+   49                         Ileal BEST4 OTOP2     361
+   57  Ileal enterocyte DUOX2pos MUC6pos PGCpos     139
+
+Missing: 0 
+Total: 987743 
+
+----------------------------------------
+COLUMN: major 
+----------------------------------------
+Attributes:
+$`encoding-type`
+[1] "categorical"
+
+$`encoding-version`
+[1] "0.2.0"
+
+$ordered
+[1] FALSE
+
+
+Internal structure:
+       name       otype  dclass    dim
+ categories H5I_DATASET  STRING     22
+      codes H5I_DATASET INTEGER 987743
+
+Category counts:
+ code                          category n_cells
+   17              Non_ileal_epithelium  305862
+    2                             CD4_T  145704
+   19                            Plasma  141951
+    3                             CD8_T   63794
+    0                                 B   60204
+    7                       Endothelium   55278
+   11                  Ileal_epithelium   49782
+   13                     LP_fibroblast   37688
+   18                          Pericyte   29731
+   15                        Mono_macro   15707
+    8                    Epi_fibroblast   14934
+   10                             Glial   14783
+    1                  C3pos_fibroblast   10646
+    6                                DC    9969
+   12                Innate_lymphocytes    8047
+   21                  Unconventional_T    6679
+    9                        Fibroblast    4747
+   14                              Mast    3968
+   16                     Myofibroblast    3710
+    5                    Cycling_stroma    1748
+   20 THY1pos_FAPpos_PDPNpos_fibroblast    1597
+    4                       Cycling_MNP    1214
+
+Missing: 0 
+Total: 987743 
+
+----------------------------------------
+COLUMN: minor 
+----------------------------------------
+Attributes:
+$`encoding-type`
+[1] "categorical"
+
+$`encoding-version`
+[1] "0.2.0"
+
+$ordered
+[1] FALSE
+
+
+Internal structure:
+       name       otype  dclass    dim
+ categories H5I_DATASET  STRING     45
+      codes H5I_DATASET INTEGER 987743
+
+Category counts:
+ code                          category n_cells
+   36              Non_ileal_enterocyte  230153
+   15                        IgA_plasma  113221
+    6                      CD8_T_memory   55609
+    3                      CD4_T_memory   55476
+    0                 Blood_endothelium   54710
+    2                      CD4_T_helper   48982
+   19                  Ileal_enterocyte   42200
+   30                          Memory_B   41263
+   26                     LP_fibroblast   37688
+   39            Non_ileal_stem_LGR5pos   33568
+   41                          Pericyte   29731
+    5                          CD4_Treg   25656
+   16                        IgG_plasma   23834
+   11                    Epi_fibroblast   19681
+    4                       CD4_T_naive   15590
+   37                  Non_ileal_goblet   15413
+   14                             Glial   14783
+   33             Non_ileal_BEST4_OTOP2   12555
+   12                      Follicular_B   12186
+    1                  C3pos_fibroblast   10646
+   10                                DC    9969
+   44                  Unconventional_T    9226
+   28                             Macro    8475
+   24                Innate_lymphocytes    8047
+   34                     Non_ileal_EEC    7646
+   31                              Mono    7232
+   25                    Intermediate_B    5780
+    7                       CD8_T_naive    5638
+   42                       Plasmablast    4896
+   22                Ileal_stem_LGR5pos    4100
+   29                              Mast    3968
+   32                     Myofibroblast    3710
+   40                    Non_ileal_tuft    3347
+   35                  Non_ileal_M_like    2021
+    9                    Cycling_stroma    1748
+   43 THY1pos_FAPpos_PDPNpos_fibroblast    1597
+    8                       Cycling_MNP    1214
+   38                  Non_ileal_paneth    1159
+   18                         Ileal_EEC     997
+   20                      Ileal_goblet     985
+   13                          GClike_B     975
+   23                        Ileal_tuft     583
+   27             Lymphatic_endothelium     568
+   21                      Ileal_paneth     556
+   17                 Ileal_BEST4_OTOP2     361
+
+Missing: 0 
+Total: 987743 
+
+----------------------------------------
+COLUMN: bucket 
+----------------------------------------
+Attributes:
+$`encoding-type`
+[1] "categorical"
+
+$`encoding-version`
+[1] "0.2.0"
+
+$ordered
+[1] FALSE
+
+
+Internal structure:
+       name       otype  dclass    dim
+ categories H5I_DATASET  STRING      9
+      codes H5I_DATASET INTEGER 987743
+
+Category counts:
+ code                   category n_cells
+    4       Epithelium_non_ileal  305862
+    8                     Stroma  174862
+    1    CD4_cytotoxic_lo_T_cell  145704
+    7                Plasma_cell  141951
+    2 CD8_cytotoxic_hi_T_cell_NK   74840
+    0                     B_cell   60204
+    3           Epithelium_ileum   49782
+    6                    Myeloid   30858
+    5                        ILC    3680
+
+Missing: 0 
+Total: 987743 
+
+----------------------------------------
+COLUMN: sub_bucket 
+----------------------------------------
+Attributes:
+$`encoding-type`
+[1] "categorical"
+
+$`encoding-version`
+[1] "0.2.0"
+
+$ordered
+[1] FALSE
+
+
+Internal structure:
+       name       otype  dclass    dim
+ categories H5I_DATASET  STRING     14
+      codes H5I_DATASET INTEGER 987743
+
+Category counts:
+ code                   category n_cells
+   11       Non_ileal_epithelium  305862
+    1    CD4_cytotoxic_lo_T_cell  145704
+   12                Plasma_cell  141951
+    4                   Fib_peri   99343
+    2 CD8_cytotoxic_hi_T_cell_NK   74840
+    0                     B_cell   60204
+   13                   Vascular   55278
+    7           Ileal_epithelium   49782
+    9              Mono_macro_DC   26890
+    5                      Glial   14783
+    8                       Mast    3968
+   10              Myofibroblast    3710
+    6                        ILC    3680
+    3             Cycling_stroma    1748
+
+Missing: 0 
+Total: 987743 
+
+----------------------------------------
+COLUMN: Patient 
+----------------------------------------
+Attributes:
+$`encoding-type`
+[1] "categorical"
+
+$`encoding-version`
+[1] "0.2.0"
+
+$ordered
+[1] FALSE
+
+
+Internal structure:
+       name       otype  dclass    dim
+ categories H5I_DATASET  STRING     41
+      codes H5I_DATASET INTEGER 987743
+
+Category counts:
+ code category n_cells
+   11      CD5   53619
+   38      UC7   39614
+   14      CD8   39239
+   15      CD9   37095
+    4     CD13   36978
+   12      CD6   36579
+    1     CD10   34553
+   22     UC12   33829
+   36      UC5   33775
+   10      CD4   33336
+   19      UC1   32568
+    0      CD1   31441
+   33     UC22   31308
+   13      CD7   30387
+   34      UC3   27778
+   37      UC6   26435
+   35      UC4   25743
+   30      UC2   25547
+   20     UC10   23663
+   21     UC11   23323
+    8      CD2   23215
+   26     UC16   23136
+   24     UC14   23130
+    9      CD3   22557
+   39      UC8   22029
+   40      UC9   21757
+   23     UC13   21288
+   18       H3   20840
+    5     CD14   19397
+   16       H1   18444
+   17       H2   17409
+   27     UC17   16679
+    3     CD12   16615
+    2     CD11   15085
+   25     UC15   13147
+    6     CD15   10522
+   31     UC20    7971
+   32     UC21    6574
+    7     CD16    4564
+   29     UC19    4450
+   28     UC18    2124
+
+Missing: 0 
+Total: 987743 
+
+----------------------------------------
+COLUMN: sample_id 
+----------------------------------------
+Attributes:
+$`encoding-type`
+[1] "categorical"
+
+$`encoding-version`
+[1] "0.2.0"
+
+$ordered
+[1] FALSE
+
+
+Internal structure:
+       name       otype  dclass    dim
+ categories H5I_DATASET  STRING    216
+      codes H5I_DATASET INTEGER 987743
+
+Category counts:
+ code    category n_cells
+  103 CID004749-1    9457
+   72 CID004716-1    8461
+  191 CID005782-1    8360
+  112 CID004758-1    8072
+   58 CID004702-1    7976
+   59 CID004703-1    7731
+   67 CID004711-1    7443
+   71 CID004715-1    7347
+   84 CID004730-1    7330
+  140 CID005731-1    7314
+   78 CID004724-1    7295
+  100 CID004746-1    6983
+   95 CID004741-1    6827
+  143 CID005734-1    6645
+  101 CID004747-1    6624
+    3 CID003355-1    6500
+   68 CID004712-1    6500
+   51 CID003683-1    6441
+   37 CID003669-1    6414
+   81 CID004727-1    6364
+   35 CID003666-1    6334
+   75 CID004720-2    6271
+  104 CID004750-1    6264
+  196 CID006563-1    6177
+  202 CID006570-1    6177
+   87 CID004733-1    6155
+   70 CID004714-1    6136
+  151 CID005742-1    6099
+  204 CID006572-1    6045
+  193 CID006559-1    6026
+  180 CID005771-1    6023
+  163 CID005754-1    6010
+   29 CID003382-1    5943
+  113 CID005704-1    5863
+  102 CID004748-1    5791
+   62 CID004706-1    5760
+   94 CID004740-1    5716
+  133 CID005724-1    5714
+  205 CID006573-1    5588
+  166 CID005757-1    5575
+   33 CID003386-1    5567
+  121 CID005712-1    5562
+   91 CID004737-1    5513
+  134 CID005725-1    5477
+    0 CID003352-2    5460
+  135 CID005726-1    5460
+   98 CID004744-1    5431
+   45 CID003677-1    5415
+  142 CID005733-1    5402
+  187 CID005778-1    5383
+   89 CID004735-1    5372
+   48 CID003680-1    5331
+  182 CID005773-1    5305
+   83 CID004729-1    5273
+    5 CID003357-1    5254
+   49 CID003681-1    5221
+  105 CID004751-1    5156
+  213 CID006582-1    5135
+   36 CID003667-1    5124
+  139 CID005730-1    5120
+  178 CID005769-1    5099
+   52 CID004696-1    5098
+  124 CID005715-1    5094
+  200 CID006568-1    5076
+  155 CID005746-1    5074
+  170 CID005761-1    5073
+  156 CID005747-1    5065
+  160 CID005751-1    5058
+  203 CID006571-1    5046
+  175 CID005766-1    5033
+  173 CID005764-1    4987
+   50 CID003682-1    4944
+  176 CID005767-1    4941
+    7 CID003360-1    4937
+   44 CID003676-2    4928
+  147 CID005738-1    4928
+  201 CID006569-1    4889
+   60 CID004704-1    4888
+   13 CID003366-1    4880
+  172 CID005763-1    4874
+   10 CID003363-1    4863
+   90 CID004736-1    4855
+   86 CID004732-1    4839
+   69 CID004713-1    4822
+  141 CID005732-1    4801
+   82 CID004728-1    4791
+  152 CID005743-1    4787
+  109 CID004755-1    4779
+  111 CID004757-1    4770
+    9 CID003362-1    4764
+   21 CID003374-1    4761
+   22 CID003375-1    4760
+  158 CID005749-1    4694
+   96 CID004742-1    4675
+   56 CID004700-1    4645
+  114 CID005705-1    4639
+  118 CID005709-1    4625
+    2 CID003354-1    4617
+   97 CID004743-1    4611
+   30 CID003383-1    4582
+  137 CID005728-1    4575
+  179 CID005770-1    4570
+  194 CID006561-1    4564
+  144 CID005735-1    4547
+   54 CID004698-1    4517
+  192 CID006558-1    4496
+   99 CID004745-1    4495
+   63 CID004707-1    4488
+   66 CID004710-1    4473
+   38 CID003670-1    4420
+   53 CID004697-1    4414
+   16 CID003369-1    4390
+   85 CID004731-1    4378
+  207 CID006576-1    4357
+  184 CID005775-1    4356
+   28 CID003381-1    4346
+  108 CID004754-1    4342
+  197 CID006565-1    4322
+  190 CID005781-1    4307
+   88 CID004734-1    4302
+   64 CID004708-1    4301
+   77 CID004723-1    4300
+  168 CID005759-1    4292
+  132 CID005723-1    4235
+  119 CID005710-1    4211
+   74 CID004719-1    4209
+   12 CID003365-1    4183
+   65 CID004709-1    4136
+   14 CID003367-2    4125
+  188 CID005779-1    4119
+  116 CID005707-1    4115
+  129 CID005720-1    4084
+  117 CID005708-1    4064
+  131 CID005722-1    4063
+  189 CID005780-1    4054
+   93 CID004739-1    4048
+  183 CID005774-1    4047
+  120 CID005711-1    4046
+  210 CID006579-1    4037
+  199 CID006567-1    4034
+  181 CID005772-1    4022
+   23 CID003376-1    4013
+  122 CID005713-1    4008
+   25 CID003378-1    3987
+  130 CID005721-1    3984
+  186 CID005777-1    3980
+    6 CID003359-1    3958
+  167 CID005758-1    3919
+  154 CID005745-1    3915
+  138 CID005729-1    3910
+  157 CID005748-1    3904
+  136 CID005727-1    3901
+   43 CID003675-1    3895
+   24 CID003377-1    3861
+  174 CID005765-1    3839
+  126 CID005717-1    3835
+   92 CID004738-1    3825
+   55 CID004699-1    3796
+   42 CID003674-1    3793
+  215 CID006584-1    3790
+   76 CID004722-1    3781
+  148 CID005739-1    3773
+   40 CID003672-1    3717
+  146 CID005737-1    3713
+  171 CID005762-1    3707
+  185 CID005776-1    3690
+    4 CID003356-1    3641
+   80 CID004726-1    3639
+  177 CID005768-1    3635
+   32 CID003385-1    3620
+   61 CID004705-1    3568
+  169 CID005760-1    3543
+  162 CID005753-1    3538
+   31 CID003384-1    3503
+   15 CID003368-1    3481
+  145 CID005736-1    3475
+   39 CID003671-1    3474
+  107 CID004753-1    3470
+    8 CID003361-1    3456
+   34 CID003665-1    3451
+  110 CID004756-1    3451
+   20 CID003373-1    3362
+  115 CID005706-1    3348
+   11 CID003364-1    3344
+   47 CID003679-1    3332
+   57 CID004701-1    3329
+  164 CID005755-1    3310
+  153 CID005744-1    3255
+  127 CID005718-1    3246
+  159 CID005750-1    3227
+   73 CID004718-1    3191
+  206 CID006575-1    3175
+    1 CID003353-1    3138
+  125 CID005716-1    3119
+  161 CID005752-1    3057
+  106 CID004752-1    3055
+   19 CID003372-1    3009
+   79 CID004725-1    2990
+  149 CID005740-1    2977
+  198 CID006566-1    2960
+   27 CID003380-1    2948
+  212 CID006581-1    2836
+  214 CID006583-1    2784
+   26 CID003379-1    2765
+   41 CID003673-1    2750
+   17 CID003370-1    2678
+   46 CID003678-1    2652
+  195 CID006562-1    2648
+  123 CID005714-1    2455
+  150 CID005741-1    2422
+  165 CID005756-1    2281
+   18 CID003371-2    1853
+  128 CID005719-1    1583
+  209 CID006578-1    1111
+  208 CID006577-1    1013
+  211 CID006580-1     413
+
+Missing: 0 
+Total: 987743 
+
+----------------------------------------
+COLUMN: Disease 
+----------------------------------------
+Attributes:
+$`encoding-type`
+[1] "categorical"
+
+$`encoding-version`
+[1] "0.2.0"
+
+$ordered
+[1] FALSE
+
+
+Internal structure:
+       name       otype  dclass    dim
+ categories H5I_DATASET  STRING      3
+      codes H5I_DATASET INTEGER 987743
+
+Category counts:
+ code category n_cells
+    2       UC  485868
+    0       CD  445182
+    1  Healthy   56693
+
+Missing: 0 
+Total: 987743 
+
+----------------------------------------
+COLUMN: Site 
+----------------------------------------
+Attributes:
+$`encoding-type`
+[1] "categorical"
+
+$`encoding-version`
+[1] "0.2.0"
+
+$ordered
+[1] FALSE
+
+
+Internal structure:
+       name       otype  dclass    dim
+ categories H5I_DATASET  STRING      5
+      codes H5I_DATASET INTEGER 987743
+
+Category counts:
+ code         category n_cells
+    2           Rectum  291948
+    1 Descending_Colon  253554
+    4   Terminal_Ileum  171843
+    0  Ascending_Colon  149721
+    3          Sigmoid  120677
+
+Missing: 0 
+Total: 987743 
+
+----------------------------------------
+COLUMN: Inflammation 
+----------------------------------------
+Attributes:
+$`encoding-type`
+[1] "categorical"
+
+$`encoding-version`
+[1] "0.2.0"
+
+$ordered
+[1] FALSE
+
+
+Internal structure:
+       name       otype  dclass    dim
+ categories H5I_DATASET  STRING      3
+      codes H5I_DATASET INTEGER 987743
+
+Category counts:
+ code     category n_cells
+    2 Non_Inflamed  480226
+    1     Inflamed  450824
+    0      Healthy   56693
+
+Missing: 0 
+Total: 987743 
+
+----------------------------------------
+COLUMN: Ileum_vs_Colon 
+----------------------------------------
+Attributes:
+$`encoding-type`
+[1] "categorical"
+
+$`encoding-version`
+[1] "0.2.0"
+
+$ordered
+[1] FALSE
+
+
+Internal structure:
+       name       otype  dclass    dim
+ categories H5I_DATASET  STRING      3
+      codes H5I_DATASET INTEGER 987743
+
+Category counts:
+ code category n_cells
+    0    Colon  523952
+    2   Rectum  291948
+    1    Ileum  171843
+
+Missing: 0 
+Total: 987743 
+
+========================================
+METADATA AUDIT COMPLETE
+========================================

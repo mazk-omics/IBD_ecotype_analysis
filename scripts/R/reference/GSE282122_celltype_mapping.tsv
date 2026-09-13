@@ -1,0 +1,110 @@
+final_analysis	code	n_cells	reference_identity	status	action	note
+ABCA8pos WNT2Bpos FOShi fibroblast	0	12244	Fibroblast	KEEP	merge	
+ABCA8pos WNT2Bpos FOSlo fibroblast	1	25444	Fibroblast	KEEP	merge	
+Arterial endothelium	2	39146	Endothelial	KEEP	merge	
+C1Qhi IL1Bhi macro	3	4255	Monocyte_Macrophage	KEEP	merge	
+C1Qhi IL1Blo macro	4	4220	Monocyte_Macrophage	KEEP	merge	
+C3hi CCL19pos fibroblast	5	1640	Fibroblast	KEEP	merge	
+C3hi RSPO3pos fibroblast	6	9006	Fibroblast	KEEP	merge	
+CCL3pos CCL4pos follicular B	7	627	B	KEEP	merge	
+CCL22pos memory B	8	1342	B	KEEP	merge	
+CD1Chi DC	9	6466	DC	KEEP	merge	
+CD4 FOShi T	10	19508	CD4_T	KEEP	merge	
+CD4 FOSpos T	11	19718	CD4_T	KEEP	merge	
+CD4 HSPhi CD70pos Treg	12	1155	CD4_T	KEEP	merge	
+CD4 HSPhi Treg	13	2819	CD4_T	KEEP	merge	
+CD4 IKZF2hi TNFRSF18hi Treg	14	5809	CD4_T	KEEP	merge	
+CD4 IKZF2hi TNFRSF18lo Treg	15	6546	CD4_T	KEEP	merge	
+CD4 IKZF2lo LAG3pos Treg	16	6159	CD4_T	KEEP	merge	
+CD4 KLF2hi T	17	7441	CD4_T	KEEP	merge	
+CD4 KLF2int T	18	6141	CD4_T	KEEP	merge	
+CD4 TNFSF13Bhi T	19	2668	CD4_T	KEEP	merge	
+CD4 TWIST1 Treg	20	3168	CD4_T	KEEP	merge	
+CD4 naive T	21	15590	CD4_T	KEEP	merge	
+CD8 CTLA4hi TIGIThi T	22	2218	CD8_T	KEEP	merge	
+CD8 EGR1hi T	23	6181	CD8_T	KEEP	merge	
+CD8 FGFBP2pos T	24	2881	CD8_T	KEEP	merge	
+CD8 GZMKhi T	25	11952	CD8_T	KEEP	merge	
+CD8 GZMKint T	26	7646	CD8_T	KEEP	merge	
+CD8 IL7Rhi T	27	19687	CD8_T	KEEP	merge	
+CD8 IL17Apos IL26pos IL23Rpos T	28	2690	CD8_T	KEEP	merge	
+CD8 TNFhi IFNGhi IL2pos T	29	1670	CD8_T	KEEP	merge	
+CD8 cycling T	30	684	CD8_T	KEEP	merge	
+CD8 naive	31	5638	CD8_T	KEEP	merge	
+CD74hi HLADRB1hi arterial pericyte	32	12546	Pericyte	KEEP	merge	
+CD74hi HLADRB1hi venous pericyte	33	578	Pericyte	KEEP	merge	
+Cycling B	34	4783	B	KEEP	merge	
+Cycling MNP	35	1214	NA	REVIEW	review	Cycling MNP; parent monocyte/macrophage/DC identity requires review
+Cycling stroma	36	1748	NA	REVIEW	review	Cycling stromal identity; parent lineage not sufficiently resolved
+FCRL4pos memory B	37	4296	B	KEEP	merge	
+Follicular B	38	11559	B	KEEP	merge	
+GClike B	39	975	B	KEEP	merge	
+Glia	40	14783	Glial	CANDIDATE	hold	Candidate identity; cross-dataset stability test pending
+IFN resp memory B	41	1582	B	KEEP	merge	
+IGLC6hi memory B	42	562	B	KEEP	merge	
+ILC	43	3680	ILC	KEEP	keep	
+IgApos IFN resp plasma	44	1356	Plasma	KEEP	merge	
+IgApos plasma	45	111865	Plasma	KEEP	merge	
+IgGhi IgAhi memory B	46	889	B	KEEP	merge	
+IgGpos CXCR4hi plasma	47	16859	Plasma	KEEP	merge	
+IgGpos CXCR4lo plasma	48	6975	Plasma	KEEP	merge	
+Ileal BEST4 OTOP2	49	361	Ileal_absorptive	KEEP	merge	
+Ileal EEC CHGAhi CHGBhi	50	506	Enteroendocrine	KEEP	merge	
+Ileal EEC CHGAlo CHGBlo	51	491	Enteroendocrine	KEEP	merge	
+Ileal LGR5pos stem	52	4100	Stem_TA_progenitor	KEEP	merge	
+Ileal RPShi enterocyte	53	3385	Ileal_absorptive	KEEP	merge	
+Ileal TA	54	4972	Stem_TA_progenitor	KEEP	merge	
+Ileal enterocyte	55	28182	Ileal_absorptive	KEEP	merge	
+Ileal enterocyte DUOX2pos LCN2pos	56	1947	Ileal_absorptive	KEEP	merge	
+Ileal enterocyte DUOX2pos MUC6pos PGCpos	57	139	Ileal_absorptive	KEEP	merge	
+Ileal enterocyte PLCG2hi	58	3575	Ileal_absorptive	KEEP	merge	
+Ileal goblet	59	985	Goblet	KEEP	merge	
+Ileal paneth	60	556	Paneth	KEEP	merge	
+Ileal tuft	61	583	Tuft	CANDIDATE	hold	Candidate identity; cross-dataset stability test pending
+Intermediate B	62	5801	B	KEEP	merge	
+LAMP3pos DC	63	796	DC	KEEP	merge	
+LAMP3pos IL1Bpos DC	64	702	DC	KEEP	merge	
+Lymphatic endothelium	65	568	Endothelial	KEEP	merge	
+MAIT	66	2547	NA	EXCLUDE	exclude	Not represented in current frozen KEEP ontology
+Mast	67	3968	Mast	KEEP	keep	
+Memory B	68	27788	B	KEEP	merge	
+Myofibroblast	69	3710	Fibroblast	KEEP	merge	
+NK	70	4367	NK	KEEP	keep	
+NOTCH3hi MYH11pos pericyte	71	4035	Pericyte	KEEP	merge	
+NOTCH3hi TNChi LOXL2pos pericyte	72	2128	Pericyte	KEEP	merge	
+NOTCH3hi TNCint CCL19pos pericyte	73	1989	Pericyte	KEEP	merge	
+NOTCH3hi TNClo pericyte	74	8455	Pericyte	KEEP	merge	
+Non ileal BEST4 OTOP2	75	12555	Colonic_absorptive	KEEP	merge	
+Non ileal CT colonocyte	76	43387	Colonic_absorptive	KEEP	merge	
+Non ileal EEC DDCpos CHGApos	77	3704	Enteroendocrine	KEEP	merge	
+Non ileal EEC GCGpos PYYpos	78	2529	Enteroendocrine	KEEP	merge	
+Non ileal EEC NEUROG3pos	79	1413	Enteroendocrine	KEEP	merge	
+Non ileal LGR5pos stem	80	33568	Stem_TA_progenitor	KEEP	merge	
+Non ileal M like	81	2021	NA	EXCLUDE	exclude	Not represented in current frozen KEEP ontology
+Non ileal TA	82	66406	Stem_TA_progenitor	KEEP	merge	
+Non ileal enterocyte DUOXA2pos	83	13585	Colonic_absorptive	KEEP	merge	
+Non ileal enterocyte DUOXA2pos CXCL11pos	84	4329	Colonic_absorptive	KEEP	merge	
+Non ileal enterocyte PLCG2hi	85	31000	Colonic_absorptive	KEEP	merge	
+Non ileal goblet	86	15413	Goblet	KEEP	merge	
+Non ileal paneth	87	1159	Paneth	KEEP	merge	
+Non ileal tuft	88	3347	Tuft	CANDIDATE	hold	Candidate identity; cross-dataset stability test pending
+Non ileal undiff enterocyte	89	71446	Colonic_absorptive	KEEP	merge	
+Plasmablast	90	4896	Plasma	KEEP	merge	
+S100A8 A9hi TNFhi IL6pos mono	91	1182	Monocyte_Macrophage	KEEP	merge	
+S100A8 A9hi mono	92	6050	Monocyte_Macrophage	KEEP	merge	
+SOX6pos POSTNpos NRG1hi NPYpos fibroblast	93	4747	Fibroblast	KEEP	merge	
+SOX6pos POSTNpos fibroblast	94	14934	Fibroblast	KEEP	merge	
+THY1pos FAPpos PDPNpos fibroblast	95	1597	Fibroblast	KEEP	merge	
+Th1	96	2956	CD4_T	KEEP	merge	
+Th1 17 22	97	932	CD4_T	KEEP	merge	
+Th1 17 GZMAhi	98	4622	CD4_T	KEEP	merge	
+Th1 17 GZMApos	99	3600	CD4_T	KEEP	merge	
+Th17	100	6027	CD4_T	KEEP	merge	
+Th22	101	13268	CD4_T	KEEP	merge	
+Tph Tfh	102	8516	CD4_T	KEEP	merge	
+Tph Tfh CXCL13pos	103	9061	CD4_T	KEEP	merge	
+Venous endothelium	104	15564	Endothelial	KEEP	merge	
+XCR1pos DC	105	1237	DC	KEEP	merge	
+gd SOX4pos T	106	3572	NA	EXCLUDE	exclude	Not represented in current frozen KEEP ontology
+gd T	107	3107	NA	EXCLUDE	exclude	Not represented in current frozen KEEP ontology
+pDC	108	768	DC	KEEP	merge	
