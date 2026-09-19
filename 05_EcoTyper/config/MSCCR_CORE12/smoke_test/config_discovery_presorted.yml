@@ -1,0 +1,47 @@
+default:
+
+  Input:
+
+    Discovery dataset name: "MSCCR_CORE12_SMOKE"
+
+    Expression matrices: "/home/mazekai/IBD_EcoTyper/05_EcoTyper/input/MSCCR_CORE12/expression_matrices"
+
+    Annotation file: "/home/mazekai/IBD_EcoTyper/05_EcoTyper/input/MSCCR_CORE12/annotation/MSCCR_CORE12_annotation.tsv"
+
+    # Do not regress out disease, inflammation, or anatomical region.
+    Annotation file column to scale by: null
+
+    Annotation file column(s) to plot:
+      - "Disease"
+      - "Inflammation"
+      - "Region3"
+
+
+  Output:
+
+    Output folder: "/home/mazekai/IBD_EcoTyper/05_EcoTyper/output/MSCCR_CORE12/smoke_test"
+
+
+  Pipeline settings:
+
+    # Step 6 is skipped by the official default workflow.
+    Pipeline steps to skip:
+      - 6
+
+    # First interface test:
+    # do not perform cross-cell-type filtering.
+    Filter genes: "no filter"
+
+    Number of threads: 10
+
+    # Smoke-test only.
+    # Formal discovery will use substantially more restarts.
+    Number of NMF restarts: 2
+
+    # Must test several ranks.
+    # Ranks 2, 3 and 4 will be evaluated.
+    Maximum number of states per cell type: 4
+
+    Cophenetic coefficient cutoff: 0.95
+
+    Minimum number of states in ecotypes: 3
