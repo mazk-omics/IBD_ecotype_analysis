@@ -92,3 +92,22 @@ id_ed25519.pub
 # ---------------- Upstream software repositories ----------------
 
 /software/ecotyper/
+
+# ============================================================
+# IBD EcoTyper generated inputs / outputs / runtime
+# ============================================================
+
+# Reconstructable EcoTyper project inputs
+05_EcoTyper/input/MSCCR_CORE12/
+
+# EcoTyper final/generated outputs
+05_EcoTyper/output/MSCCR_CORE12/
+
+# Runtime logs
+05_EcoTyper/logs/MSCCR_CORE12/
+
+# EcoTyper internal runtime directories generated from configs
+software/ecotyper/EcoTyper/MSCCR_CORE12_*/
+software/ecotyper/CIBERSORTx/hires/MSCCR_CORE12_*/
+software/ecotyper/datasets/discovery/MSCCR_CORE12_*/
+
