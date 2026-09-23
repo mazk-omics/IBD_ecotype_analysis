@@ -1,0 +1,40 @@
+default :
+
+  Input :
+
+    Discovery dataset name : "MSCCR_CORE12_CTSPEC_SMOKE"
+
+    Expression matrices : "/home/mazekai/IBD_EcoTyper/05_EcoTyper/input/MSCCR_CORE12/expression_matrices"
+
+    Annotation file : "/home/mazekai/IBD_EcoTyper/05_EcoTyper/input/MSCCR_CORE12/annotation/MSCCR_CORE12_annotation.tsv"
+
+    Annotation file column to scale by : null
+
+    Annotation file column(s) to plot : ["Disease", "Inflammation", "Region3"]
+
+  Output :
+
+    Output folder : "/home/mazekai/IBD_EcoTyper/05_EcoTyper/output/MSCCR_CORE12/ctspec_smoke"
+
+  Pipeline settings :
+
+    # Step 1: extract cell-type-specific genes
+    # Step 2: NMF state discovery
+    # Step 3: rank selection
+    # Step 4: state extraction
+    # Step 5: first state QC
+    # Step 6: advanced state QC
+    # Step 7: ecotype discovery
+    Pipeline steps to skip : [6]
+
+    Filter genes : "cell type specific"
+
+    Number of threads : 10
+
+    Number of NMF restarts : 2
+
+    Maximum number of states per cell type : 4
+
+    Cophenetic coefficient cutoff : 0.95
+
+    Minimum number of states in ecotypes : 3

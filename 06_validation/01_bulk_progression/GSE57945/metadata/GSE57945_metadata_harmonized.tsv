@@ -1,0 +1,323 @@
+GSM编号	患者编号	取样部位	性别	年龄（诊断入组时）	Paris分期	IBD疾病类型	IBD疾病细分类型	组织病理学特征	深部溃疡	RiskNumber	ExpressionSet	Disease	CDSubtype	Pathology	DeepUlcer
+GSM1598408	CCFA_Risk_001	Ileum（回肠）	女	15.25	A1b	CD	iCD	Macroscopic inflammation	0	1	Combined_001_254	CD	iCD	Macroscopic inflammation	0
+GSM1598409	CCFA_Risk_002	Ileum（回肠）	男	14.42	A1b	CD	iCD	Macroscopic inflammation	0	2	Combined_001_254	CD	iCD	Macroscopic inflammation	0
+GSM1598410	CCFA_Risk_003	Ileum（回肠）	女	12.5	A1b	CD	iCD	Macroscopic inflammation	0	3	Combined_001_254	CD	iCD	Macroscopic inflammation	0
+GSM1598411	CCFA_Risk_004	Ileum（回肠）	男	14.58	A1b	CD	iCD	Macroscopic inflammation	0	4	Combined_001_254	CD	iCD	Macroscopic inflammation	0
+GSM1598412	CCFA_Risk_005	Ileum（回肠）	女	10.17	A1b	CD	iCD	Macroscopic inflammation	0	5	Combined_001_254	CD	iCD	Macroscopic inflammation	0
+GSM1598413	CCFA_Risk_006	Ileum（回肠）	女	15.75	A1b	CD	iCD	Macroscopic inflammation	1	6	Combined_001_254	CD	iCD	Macroscopic inflammation	1
+GSM1598414	CCFA_Risk_007	Ileum（回肠）	男	14.33	A1b	CD	iCD	Macroscopic inflammation	0	7	Combined_001_254	CD	iCD	Macroscopic inflammation	0
+GSM1598415	CCFA_Risk_008	Ileum（回肠）	男	11.42	A1b	CD	cCD	Normal	0	8	Combined_001_254	CD	cCD	Normal	0
+GSM1598416	CCFA_Risk_009	Ileum（回肠）	女	9	A1a	CD	iCD	Macroscopic inflammation	0	9	Combined_001_254	CD	iCD	Macroscopic inflammation	0
+GSM1598417	CCFA_Risk_010	Ileum（回肠）	男	10.33	A1b	Not IBD	Not IBD	NA	NA	10	Combined_001_254	Non-IBD	Not IBD	NA	NA
+GSM1598418	CCFA_Risk_011	Ileum（回肠）	男	10.83	A1b	Not IBD	Not IBD	NA	NA	11	Combined_001_254	Non-IBD	Not IBD	NA	NA
+GSM1598419	CCFA_Risk_012	Ileum（回肠）	女	13.92	A1b	CD	cCD	Microscopic inflammation	0	12	Combined_001_254	CD	cCD	Microscopic inflammation	0
+GSM1598420	CCFA_Risk_013	Ileum（回肠）	男	9.25	A1a	CD	iCD	Macroscopic inflammation	0	13	Combined_001_254	CD	iCD	Macroscopic inflammation	0
+GSM1598421	CCFA_Risk_014	Ileum（回肠）	女	9	A1a	Not IBD	Not IBD	NA	NA	14	Combined_001_254	Non-IBD	Not IBD	NA	NA
+GSM1598422	CCFA_Risk_015	Ileum（回肠）	男	13.42	A1b	CD	iCD	Macroscopic inflammation	0	15	Combined_001_254	CD	iCD	Macroscopic inflammation	0
+GSM1598423	CCFA_Risk_016	Ileum（回肠）	男	15.17	A1b	CD	iCD	Macroscopic inflammation	0	16	Combined_001_254	CD	iCD	Macroscopic inflammation	0
+GSM1598424	CCFA_Risk_017	Ileum（回肠）	男	13.25	A1b	CD	iCD	Macroscopic inflammation	1	17	Combined_001_254	CD	iCD	Macroscopic inflammation	1
+GSM1598425	CCFA_Risk_018	Ileum（回肠）	女	16.08	A1b	CD	iCD	Macroscopic inflammation	0	18	Combined_001_254	CD	iCD	Macroscopic inflammation	0
+GSM1598426	CCFA_Risk_019	Ileum（回肠）	女	15	A1b	Not IBD	Not IBD	NA	NA	19	Combined_001_254	Non-IBD	Not IBD	NA	NA
+GSM1598427	CCFA_Risk_020	Ileum（回肠）	女	10.75	A1b	not IBD	not IBD	NA	NA	20	Combined_001_254	Non-IBD	not IBD	NA	NA
+GSM1598428	CCFA_Risk_021	Ileum（回肠）	男	10.33	A1b	CD	iCD	Macroscopic inflammation	1	21	Combined_001_254	CD	iCD	Macroscopic inflammation	1
+GSM1598429	CCFA_Risk_022	Ileum（回肠）	女	10.83	A1b	CD	iCD	Macroscopic inflammation	1	22	Combined_001_254	CD	iCD	Macroscopic inflammation	1
+GSM1598430	CCFA_Risk_023	Ileum（回肠）	女	10.17	A1b	CD	iCD	Macroscopic inflammation	1	23	Combined_001_254	CD	iCD	Macroscopic inflammation	1
+GSM1598431	CCFA_Risk_024	Ileum（回肠）	男	4.5	A1a	CD	iCD	Macroscopic inflammation	0	24	Combined_001_254	CD	iCD	Macroscopic inflammation	0
+GSM1598432	CCFA_Risk_025	Ileum（回肠）	女	6.33	A1a	CD	iCD	Macroscopic inflammation	0	25	Combined_001_254	CD	iCD	Macroscopic inflammation	0
+GSM1598433	CCFA_Risk_026	Ileum（回肠）	男	5.08	A1a	CD	iCD	Macroscopic inflammation	0	26	Combined_001_254	CD	iCD	Macroscopic inflammation	0
+GSM1598434	CCFA_Risk_027	Ileum（回肠）	女	10.33	A1b	CD	iCD	Macroscopic inflammation	1	27	Combined_001_254	CD	iCD	Macroscopic inflammation	1
+GSM1598435	CCFA_Risk_028	Ileum（回肠）	女	16.92	A1b	Not IBD	Not IBD	NA	NA	28	Combined_001_254	Non-IBD	Not IBD	NA	NA
+GSM1598436	CCFA_Risk_029	Ileum（回肠）	女	10.83	A1b	CD	iCD	Macroscopic inflammation	0	29	Combined_001_254	CD	iCD	Macroscopic inflammation	0
+GSM1598437	CCFA_Risk_030	Ileum（回肠）	男	10.75	A1b	CD	iCD	Macroscopic inflammation	0	30	Combined_001_254	CD	iCD	Macroscopic inflammation	0
+GSM1598438	CCFA_Risk_031	Ileum（回肠）	女	12.5	A1b	Not IBD	Not IBD	NA	NA	31	Combined_001_254	Non-IBD	Not IBD	NA	NA
+GSM1598439	CCFA_Risk_032	Ileum（回肠）	女	8.67	A1a	CD	iCD	Macroscopic inflammation	0	32	Combined_001_254	CD	iCD	Macroscopic inflammation	0
+GSM1598440	CCFA_Risk_033	Ileum（回肠）	男	9.33	A1a	Not IBD	Not IBD	NA	NA	33	Combined_001_254	Non-IBD	Not IBD	NA	NA
+GSM1598441	CCFA_Risk_034	Ileum（回肠）	男	7.75	A1a	Not IBD	Not IBD	NA	NA	34	Combined_001_254	Non-IBD	Not IBD	NA	NA
+GSM1598442	CCFA_Risk_035	Ileum（回肠）	男	11.5	A1b	Not IBD	Not IBD	NA	NA	35	Combined_001_254	Non-IBD	Not IBD	NA	NA
+GSM1598443	CCFA_Risk_036	Ileum（回肠）	男	10.5	A1b	Not IBD	Not IBD	NA	NA	36	Combined_001_254	Non-IBD	Not IBD	NA	NA
+GSM1598444	CCFA_Risk_037	Ileum（回肠）	男	10.5	A1b	CD	iCD	Macroscopic inflammation	1	37	Combined_001_254	CD	iCD	Macroscopic inflammation	1
+GSM1598445	CCFA_Risk_038	Ileum（回肠）	男	8.67	A1a	Not IBD	Not IBD	NA	NA	38	Combined_001_254	Non-IBD	Not IBD	NA	NA
+GSM1598446	CCFA_Risk_039	Ileum（回肠）	女	15.33	A1b	Not IBD	Not IBD	NA	NA	39	Combined_001_254	Non-IBD	Not IBD	NA	NA
+GSM1598447	CCFA_Risk_040	Ileum（回肠）	女	9.17	A1a	CD	iCD	Macroscopic inflammation	0	40	Combined_001_254	CD	iCD	Macroscopic inflammation	0
+GSM1598448	CCFA_Risk_041	Ileum（回肠）	男	4.83	A1a	Not IBD	Not IBD	NA	NA	41	Combined_001_254	Non-IBD	Not IBD	NA	NA
+GSM1598449	CCFA_Risk_042	Ileum（回肠）	男	12	A1b	Not IBD	Not IBD	NA	NA	42	Combined_001_254	Non-IBD	Not IBD	NA	NA
+GSM1598450	CCFA_Risk_043	Ileum（回肠）	女	12.08	A1b	CD	iCD	Macroscopic inflammation	0	43	Combined_001_254	CD	iCD	Macroscopic inflammation	0
+GSM1598451	CCFA_Risk_044	Ileum（回肠）	男	9.17	A1a	Not IBD	Not IBD	NA	NA	44	Combined_001_254	Non-IBD	Not IBD	NA	NA
+GSM1598452	CCFA_Risk_045	Ileum（回肠）	男	5.42	A1a	CD	iCD	Macroscopic inflammation	0	45	Combined_001_254	CD	iCD	Macroscopic inflammation	0
+GSM1598453	CCFA_Risk_046	Ileum（回肠）	女	15.17	A1b	CD	iCD	Macroscopic inflammation	1	46	Combined_001_254	CD	iCD	Macroscopic inflammation	1
+GSM1598454	CCFA_Risk_047	Ileum（回肠）	女	15.83	A1b	CD	iCD	Macroscopic inflammation	0	47	Combined_001_254	CD	iCD	Macroscopic inflammation	0
+GSM1598455	CCFA_Risk_048	Ileum（回肠）	男	7.67	A1a	CD	iCD	Macroscopic inflammation	1	48	Combined_001_254	CD	iCD	Macroscopic inflammation	1
+GSM1598456	CCFA_Risk_049	Ileum（回肠）	女	10.08	A1b	CD	iCD	Macroscopic inflammation	1	49	Combined_001_254	CD	iCD	Macroscopic inflammation	1
+GSM1598457	CCFA_Risk_050	Ileum（回肠）	男	13.42	A1b	CD	iCD	Macroscopic inflammation	1	50	Combined_001_254	CD	iCD	Macroscopic inflammation	1
+GSM1598458	CCFA_Risk_051	Ileum（回肠）	男	8.75	A1a	CD	iCD	Macroscopic inflammation	1	51	Combined_001_254	CD	iCD	Macroscopic inflammation	1
+GSM1598459	CCFA_Risk_052	Ileum（回肠）	男	16.08	A1b	CD	iCD	Macroscopic inflammation	0	52	Combined_001_254	CD	iCD	Macroscopic inflammation	0
+GSM1598460	CCFA_Risk_053	Ileum（回肠）	女	9.17	A1a	CD	cCD	Microscopic inflammation	0	53	Combined_001_254	CD	cCD	Microscopic inflammation	0
+GSM1598461	CCFA_Risk_054	Ileum（回肠）	男	2.33	A1a	Not IBD	Not IBD	NA	NA	54	Combined_001_254	Non-IBD	Not IBD	NA	NA
+GSM1598462	CCFA_Risk_055	Ileum（回肠）	男	11.42	A1b	Not IBD	Not IBD	NA	NA	55	Combined_001_254	Non-IBD	Not IBD	NA	NA
+GSM1598463	CCFA_Risk_056	Ileum（回肠）	女	13.25	A1b	CD	iCD	Macroscopic inflammation	0	56	Combined_001_254	CD	iCD	Macroscopic inflammation	0
+GSM1598464	CCFA_Risk_057	Ileum（回肠）	男	7.58	A1a	CD	iCD	Macroscopic inflammation	0	57	Combined_001_254	CD	iCD	Macroscopic inflammation	0
+GSM1598465	CCFA_Risk_058	Ileum（回肠）	男	16.17	A1b	CD	iCD	Macroscopic inflammation	0	58	Combined_001_254	CD	iCD	Macroscopic inflammation	0
+GSM1598466	CCFA_Risk_059	Ileum（回肠）	男	9.42	A1a	CD	iCD	Macroscopic inflammation	1	59	Combined_001_254	CD	iCD	Macroscopic inflammation	1
+GSM1598467	CCFA_Risk_060	Ileum（回肠）	男	13.58	A1b	CD	cCD	Microscopic inflammation	0	60	Combined_001_254	CD	cCD	Microscopic inflammation	0
+GSM1598468	CCFA_Risk_061	Ileum（回肠）	男	10.42	A1b	CD	iCD	Macroscopic inflammation	0	61	Combined_001_254	CD	iCD	Macroscopic inflammation	0
+GSM1598469	CCFA_Risk_062	Ileum（回肠）	男	10.67	A1b	CD	iCD	Macroscopic inflammation	1	62	Combined_001_254	CD	iCD	Macroscopic inflammation	1
+GSM1598470	CCFA_Risk_063	Ileum（回肠）	女	8.5	A1a	CD	iCD	Macroscopic inflammation	1	63	Combined_001_254	CD	iCD	Macroscopic inflammation	1
+GSM1598471	CCFA_Risk_064	Ileum（回肠）	男	14.25	A1b	Not IBD	Not IBD	NA	NA	64	Combined_001_254	Non-IBD	Not IBD	NA	NA
+GSM1598472	CCFA_Risk_065	Ileum（回肠）	女	12.33	A1b	Not IBD	Not IBD	NA	NA	65	Combined_001_254	Non-IBD	Not IBD	NA	NA
+GSM1598473	CCFA_Risk_066	Ileum（回肠）	男	8.42	A1a	CD	iCD	Macroscopic inflammation	0	66	Combined_001_254	CD	iCD	Macroscopic inflammation	0
+GSM1598474	CCFA_Risk_067	Ileum（回肠）	男	12.92	A1b	Not IBD	Not IBD	NA	NA	67	Combined_001_254	Non-IBD	Not IBD	NA	NA
+GSM1598475	CCFA_Risk_068	Ileum（回肠）	男	10.33	A1b	CD	iCD	Macroscopic inflammation	0	68	Combined_001_254	CD	iCD	Macroscopic inflammation	0
+GSM1598476	CCFA_Risk_069	Ileum（回肠）	女	12.08	A1b	CD	iCD	Macroscopic inflammation	1	69	Combined_001_254	CD	iCD	Macroscopic inflammation	1
+GSM1598477	CCFA_Risk_070	Ileum（回肠）	女	8.58	A1a	CD	iCD	Macroscopic inflammation	1	70	Combined_001_254	CD	iCD	Macroscopic inflammation	1
+GSM1598478	CCFA_Risk_071	Ileum（回肠）	男	10.67	A1b	CD	cCD	Normal	0	71	Combined_001_254	CD	cCD	Normal	0
+GSM1598479	CCFA_Risk_072	Ileum（回肠）	女	13.08	A1b	Not IBD	Not IBD	NA	NA	72	Combined_001_254	Non-IBD	Not IBD	NA	NA
+GSM1598480	CCFA_Risk_073	Ileum（回肠）	女	8.58	A1a	CD	iCD	Macroscopic inflammation	0	73	Combined_001_254	CD	iCD	Macroscopic inflammation	0
+GSM1598481	CCFA_Risk_074	Ileum（回肠）	女	5.42	A1a	CD	iCD	Macroscopic inflammation	0	74	Combined_001_254	CD	iCD	Macroscopic inflammation	0
+GSM1598482	CCFA_Risk_075	Ileum（回肠）	男	16.5	A1b	CD	iCD	Macroscopic inflammation	1	75	Combined_001_254	CD	iCD	Macroscopic inflammation	1
+GSM1598483	CCFA_Risk_076	Ileum（回肠）	女	11	A1b	Not IBD	Not IBD	NA	NA	76	Combined_001_254	Non-IBD	Not IBD	NA	NA
+GSM1598484	CCFA_Risk_077	Ileum（回肠）	男	7.25	A1a	Not IBD	Not IBD	NA	NA	77	Combined_001_254	Non-IBD	Not IBD	NA	NA
+GSM1598485	CCFA_Risk_078	Ileum（回肠）	男	12.83	A1b	Not IBD	Not IBD	NA	NA	78	Combined_001_254	Non-IBD	Not IBD	NA	NA
+GSM1598486	CCFA_Risk_079	Ileum（回肠）	男	8.5	A1a	Not IBD	Not IBD	NA	NA	79	Combined_001_254	Non-IBD	Not IBD	NA	NA
+GSM1598487	CCFA_Risk_080	Ileum（回肠）	男	14.17	A1b	Not IBD	Not IBD	NA	NA	80	Combined_001_254	Non-IBD	Not IBD	NA	NA
+GSM1598488	CCFA_Risk_081	Ileum（回肠）	男	15.83	A1b	Not IBD	Not IBD	NA	NA	81	Combined_001_254	Non-IBD	Not IBD	NA	NA
+GSM1598489	CCFA_Risk_082	Ileum（回肠）	男	15.58	A1b	Not IBD	Not IBD	NA	NA	82	Combined_001_254	Non-IBD	Not IBD	NA	NA
+GSM1598490	CCFA_Risk_083	Ileum（回肠）	男	11.42	A1b	Not IBD	Not IBD	NA	NA	83	Combined_001_254	Non-IBD	Not IBD	NA	NA
+GSM1598491	CCFA_Risk_084	Ileum（回肠）	男	10.25	A1b	Not IBD	Not IBD	NA	NA	84	Combined_001_254	Non-IBD	Not IBD	NA	NA
+GSM1598492	CCFA_Risk_085	Ileum（回肠）	女	6.58	A1a	Not IBD	Not IBD	NA	NA	85	Combined_001_254	Non-IBD	Not IBD	NA	NA
+GSM1598493	CCFA_Risk_086	Ileum（回肠）	女	14.75	A1b	Not IBD	Not IBD	NA	NA	86	Combined_001_254	Non-IBD	Not IBD	NA	NA
+GSM1598494	CCFA_Risk_087	Ileum（回肠）	女	11.58	A1b	Not IBD	Not IBD	NA	NA	87	Combined_001_254	Non-IBD	Not IBD	NA	NA
+GSM1598495	CCFA_Risk_088	Ileum（回肠）	女	10.33	A1b	Not IBD	Not IBD	NA	NA	88	Combined_001_254	Non-IBD	Not IBD	NA	NA
+GSM1598496	CCFA_Risk_089	Ileum（回肠）	男	15.75	A1b	Not IBD	Not IBD	NA	NA	89	Combined_001_254	Non-IBD	Not IBD	NA	NA
+GSM1598497	CCFA_Risk_090	Ileum（回肠）	女	9.92	A1a	Not IBD	Not IBD	NA	NA	90	Combined_001_254	Non-IBD	Not IBD	NA	NA
+GSM1598498	CCFA_Risk_091	Ileum（回肠）	男	14.75	A1b	CD	cCD	Microscopic inflammation	0	91	Combined_001_254	CD	cCD	Microscopic inflammation	0
+GSM1598499	CCFA_Risk_092	Ileum（回肠）	男	9.83	A1a	UC	UC	NA	NA	92	Combined_001_254	UC	UC	NA	NA
+GSM1598500	CCFA_Risk_093	Ileum（回肠）	男	5.75	A1a	CD	iCD	Macroscopic inflammation	1	93	Combined_001_254	CD	iCD	Macroscopic inflammation	1
+GSM1598501	CCFA_Risk_094	Ileum（回肠）	女	9.75	A1a	CD	cCD	Normal	0	94	Combined_001_254	CD	cCD	Normal	0
+GSM1598502	CCFA_Risk_095	Ileum（回肠）	男	14.75	A1b	CD	iCD	Macroscopic inflammation	1	95	Combined_001_254	CD	iCD	Macroscopic inflammation	1
+GSM1598503	CCFA_Risk_096	Ileum（回肠）	女	13.08	A1b	CD	iCD	Macroscopic inflammation	1	96	Combined_001_254	CD	iCD	Macroscopic inflammation	1
+GSM1598504	CCFA_Risk_097	Ileum（回肠）	女	14.17	A1b	CD	cCD	Microscopic inflammation	0	97	Combined_001_254	CD	cCD	Microscopic inflammation	0
+GSM1598505	CCFA_Risk_098	Ileum（回肠）	男	14.83	A1b	CD	iCD	Macroscopic inflammation	1	98	Combined_001_254	CD	iCD	Macroscopic inflammation	1
+GSM1598506	CCFA_Risk_099	Ileum（回肠）	女	15.5	A1b	CD	iCD	Macroscopic inflammation	1	99	Combined_001_254	CD	iCD	Macroscopic inflammation	1
+GSM1598507	CCFA_Risk_100	Ileum（回肠）	女	12.83	A1b	CD	cCD	Normal	0	100	Combined_001_254	CD	cCD	Normal	0
+GSM1598508	CCFA_Risk_101	Ileum（回肠）	女	2.25	A1a	CD	cCD	Microscopic inflammation	0	101	Combined_001_254	CD	cCD	Microscopic inflammation	0
+GSM1598509	CCFA_Risk_102	Ileum（回肠）	女	11.58	A1b	CD	cCD	Undetermined	0	102	Combined_001_254	CD	cCD	Undetermined	0
+GSM1598510	CCFA_Risk_103	Ileum（回肠）	男	14.83	A1b	CD	cCD	Microscopic inflammation	0	103	Combined_001_254	CD	cCD	Microscopic inflammation	0
+GSM1598511	CCFA_Risk_104	Ileum（回肠）	男	14.08	A1b	CD	cCD	Undetermined	0	104	Combined_001_254	CD	cCD	Undetermined	0
+GSM1598512	CCFA_Risk_105	Ileum（回肠）	男	15.92	A1b	CD	iCD	Macroscopic inflammation	0	105	Combined_001_254	CD	iCD	Macroscopic inflammation	0
+GSM1598513	CCFA_Risk_106	Ileum（回肠）	女	13.17	A1b	CD	iCD	Macroscopic inflammation	1	106	Combined_001_254	CD	iCD	Macroscopic inflammation	1
+GSM1598514	CCFA_Risk_107	Ileum（回肠）	男	15.75	A1b	CD	iCD	Macroscopic inflammation	0	107	Combined_001_254	CD	iCD	Macroscopic inflammation	0
+GSM1598515	CCFA_Risk_108	Ileum（回肠）	男	15	A1b	CD	iCD	Macroscopic inflammation	0	108	Combined_001_254	CD	iCD	Macroscopic inflammation	0
+GSM1598516	CCFA_Risk_109	Ileum（回肠）	男	13.58	A1b	CD	iCD	Macroscopic inflammation	1	109	Combined_001_254	CD	iCD	Macroscopic inflammation	1
+GSM1598517	CCFA_Risk_110	Ileum（回肠）	男	11.33	A1b	CD	iCD	Macroscopic inflammation	0	110	Combined_001_254	CD	iCD	Macroscopic inflammation	0
+GSM1598518	CCFA_Risk_111	Ileum（回肠）	男	14.5	A1b	CD	iCD	Macroscopic inflammation	0	111	Combined_001_254	CD	iCD	Macroscopic inflammation	0
+GSM1598519	CCFA_Risk_112	Ileum（回肠）	女	14.33	A1b	CD	iCD	Macroscopic inflammation	0	112	Combined_001_254	CD	iCD	Macroscopic inflammation	0
+GSM1598520	CCFA_Risk_113	Ileum（回肠）	女	13.42	A1b	CD	iCD	Macroscopic inflammation	0	113	Combined_001_254	CD	iCD	Macroscopic inflammation	0
+GSM1598521	CCFA_Risk_114	Ileum（回肠）	男	9.92	A1a	UC	UC	NA	NA	114	Combined_001_254	UC	UC	NA	NA
+GSM1598522	CCFA_Risk_115	Ileum（回肠）	女	14.08	A1b	CD	iCD	Macroscopic inflammation	0	115	Combined_001_254	CD	iCD	Macroscopic inflammation	0
+GSM1598523	CCFA_Risk_116	Ileum（回肠）	男	11.33	A1b	CD	iCD	Macroscopic inflammation	1	116	Combined_001_254	CD	iCD	Macroscopic inflammation	1
+GSM1598524	CCFA_Risk_117	Ileum（回肠）	男	7.83	A1a	Not IBD	Not IBD	NA	NA	117	Combined_001_254	Non-IBD	Not IBD	NA	NA
+GSM1598525	CCFA_Risk_118	Ileum（回肠）	男	9.67	A1a	Not IBD	Not IBD	NA	NA	118	Combined_001_254	Non-IBD	Not IBD	NA	NA
+GSM1598526	CCFA_Risk_119	Ileum（回肠）	男	12.67	A1b	UC	UC	NA	NA	119	Combined_001_254	UC	UC	NA	NA
+GSM1598527	CCFA_Risk_120	Ileum（回肠）	男	8	A1a	Not IBD	Not IBD	NA	NA	120	Combined_001_254	Non-IBD	Not IBD	NA	NA
+GSM1598528	CCFA_Risk_121	Ileum（回肠）	女	10.67	A1b	Not IBD	Not IBD	NA	NA	121	Combined_001_254	Non-IBD	Not IBD	NA	NA
+GSM1598529	CCFA_Risk_122	Ileum（回肠）	女	10.5	A1b	UC	UC	NA	NA	122	Combined_001_254	UC	UC	NA	NA
+GSM1598530	CCFA_Risk_123	Ileum（回肠）	女	8.5	A1a	UC	UC	NA	NA	123	Combined_001_254	UC	UC	NA	NA
+GSM1598531	CCFA_Risk_124	Ileum（回肠）	女	11.67	A1b	UC	UC	NA	NA	124	Combined_001_254	UC	UC	NA	NA
+GSM1598532	CCFA_Risk_125	Ileum（回肠）	男	5.75	A1a	UC	UC	NA	NA	125	Combined_001_254	UC	UC	NA	NA
+GSM1598533	CCFA_Risk_126	Ileum（回肠）	男	5.5	A1a	UC	UC	NA	NA	126	Combined_001_254	UC	UC	NA	NA
+GSM1598534	CCFA_Risk_127	Ileum（回肠）	女	14.5	A1b	UC	UC	NA	NA	127	Combined_001_254	UC	UC	NA	NA
+GSM1598535	CCFA_Risk_128	Ileum（回肠）	女	11.5	A1b	UC	UC	NA	NA	128	Combined_001_254	UC	UC	NA	NA
+GSM1598536	CCFA_Risk_129	Ileum（回肠）	男	11.83	A1b	UC	UC	NA	NA	129	Combined_001_254	UC	UC	NA	NA
+GSM1598537	CCFA_Risk_130	Ileum（回肠）	男	15.5	A1b	UC	UC	NA	NA	130	Combined_001_254	UC	UC	NA	NA
+GSM1598538	CCFA_Risk_131	Ileum（回肠）	女	8.25	A1a	UC	UC	NA	NA	131	Combined_001_254	UC	UC	NA	NA
+GSM1598539	CCFA_Risk_132	Ileum（回肠）	男	9.17	A1a	CD	iCD	Macroscopic inflammation	0	132	Combined_001_254	CD	iCD	Macroscopic inflammation	0
+GSM1598540	CCFA_Risk_133	Ileum（回肠）	男	13.67	A1b	CD	iCD	Macroscopic inflammation	1	133	Combined_001_254	CD	iCD	Macroscopic inflammation	1
+GSM1598541	CCFA_Risk_134	Ileum（回肠）	男	11.5	A1b	CD	iCD	Macroscopic inflammation	0	134	Combined_001_254	CD	iCD	Macroscopic inflammation	0
+GSM1598542	CCFA_Risk_135	Ileum（回肠）	男	14.42	A1b	CD	iCD	Macroscopic inflammation	0	135	Combined_001_254	CD	iCD	Macroscopic inflammation	0
+GSM1598543	CCFA_Risk_136	Ileum（回肠）	女	11.58	A1b	CD	iCD	Macroscopic inflammation	0	136	Combined_001_254	CD	iCD	Macroscopic inflammation	0
+GSM1598544	CCFA_Risk_137	Ileum（回肠）	男	15.83	A1b	CD	cCD	Microscopic inflammation	0	137	Combined_001_254	CD	cCD	Microscopic inflammation	0
+GSM1598545	CCFA_Risk_138	Ileum（回肠）	女	11.75	A1b	CD	iCD	Macroscopic inflammation	1	138	Combined_001_254	CD	iCD	Macroscopic inflammation	1
+GSM1598546	CCFA_Risk_139	Ileum（回肠）	男	11.5	A1b	CD	iCD	Macroscopic inflammation	1	139	Combined_001_254	CD	iCD	Macroscopic inflammation	1
+GSM1598547	CCFA_Risk_140	Ileum（回肠）	女	11	A1b	CD	iCD	Macroscopic inflammation	0	140	Combined_001_254	CD	iCD	Macroscopic inflammation	0
+GSM1598548	CCFA_Risk_141	Ileum（回肠）	女	12.33	A1b	CD	iCD	Macroscopic inflammation	0	141	Combined_001_254	CD	iCD	Macroscopic inflammation	0
+GSM1598549	CCFA_Risk_142	Ileum（回肠）	男	6.25	A1a	CD	iCD	Macroscopic inflammation	1	142	Combined_001_254	CD	iCD	Macroscopic inflammation	1
+GSM1598550	CCFA_Risk_143	Ileum（回肠）	女	10.67	A1b	CD	iCD	Macroscopic inflammation	1	143	Combined_001_254	CD	iCD	Macroscopic inflammation	1
+GSM1598551	CCFA_Risk_144	Ileum（回肠）	女	13.08	A1b	UC	UC	NA	NA	144	Combined_001_254	UC	UC	NA	NA
+GSM1598552	CCFA_Risk_145	Ileum（回肠）	女	11.25	A1b	CD	iCD	Macroscopic inflammation	1	145	Combined_001_254	CD	iCD	Macroscopic inflammation	1
+GSM1598553	CCFA_Risk_146	Ileum（回肠）	女	7.25	A1a	CD	iCD	Macroscopic inflammation	1	146	Combined_001_254	CD	iCD	Macroscopic inflammation	1
+GSM1598554	CCFA_Risk_147	Ileum（回肠）	男	11.08	A1b	CD	iCD	Macroscopic inflammation	1	147	Combined_001_254	CD	iCD	Macroscopic inflammation	1
+GSM1598555	CCFA_Risk_148	Ileum（回肠）	男	8.83	A1a	CD	iCD	Macroscopic inflammation	1	148	Combined_001_254	CD	iCD	Macroscopic inflammation	1
+GSM1598556	CCFA_Risk_149	Ileum（回肠）	男	11.17	A1b	CD	iCD	Macroscopic inflammation	0	149	Combined_001_254	CD	iCD	Macroscopic inflammation	0
+GSM1598557	CCFA_Risk_150	Ileum（回肠）	男	10.67	A1b	CD	iCD	Macroscopic inflammation	1	150	Combined_001_254	CD	iCD	Macroscopic inflammation	1
+GSM1598558	CCFA_Risk_151	Ileum（回肠）	女	6.75	A1a	UC	UC	NA	NA	151	Combined_001_254	UC	UC	NA	NA
+GSM1598559	CCFA_Risk_152	Ileum（回肠）	男	9.67	A1a	UC	UC	NA	NA	152	Combined_001_254	UC	UC	NA	NA
+GSM1598560	CCFA_Risk_153	Ileum（回肠）	男	8.5	A1a	UC	UC	NA	NA	153	Combined_001_254	UC	UC	NA	NA
+GSM1598561	CCFA_Risk_154	Ileum（回肠）	女	14.42	A1b	UC	UC	NA	NA	154	Combined_001_254	UC	UC	NA	NA
+GSM1598562	CCFA_Risk_155	Ileum（回肠）	女	13.17	A1b	UC	UC	NA	NA	155	Combined_001_254	UC	UC	NA	NA
+GSM1598563	CCFA_Risk_156	Ileum（回肠）	女	6.75	A1a	CD	cCD	Normal	0	156	Combined_001_254	CD	cCD	Normal	0
+GSM1598564	CCFA_Risk_157	Ileum（回肠）	女	8.83	A1a	CD	cCD	Microscopic inflammation	0	157	Combined_001_254	CD	cCD	Microscopic inflammation	0
+GSM1598565	CCFA_Risk_158	Ileum（回肠）	女	7.83	A1a	CD	cCD	Normal	0	158	Combined_001_254	CD	cCD	Normal	0
+GSM1598566	CCFA_Risk_159	Ileum（回肠）	女	11.92	A1b	CD	cCD	Microscopic inflammation	0	159	Combined_001_254	CD	cCD	Microscopic inflammation	0
+GSM1598567	CCFA_Risk_160	Ileum（回肠）	男	12.58	A1b	CD	cCD	Microscopic inflammation	0	160	Combined_001_254	CD	cCD	Microscopic inflammation	0
+GSM1598568	CCFA_Risk_161	Ileum（回肠）	女	8.83	A1a	CD	cCD	Microscopic inflammation	0	161	Combined_001_254	CD	cCD	Microscopic inflammation	0
+GSM1598569	CCFA_Risk_162	Ileum（回肠）	女	9.75	A1a	CD	cCD	Microscopic inflammation	0	162	Combined_001_254	CD	cCD	Microscopic inflammation	0
+GSM1598570	CCFA_Risk_163	Ileum（回肠）	女	9.25	A1a	CD	iCD	Macroscopic inflammation	1	163	Combined_001_254	CD	iCD	Macroscopic inflammation	1
+GSM1598571	CCFA_Risk_164	Ileum（回肠）	女	8.83	A1a	CD	cCD	Normal	0	164	Combined_001_254	CD	cCD	Normal	0
+GSM1598572	CCFA_Risk_165	Ileum（回肠）	女	9.75	A1a	CD	iCD	Macroscopic inflammation	1	165	Combined_001_254	CD	iCD	Macroscopic inflammation	1
+GSM1598573	CCFA_Risk_166	Ileum（回肠）	男	9.58	A1a	CD	iCD	Macroscopic inflammation	0	166	Combined_001_254	CD	iCD	Macroscopic inflammation	0
+GSM1598574	CCFA_Risk_167	Ileum（回肠）	男	9.58	A1a	CD	iCD	Macroscopic inflammation	1	167	Combined_001_254	CD	iCD	Macroscopic inflammation	1
+GSM1598575	CCFA_Risk_168	Ileum（回肠）	男	9.25	A1a	CD	iCD	Macroscopic inflammation	0	168	Combined_001_254	CD	iCD	Macroscopic inflammation	0
+GSM1598576	CCFA_Risk_169	Ileum（回肠）	男	9.08	A1a	CD	iCD	Macroscopic inflammation	0	169	Combined_001_254	CD	iCD	Macroscopic inflammation	0
+GSM1598577	CCFA_Risk_170	Ileum（回肠）	男	9	A1a	CD	iCD	Macroscopic inflammation	1	170	Combined_001_254	CD	iCD	Macroscopic inflammation	1
+GSM1598578	CCFA_Risk_171	Ileum（回肠）	男	16.42	A1b	CD	iCD	Macroscopic inflammation	1	171	Combined_001_254	CD	iCD	Macroscopic inflammation	1
+GSM1598579	CCFA_Risk_172	Ileum（回肠）	男	16.08	A1b	CD	iCD	Macroscopic inflammation	0	172	Combined_001_254	CD	iCD	Macroscopic inflammation	0
+GSM1598580	CCFA_Risk_173	Ileum（回肠）	女	8.92	A1a	CD	iCD	Macroscopic inflammation	0	173	Combined_001_254	CD	iCD	Macroscopic inflammation	0
+GSM1598581	CCFA_Risk_174	Ileum（回肠）	男	7.92	A1a	CD	iCD	Macroscopic inflammation	0	174	Combined_001_254	CD	iCD	Macroscopic inflammation	0
+GSM1598582	CCFA_Risk_175	Ileum（回肠）	男	7.92	A1a	CD	iCD	Macroscopic inflammation	0	175	Combined_001_254	CD	iCD	Macroscopic inflammation	0
+GSM1598583	CCFA_Risk_176	Ileum（回肠）	男	8.92	A1a	CD	iCD	Macroscopic inflammation	1	176	Combined_001_254	CD	iCD	Macroscopic inflammation	1
+GSM1598584	CCFA_Risk_177	Ileum（回肠）	男	9.58	A1a	CD	iCD	Macroscopic inflammation	1	177	Combined_001_254	CD	iCD	Macroscopic inflammation	1
+GSM1598585	CCFA_Risk_178	Ileum（回肠）	男	6.75	A1a	CD	iCD	Macroscopic inflammation	0	178	Combined_001_254	CD	iCD	Macroscopic inflammation	0
+GSM1598586	CCFA_Risk_179	Ileum（回肠）	男	8.83	A1a	CD	iCD	Macroscopic inflammation	0	179	Combined_001_254	CD	iCD	Macroscopic inflammation	0
+GSM1598587	CCFA_Risk_180	Ileum（回肠）	女	12.67	A1b	Not IBD	Not IBD	NA	NA	180	Combined_001_254	Non-IBD	Not IBD	NA	NA
+GSM1598588	CCFA_Risk_181	Ileum（回肠）	男	8.42	A1a	CD	iCD	Macroscopic inflammation	1	181	Combined_001_254	CD	iCD	Macroscopic inflammation	1
+GSM1598589	CCFA_Risk_182	Ileum（回肠）	男	9.17	A1a	CD	iCD	Macroscopic inflammation	0	182	Combined_001_254	CD	iCD	Macroscopic inflammation	0
+GSM1598590	CCFA_Risk_183	Ileum（回肠）	男	7.33	A1a	CD	iCD	Macroscopic inflammation	1	183	Combined_001_254	CD	iCD	Macroscopic inflammation	1
+GSM1598591	CCFA_Risk_184	Ileum（回肠）	男	5.67	A1a	CD	cCD	Microscopic inflammation	0	184	Combined_001_254	CD	cCD	Microscopic inflammation	0
+GSM1598592	CCFA_Risk_185	Ileum（回肠）	男	8.75	A1a	CD	iCD	Macroscopic inflammation	0	185	Combined_001_254	CD	iCD	Macroscopic inflammation	0
+GSM1598593	CCFA_Risk_186	Ileum（回肠）	男	9.25	A1a	CD	iCD	Macroscopic inflammation	0	186	Combined_001_254	CD	iCD	Macroscopic inflammation	0
+GSM1598594	CCFA_Risk_187	Ileum（回肠）	男	8	A1a	CD	iCD	Macroscopic inflammation	0	187	Combined_001_254	CD	iCD	Macroscopic inflammation	0
+GSM1598595	CCFA_Risk_188	Ileum（回肠）	女	6.17	A1a	CD	iCD	Macroscopic inflammation	0	188	Combined_001_254	CD	iCD	Macroscopic inflammation	0
+GSM1598596	CCFA_Risk_189	Ileum（回肠）	女	8	A1a	CD	iCD	Macroscopic inflammation	0	189	Combined_001_254	CD	iCD	Macroscopic inflammation	0
+GSM1598597	CCFA_Risk_190	Ileum（回肠）	男	7.17	A1a	CD	iCD	Macroscopic inflammation	0	190	Combined_001_254	CD	iCD	Macroscopic inflammation	0
+GSM1598598	CCFA_Risk_191	Ileum（回肠）	女	14.5	A1b	CD	iCD	Macroscopic inflammation	0	191	Combined_001_254	CD	iCD	Macroscopic inflammation	0
+GSM1598599	CCFA_Risk_192	Ileum（回肠）	男	15.17	A1b	CD	cCD	Undetermined	0	192	Combined_001_254	CD	cCD	Undetermined	0
+GSM1598600	CCFA_Risk_193	Ileum（回肠）	女	15.25	A1b	CD	iCD	Macroscopic inflammation	1	193	Combined_001_254	CD	iCD	Macroscopic inflammation	1
+GSM1598601	CCFA_Risk_194	Ileum（回肠）	女	9.5	A1a	CD	cCD	Normal	0	194	Combined_001_254	CD	cCD	Normal	0
+GSM1598602	CCFA_Risk_195	Ileum（回肠）	男	14.33	A1b	CD	cCD	Normal	0	195	Combined_001_254	CD	cCD	Normal	0
+GSM1598603	CCFA_Risk_196	Ileum（回肠）	女	13.92	A1b	CD	iCD	Macroscopic inflammation	1	196	Combined_001_254	CD	iCD	Macroscopic inflammation	1
+GSM1598604	CCFA_Risk_197	Ileum（回肠）	男	11.25	A1b	CD	iCD	Macroscopic inflammation	0	197	Combined_001_254	CD	iCD	Macroscopic inflammation	0
+GSM1598605	CCFA_Risk_198	Ileum（回肠）	男	13.75	A1b	CD	cCD	Normal	0	198	Combined_001_254	CD	cCD	Normal	0
+GSM1598606	CCFA_Risk_199	Ileum（回肠）	女	14.33	A1b	CD	iCD	Macroscopic inflammation	1	199	Combined_001_254	CD	iCD	Macroscopic inflammation	1
+GSM1598607	CCFA_Risk_200	Ileum（回肠）	女	15.58	A1b	CD	iCD	Macroscopic inflammation	0	200	Combined_001_254	CD	iCD	Macroscopic inflammation	0
+GSM1598608	CCFA_Risk_201	Ileum（回肠）	女	15	A1b	CD	iCD	Macroscopic inflammation	0	201	Combined_001_254	CD	iCD	Macroscopic inflammation	0
+GSM1598609	CCFA_Risk_202	Ileum（回肠）	女	14.75	A1b	CD	iCD	Macroscopic inflammation	1	202	Combined_001_254	CD	iCD	Macroscopic inflammation	1
+GSM1598610	CCFA_Risk_203	Ileum（回肠）	男	16.83	A1b	CD	iCD	Macroscopic inflammation	1	203	Combined_001_254	CD	iCD	Macroscopic inflammation	1
+GSM1598611	CCFA_Risk_204	Ileum（回肠）	女	16.92	A1b	CD	iCD	Macroscopic inflammation	0	204	Combined_001_254	CD	iCD	Macroscopic inflammation	0
+GSM1598612	CCFA_Risk_205	Ileum（回肠）	女	15.42	A1b	CD	iCD	Macroscopic inflammation	0	205	Combined_001_254	CD	iCD	Macroscopic inflammation	0
+GSM1598613	CCFA_Risk_206	Ileum（回肠）	女	15.33	A1b	CD	cCD	Normal	0	206	Combined_001_254	CD	cCD	Normal	0
+GSM1598614	CCFA_Risk_207	Ileum（回肠）	男	16.5	A1b	CD	iCD	Macroscopic inflammation	0	207	Combined_001_254	CD	iCD	Macroscopic inflammation	0
+GSM1598615	CCFA_Risk_208	Ileum（回肠）	男	12.75	A1b	CD	iCD	Macroscopic inflammation	0	208	Combined_001_254	CD	iCD	Macroscopic inflammation	0
+GSM1598616	CCFA_Risk_209	Ileum（回肠）	男	11.17	A1b	CD	iCD	Macroscopic inflammation	0	209	Combined_001_254	CD	iCD	Macroscopic inflammation	0
+GSM1598617	CCFA_Risk_210	Ileum（回肠）	男	15.33	A1b	CD	iCD	Macroscopic inflammation	0	210	Combined_001_254	CD	iCD	Macroscopic inflammation	0
+GSM1598618	CCFA_Risk_211	Ileum（回肠）	男	15	A1b	CD	iCD	Macroscopic inflammation	0	211	Combined_001_254	CD	iCD	Macroscopic inflammation	0
+GSM1598619	CCFA_Risk_212	Ileum（回肠）	女	12	A1b	CD	iCD	Macroscopic inflammation	1	212	Combined_001_254	CD	iCD	Macroscopic inflammation	1
+GSM1598620	CCFA_Risk_213	Ileum（回肠）	女	16.25	A1b	CD	iCD	Macroscopic inflammation	1	213	Combined_001_254	CD	iCD	Macroscopic inflammation	1
+GSM1598621	CCFA_Risk_214	Ileum（回肠）	女	15.58	A1b	CD	iCD	Macroscopic inflammation	0	214	Combined_001_254	CD	iCD	Macroscopic inflammation	0
+GSM1598622	CCFA_Risk_215	Ileum（回肠）	男	13.83	A1b	CD	cCD	Normal	0	215	Combined_001_254	CD	cCD	Normal	0
+GSM1598623	CCFA_Risk_216	Ileum（回肠）	男	12.42	A1b	CD	iCD	Macroscopic inflammation	1	216	Combined_001_254	CD	iCD	Macroscopic inflammation	1
+GSM1598624	CCFA_Risk_217	Ileum（回肠）	男	11.92	A1b	CD	iCD	Macroscopic inflammation	1	217	Combined_001_254	CD	iCD	Macroscopic inflammation	1
+GSM1598625	CCFA_Risk_218	Ileum（回肠）	女	15.83	A1b	CD	iCD	Macroscopic inflammation	1	218	Combined_001_254	CD	iCD	Macroscopic inflammation	1
+GSM1598626	CCFA_Risk_219	Ileum（回肠）	男	13.58	A1b	CD	iCD	Macroscopic inflammation	1	219	Combined_001_254	CD	iCD	Macroscopic inflammation	1
+GSM1598627	CCFA_Risk_220	Ileum（回肠）	男	12.67	A1b	CD	cCD	Normal	0	220	Combined_001_254	CD	cCD	Normal	0
+GSM1598628	CCFA_Risk_221	Ileum（回肠）	女	10.75	A1b	CD	iCD	Macroscopic inflammation	0	221	Combined_001_254	CD	iCD	Macroscopic inflammation	0
+GSM1598629	CCFA_Risk_222	Ileum（回肠）	女	16.5	A1b	CD	iCD	Macroscopic inflammation	0	222	Combined_001_254	CD	iCD	Macroscopic inflammation	0
+GSM1598630	CCFA_Risk_223	Ileum（回肠）	女	10.67	A1b	CD	iCD	Macroscopic inflammation	1	223	Combined_001_254	CD	iCD	Macroscopic inflammation	1
+GSM1598631	CCFA_Risk_224	Ileum（回肠）	男	12.08	A1b	CD	iCD	Macroscopic inflammation	0	224	Combined_001_254	CD	iCD	Macroscopic inflammation	0
+GSM1598632	CCFA_Risk_225	Ileum（回肠）	女	15.42	A1b	CD	iCD	Macroscopic inflammation	0	225	Combined_001_254	CD	iCD	Macroscopic inflammation	0
+GSM1598633	CCFA_Risk_226	Ileum（回肠）	女	11.92	A1b	UC	UC	NA	NA	226	Combined_001_254	UC	UC	NA	NA
+GSM1598634	CCFA_Risk_227	Ileum（回肠）	男	13.17	A1b	CD	iCD	Macroscopic inflammation	0	227	Combined_001_254	CD	iCD	Macroscopic inflammation	0
+GSM1598635	CCFA_Risk_228	Ileum（回肠）	男	10.83	A1b	CD	iCD	Macroscopic inflammation	0	228	Combined_001_254	CD	iCD	Macroscopic inflammation	0
+GSM1598636	CCFA_Risk_229	Ileum（回肠）	男	15.5	A1b	CD	iCD	Macroscopic inflammation	1	229	Combined_001_254	CD	iCD	Macroscopic inflammation	1
+GSM1598637	CCFA_Risk_230	Ileum（回肠）	男	16.75	A1b	CD	iCD	Macroscopic inflammation	1	230	Combined_001_254	CD	iCD	Macroscopic inflammation	1
+GSM1598638	CCFA_Risk_231	Ileum（回肠）	女	10.17	A1b	CD	iCD	Macroscopic inflammation	1	231	Combined_001_254	CD	iCD	Macroscopic inflammation	1
+GSM1598639	CCFA_Risk_232	Ileum（回肠）	男	8.5	A1a	UC	UC	NA	NA	232	Combined_001_254	UC	UC	NA	NA
+GSM1598640	CCFA_Risk_233	Ileum（回肠）	男	14	A1b	UC	UC	NA	NA	233	Combined_001_254	UC	UC	NA	NA
+GSM1598641	CCFA_Risk_234	Ileum（回肠）	男	13.75	A1b	UC	UC	NA	NA	234	Combined_001_254	UC	UC	NA	NA
+GSM1598642	CCFA_Risk_235	Ileum（回肠）	女	16.58	A1b	UC	UC	NA	NA	235	Combined_001_254	UC	UC	NA	NA
+GSM1598643	CCFA_Risk_236	Ileum（回肠）	女	12.42	A1b	CD	iCD	Macroscopic inflammation	1	236	Combined_001_254	CD	iCD	Macroscopic inflammation	1
+GSM1598644	CCFA_Risk_237	Ileum（回肠）	男	12.58	A1b	CD	iCD	Macroscopic inflammation	0	237	Combined_001_254	CD	iCD	Macroscopic inflammation	0
+GSM1598645	CCFA_Risk_238	Ileum（回肠）	男	5.75	A1a	UC	UC	NA	NA	238	Combined_001_254	UC	UC	NA	NA
+GSM1598646	CCFA_Risk_239	Ileum（回肠）	男	15	A1b	UC	UC	NA	NA	239	Combined_001_254	UC	UC	NA	NA
+GSM1598647	CCFA_Risk_240	Ileum（回肠）	女	11.83	A1b	UC	UC	NA	NA	240	Combined_001_254	UC	UC	NA	NA
+GSM1598648	CCFA_Risk_241	Ileum（回肠）	女	12	A1b	UC	UC	NA	NA	241	Combined_001_254	UC	UC	NA	NA
+GSM1598649	CCFA_Risk_242	Ileum（回肠）	男	13.25	A1b	UC	UC	NA	NA	242	Combined_001_254	UC	UC	NA	NA
+GSM1598650	CCFA_Risk_243	Ileum（回肠）	男	11.58	A1b	UC	UC	NA	NA	243	Combined_001_254	UC	UC	NA	NA
+GSM1598651	CCFA_Risk_244	Ileum（回肠）	女	15.58	A1b	UC	UC	NA	NA	244	Combined_001_254	UC	UC	NA	NA
+GSM1598652	CCFA_Risk_245	Ileum（回肠）	女	14.92	A1b	UC	UC	NA	NA	245	Combined_001_254	UC	UC	NA	NA
+GSM1598653	CCFA_Risk_246	Ileum（回肠）	男	14.92	A1b	UC	UC	NA	NA	246	Combined_001_254	UC	UC	NA	NA
+GSM1598654	CCFA_Risk_247	Ileum（回肠）	女	6.33	A1a	UC	UC	NA	NA	247	Combined_001_254	UC	UC	NA	NA
+GSM1598655	CCFA_Risk_248	Ileum（回肠）	女	13.67	A1b	UC	UC	NA	NA	248	Combined_001_254	UC	UC	NA	NA
+GSM1598656	CCFA_Risk_249	Ileum（回肠）	女	16.92	A1b	UC	UC	NA	NA	249	Combined_001_254	UC	UC	NA	NA
+GSM1598657	CCFA_Risk_250	Ileum（回肠）	男	6.92	A1a	UC	UC	NA	NA	250	Combined_001_254	UC	UC	NA	NA
+GSM1598658	CCFA_Risk_251	Ileum（回肠）	女	16.83	A1b	UC	UC	NA	NA	251	Combined_001_254	UC	UC	NA	NA
+GSM1598659	CCFA_Risk_252	Ileum（回肠）	女	14.92	A1b	CD	iCD	Macroscopic inflammation	1	252	Combined_001_254	CD	iCD	Macroscopic inflammation	1
+GSM1598660	CCFA_Risk_253	Ileum（回肠）	男	15.08	A1b	CD	cCD	Normal	0	253	Combined_001_254	CD	cCD	Normal	0
+GSM1598661	CCFA_Risk_254	Ileum（回肠）	女	13.17	A1b	CD	iCD	Macroscopic inflammation	1	254	Combined_001_254	CD	iCD	Macroscopic inflammation	1
+GSM1598662	CCFA_Risk_255	Ileum（回肠）	男	14.42	A1b	CD	iCD	Macroscopic inflammation	1	255	Extra_255_322	CD	iCD	Macroscopic inflammation	1
+GSM1598663	CCFA_Risk_256	Ileum（回肠）	女	12.83	A1b	CD	iCD	Macroscopic inflammation	1	256	Extra_255_322	CD	iCD	Macroscopic inflammation	1
+GSM1598664	CCFA_Risk_257	Ileum（回肠）	男	11.42	A1b	CD	iCD	Macroscopic inflammation	1	257	Extra_255_322	CD	iCD	Macroscopic inflammation	1
+GSM1598665	CCFA_Risk_258	Ileum（回肠）	男	11.92	A1b	CD	iCD	Macroscopic inflammation	0	258	Extra_255_322	CD	iCD	Macroscopic inflammation	0
+GSM1598666	CCFA_Risk_259	Ileum（回肠）	男	16.25	A1b	CD	iCD	Macroscopic inflammation	1	259	Extra_255_322	CD	iCD	Macroscopic inflammation	1
+GSM1598667	CCFA_Risk_260	Ileum（回肠）	男	12.75	A1b	CD	iCD	Macroscopic inflammation	1	260	Extra_255_322	CD	iCD	Macroscopic inflammation	1
+GSM1598668	CCFA_Risk_261	Ileum（回肠）	男	10.75	A1b	CD	iCD	Macroscopic inflammation	1	261	Extra_255_322	CD	iCD	Macroscopic inflammation	1
+GSM1598669	CCFA_Risk_262	Ileum（回肠）	男	15.67	A1b	CD	iCD	Macroscopic inflammation	0	262	Extra_255_322	CD	iCD	Macroscopic inflammation	0
+GSM1598670	CCFA_Risk_263	Ileum（回肠）	男	12	A1b	CD	iCD	Macroscopic inflammation	1	263	Extra_255_322	CD	iCD	Macroscopic inflammation	1
+GSM1598671	CCFA_Risk_264	Ileum（回肠）	男	15.5	A1b	CD	iCD	Macroscopic inflammation	1	264	Extra_255_322	CD	iCD	Macroscopic inflammation	1
+GSM1598672	CCFA_Risk_265	Ileum（回肠）	男	12.83	A1b	CD	cCD	Microscopic inflammation	0	265	Extra_255_322	CD	cCD	Microscopic inflammation	0
+GSM1598673	CCFA_Risk_266	Ileum（回肠）	男	15.92	A1b	CD	cCD	Microscopic inflammation	0	266	Extra_255_322	CD	cCD	Microscopic inflammation	0
+GSM1598674	CCFA_Risk_267	Ileum（回肠）	女	13.67	A1b	CD	iCD	Macroscopic inflammation	0	267	Extra_255_322	CD	iCD	Macroscopic inflammation	0
+GSM1598675	CCFA_Risk_268	Ileum（回肠）	男	15.75	A1b	CD	iCD	Macroscopic inflammation	0	268	Extra_255_322	CD	iCD	Macroscopic inflammation	0
+GSM1598676	CCFA_Risk_269	Ileum（回肠）	男	13.92	A1b	CD	iCD	Macroscopic inflammation	1	269	Extra_255_322	CD	iCD	Macroscopic inflammation	1
+GSM1598677	CCFA_Risk_270	Ileum（回肠）	男	16.75	A1b	CD	cCD	Normal	0	270	Extra_255_322	CD	cCD	Normal	0
+GSM1598678	CCFA_Risk_271	Ileum（回肠）	男	11.67	A1b	CD	cCD	Normal	0	271	Extra_255_322	CD	cCD	Normal	0
+GSM1598679	CCFA_Risk_272	Ileum（回肠）	女	12	A1b	UC	UC	NA	NA	272	Extra_255_322	UC	UC	NA	NA
+GSM1598680	CCFA_Risk_273	Ileum（回肠）	男	16.92	A1b	CD	cCD	Microscopic inflammation	0	273	Extra_255_322	CD	cCD	Microscopic inflammation	0
+GSM1598681	CCFA_Risk_274	Ileum（回肠）	女	12.33	A1b	CD	cCD	Normal	0	274	Extra_255_322	CD	cCD	Normal	0
+GSM1598682	CCFA_Risk_275	Ileum（回肠）	女	10.83	A1b	CD	iCD	Macroscopic inflammation	1	275	Extra_255_322	CD	iCD	Macroscopic inflammation	1
+GSM1598683	CCFA_Risk_276	Ileum（回肠）	男	13.25	A1b	CD	iCD	Macroscopic inflammation	1	276	Extra_255_322	CD	iCD	Macroscopic inflammation	1
+GSM1598684	CCFA_Risk_277	Ileum（回肠）	男	7.25	A1a	UC	UC	NA	NA	277	Extra_255_322	UC	UC	NA	NA
+GSM1598685	CCFA_Risk_278	Ileum（回肠）	男	15.83	A1b	CD	cCD	Microscopic inflammation	0	278	Extra_255_322	CD	cCD	Microscopic inflammation	0
+GSM1598686	CCFA_Risk_279	Ileum（回肠）	女	14.25	A1b	CD	cCD	Microscopic inflammation	0	279	Extra_255_322	CD	cCD	Microscopic inflammation	0
+GSM1598687	CCFA_Risk_280	Ileum（回肠）	女	16.58	A1b	UC	UC	NA	NA	280	Extra_255_322	UC	UC	NA	NA
+GSM1598688	CCFA_Risk_281	Ileum（回肠）	男	16.5	A1b	CD	cCD	Normal	0	281	Extra_255_322	CD	cCD	Normal	0
+GSM1598689	CCFA_Risk_282	Ileum（回肠）	男	16.5	A1b	UC	UC	NA	NA	282	Extra_255_322	UC	UC	NA	NA
+GSM1598690	CCFA_Risk_283	Ileum（回肠）	男	15.5	A1b	UC	UC	NA	NA	283	Extra_255_322	UC	UC	NA	NA
+GSM1598691	CCFA_Risk_284	Ileum（回肠）	男	15.33	A1b	UC	UC	NA	NA	284	Extra_255_322	UC	UC	NA	NA
+GSM1598692	CCFA_Risk_285	Ileum（回肠）	女	12.67	A1b	CD	cCD	Microscopic inflammation	0	285	Extra_255_322	CD	cCD	Microscopic inflammation	0
+GSM1598693	CCFA_Risk_286	Ileum（回肠）	男	6.58	A1a	CD	cCD	Microscopic inflammation	0	286	Extra_255_322	CD	cCD	Microscopic inflammation	0
+GSM1598694	CCFA_Risk_287	Ileum（回肠）	女	16.25	A1b	CD	cCD	Normal	0	287	Extra_255_322	CD	cCD	Normal	0
+GSM1598695	CCFA_Risk_288	Ileum（回肠）	男	13.75	A1b	UC	UC	NA	NA	288	Extra_255_322	UC	UC	NA	NA
+GSM1598696	CCFA_Risk_289	Ileum（回肠）	女	14.08	A1b	CD	cCD	Normal	0	289	Extra_255_322	CD	cCD	Normal	0
+GSM1598697	CCFA_Risk_290	Ileum（回肠）	男	13.75	A1b	UC	UC	NA	NA	290	Extra_255_322	UC	UC	NA	NA
+GSM1598698	CCFA_Risk_291	Ileum（回肠）	男	7.42	A1a	UC	UC	NA	NA	291	Extra_255_322	UC	UC	NA	NA
+GSM1598699	CCFA_Risk_292	Ileum（回肠）	男	10.83	A1b	UC	UC	NA	NA	292	Extra_255_322	UC	UC	NA	NA
+GSM1598700	CCFA_Risk_293	Ileum（回肠）	女	12.5	A1b	CD	cCD	Microscopic inflammation	0	293	Extra_255_322	CD	cCD	Microscopic inflammation	0
+GSM1598701	CCFA_Risk_294	Ileum（回肠）	男	15.08	A1b	UC	UC	NA	NA	294	Extra_255_322	UC	UC	NA	NA
+GSM1598702	CCFA_Risk_295	Ileum（回肠）	男	9.42	A1a	UC	UC	NA	NA	295	Extra_255_322	UC	UC	NA	NA
+GSM1598703	CCFA_Risk_296	Ileum（回肠）	男	10.58	A1b	CD	iCD	Macroscopic inflammation	1	296	Extra_255_322	CD	iCD	Macroscopic inflammation	1
+GSM1598704	CCFA_Risk_297	Ileum（回肠）	男	15.83	A1b	UC	UC	NA	NA	297	Extra_255_322	UC	UC	NA	NA
+GSM1598705	CCFA_Risk_298	Ileum（回肠）	男	15.92	A1b	UC	UC	NA	NA	298	Extra_255_322	UC	UC	NA	NA
+GSM1598706	CCFA_Risk_299	Ileum（回肠）	男	12.75	A1b	CD	cCD	Normal	0	299	Extra_255_322	CD	cCD	Normal	0
+GSM1598707	CCFA_Risk_300	Ileum（回肠）	男	13	A1b	CD	iCD	Macroscopic inflammation	1	300	Extra_255_322	CD	iCD	Macroscopic inflammation	1
+GSM1598708	CCFA_Risk_301	Ileum（回肠）	女	16.67	A1b	UC	UC	NA	NA	301	Extra_255_322	UC	UC	NA	NA
+GSM1598709	CCFA_Risk_302	Ileum（回肠）	男	17.08	A1b	UC	UC	NA	NA	302	Extra_255_322	UC	UC	NA	NA
+GSM1598710	CCFA_Risk_303	Ileum（回肠）	男	15.33	A1b	CD	iCD	Microscopic inflammation	0	303	Extra_255_322	CD	iCD	Microscopic inflammation	0
+GSM1598711	CCFA_Risk_304	Ileum（回肠）	男	10.83	A1b	CD	cCD	Microscopic inflammation	0	304	Extra_255_322	CD	cCD	Microscopic inflammation	0
+GSM1598712	CCFA_Risk_305	Ileum（回肠）	男	13.58	A1b	UC	UC	NA	NA	305	Extra_255_322	UC	UC	NA	NA
+GSM1598713	CCFA_Risk_306	Ileum（回肠）	女	16.33	A1b	UC	UC	NA	NA	306	Extra_255_322	UC	UC	NA	NA
+GSM1598714	CCFA_Risk_307	Ileum（回肠）	男	11.83	A1b	CD	cCD	Microscopic inflammation	0	307	Extra_255_322	CD	cCD	Microscopic inflammation	0
+GSM1598715	CCFA_Risk_308	Ileum（回肠）	男	15.75	A1b	UC	UC	NA	NA	308	Extra_255_322	UC	UC	NA	NA
+GSM1598716	CCFA_Risk_309	Ileum（回肠）	女	13.67	A1b	CD	cCD	Microscopic inflammation	0	309	Extra_255_322	CD	cCD	Microscopic inflammation	0
+GSM1598717	CCFA_Risk_310	Ileum（回肠）	女	13.17	A1b	CD	iCD	Macroscopic inflammation	0	310	Extra_255_322	CD	iCD	Macroscopic inflammation	0
+GSM1598718	CCFA_Risk_311	Ileum（回肠）	男	13.83	A1b	CD	cCD	Microscopic inflammation	0	311	Extra_255_322	CD	cCD	Microscopic inflammation	0
+GSM1598719	CCFA_Risk_312	Ileum（回肠）	男	10.67	A1b	CD	cCD	Microscopic inflammation	0	312	Extra_255_322	CD	cCD	Microscopic inflammation	0
+GSM1598720	CCFA_Risk_313	Ileum（回肠）	女	5.42	A1a	CD	iCD	Macroscopic inflammation	0	313	Extra_255_322	CD	iCD	Macroscopic inflammation	0
+GSM1598721	CCFA_Risk_314	Ileum（回肠）	男	11	A1b	CD	cCD	Normal	0	314	Extra_255_322	CD	cCD	Normal	0
+GSM1598722	CCFA_Risk_315	Ileum（回肠）	女	14.92	A1b	UC	UC	NA	NA	315	Extra_255_322	UC	UC	NA	NA
+GSM1598723	CCFA_Risk_316	Ileum（回肠）	女	16.91	A1b	UC	UC	NA	NA	316	Extra_255_322	UC	UC	NA	NA
+GSM1598724	CCFA_Risk_317	Ileum（回肠）	男	10.5	A1b	CD	cCD	Microscopic inflammation	0	317	Extra_255_322	CD	cCD	Microscopic inflammation	0
+GSM1598725	CCFA_Risk_318	Ileum（回肠）	女	4.5	A1a	UC	UC	NA	NA	318	Extra_255_322	UC	UC	NA	NA
+GSM1598726	CCFA_Risk_319	Ileum（回肠）	男	11	A1b	UC	UC	NA	NA	319	Extra_255_322	UC	UC	NA	NA
+GSM1598727	CCFA_Risk_320	Ileum（回肠）	女	15.75	A1b	CD	cCD	Normal	0	320	Extra_255_322	CD	cCD	Normal	0
+GSM1598728	CCFA_Risk_321	Ileum（回肠）	女	9.58	A1a	CD	cCD	Normal	0	321	Extra_255_322	CD	cCD	Normal	0
+GSM1598729	CCFA_Risk_322	Ileum（回肠）	男	14.17	A1b	UC	UC	NA	NA	322	Extra_255_322	UC	UC	NA	NA

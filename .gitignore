@@ -111,3 +111,37 @@ software/ecotyper/EcoTyper/MSCCR_CORE12_*/
 software/ecotyper/CIBERSORTx/hires/MSCCR_CORE12_*/
 software/ecotyper/datasets/discovery/MSCCR_CORE12_*/
 
+
+# ============================================================
+# Validation datasets / generated audit products
+# ============================================================
+
+# Downloaded/public source expression
+06_validation/**/raw/**
+06_validation/**/02_source_expression/**
+
+# Locally supplied source metadata
+06_validation/**/01_source_metadata/original/**
+
+# GEO provenance downloads and generated provenance outputs
+06_validation/**/00_provenance/**
+
+# Generated validation products
+06_validation/**/prepared/**
+06_validation/**/recovery/**
+06_validation/**/audit/**
+
+# Exploratory cross-cohort outputs
+06_validation/01_bulk_progressression/99_cross_cohort/**
+06_validation/01_bulk_progression/99_cross_cohort/**
+
+# Publication/source documents
+06_validation/**/metadata/source_publication/**
+
+
+# Validation source metadata / public annotation snapshots
+06_validation/**/metadata/*.xlsx
+06_validation/**/metadata/*_family.soft.gz
+06_validation/99_common/gene_annotation/**/Homo_sapiens.gene_info.gz
+
+06_validation/**/metadata/geo_provenance/*.soft.gz

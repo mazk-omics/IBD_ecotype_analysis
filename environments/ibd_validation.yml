@@ -1,0 +1,19 @@
+name: ibd_validation
+channels:
+  - http://mirror.xiyoucloud.pro:63333/repository/conda-raw/cloud/bioconda/
+  - http://mirror.xiyoucloud.pro:63333/repository/conda-raw/cloud/conda-forge/
+  - http://mirror.xiyoucloud.pro:63333/repository/conda-raw/pkgs/main/
+  - defaults
+dependencies:
+  - r-matrix
+  - r-openxlsx
+  - r-readxl
+  - r-base=4.4
+  - r-data.table
+  - r-biocmanager
+  - bioconductor-biostrings=2.74
+  - r-png
+  - bioconductor-keggrest=1.46
+  - bioconductor-xvector=0.46
+  - bioconductor-annotationdbi=1.68
+prefix: /home/mazekai/miniconda3/envs/ibd_validation
