@@ -1,0 +1,12 @@
+# Keep research source portable between Windows and Linux.
+* text=auto
+*.py text eol=lf
+*.R text eol=lf
+*.r text eol=lf
+*.sh text eol=lf
+*.ps1 text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.md text eol=lf
+# Preserve the exact upstream patch and executed source snapshot.
+docs/software_versions/patches/** -text

@@ -1,0 +1,16 @@
+{
+  "date": "2026-10-10",
+  "python_ast_and_Git_Bash_syntax": "passed for selected source",
+  "local_R_parse_files": 2,
+  "local_R_version": "4.4.1; parse only, no analyses rerun",
+  "PowerShell_parse_files": 2,
+  "source_reconciliation": {
+    "overlapping_files": 24,
+    "distinct_local_versions_preserved": 2
+  },
+  "additional_research_folder_code_copies": 8,
+  "publication_scan": "no credential candidates; selected files <=2 MiB",
+  "whitespace_check": "existing Job24 script EOF blank line retained without reformatting",
+  "server_bundle_sha256": "cf8280cb5af34e91488c138e607ea99aa1cbf40d6be85f0a4e4159ec37576fe0",
+  "research_outputs": "kept in original research storage; not staged"
+}
