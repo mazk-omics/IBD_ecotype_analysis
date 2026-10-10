@@ -145,3 +145,17 @@ software/ecotyper/datasets/discovery/MSCCR_CORE12_*/
 06_validation/99_common/gene_annotation/**/Homo_sapiens.gene_info.gz
 
 06_validation/**/metadata/geo_provenance/*.soft.gz
+
+# Research runtime and transfer artifacts (2026-10-10)
+*.b64
+*.bak_*
+*.before_*
+06_validation/**/formal/
+06_validation/**/input/
+06_validation/**/inputs/
+06_validation/**/input_v2/
+06_validation/**/source/
+06_validation/**/sources/
+/CIBERSORTx_ready_*/
+/ctspec_region_ibd/
+/signature_matrix/

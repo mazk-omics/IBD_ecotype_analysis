@@ -106,7 +106,9 @@ IBD_ecotype_analysis/
 
 ## 当前进展
 
-项目目前处于单细胞参考图谱构建与分析环境准备阶段，正在推进细胞身份体系统一、参考数据整理、CIBERSORTx 输入准备以及 EcoTyper 流程验证。
+已完成候选参考构建、网页留出试验及小规模 MSCCR S-mode fraction 试验；既有 BayesPrism-derived discovery/recovery 与初步解释定位为敏感性分析。官方 CIBERSORTx HiRes 和服务器 Docker 路线仍需推进，尚未开展正式临床关联分析。
+
+本轮阅读入口：[2026-10-06 至 2026-10-10 进度](docs/progress/20261006_20261010_closeout.md)、[Git 归档约定](docs/methods/GIT_ARCHIVING.md)。
 
 后续将依次开展 bulk RNA-seq 发现分析、细胞状态与多细胞生态型识别、独立数据集验证、临床关联分析和空间生态型分析。
 

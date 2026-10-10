@@ -1,0 +1,9 @@
+{
+  "date": "2026-10-10",
+  "server_python_ast_and_bash_syntax": "passed for selected files",
+  "server_R_parse_files": 35,
+  "official_patch_reverse_apply_check": "passed against actual worktree",
+  "publication_scan": "no credential candidates; selected files <=2 MiB",
+  "whitespace_check": "Warnings retained in exact upstream script/patch and sessionInfo snapshots, and existing script EOF blank lines; no analysis code reformatted or rerun",
+  "scope": "code/config/environment/method progress; generated research outputs excluded"
+}

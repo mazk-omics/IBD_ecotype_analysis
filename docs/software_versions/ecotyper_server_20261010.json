@@ -1,0 +1,18 @@
+{
+  "official_origin": "https://github.com/digitalcytometry/ecotyper.git",
+  "official_base": "11408e71900e15829cf4f33e1331ce47c053472d",
+  "project_head": "4a1c71498bca1802a9b374a3259bc7d3f0836fc8",
+  "project_branch": "ibd-presorted-local-fixes",
+  "archive_date": "2026-10-10",
+  "source": "server actual worktree; includes committed presorted ordering fix and uncommitted Region3 changes",
+  "files": {
+    "ecotyper_presorted_region3_20261010.patch": {
+      "bytes": 9424,
+      "sha256": "135a491c9537821c0c7c0ae51c76fcbdca8839be7a173ee34af840ecac0db71a"
+    },
+    "state_discovery_extract_features_server_20261010.R": {
+      "bytes": 5497,
+      "sha256": "8c0e305376cd843ce4ad36f288a67bb760fa94886f44bdc44d25aa4f2b7fc79b"
+    }
+  }
+}

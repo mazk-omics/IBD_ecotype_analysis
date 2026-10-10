@@ -1,0 +1,20 @@
+name: ecotyper_interpretation
+channels:
+  - http://mirror.xiyoucloud.pro:63333/repository/conda-raw/cloud/bioconda/
+  - http://mirror.xiyoucloud.pro:63333/repository/conda-raw/cloud/conda-forge/
+  - http://mirror.xiyoucloud.pro:63333/repository/conda-raw/pkgs/main/
+  - defaults
+dependencies:
+  - r-igraph
+  - r-data.table
+  - r-base=4.0.3
+  - r-metap
+  - r-rcppprogress
+  - r-seurat=3.2.3
+  - compilers
+  - bioconductor-fgsea=1.14.0
+  - r-jsonlite
+  - r-sdmtools
+  - r-ape
+  - r-tsne
+prefix: /home/mazekai/miniconda3/envs/ecotyper_interpretation
