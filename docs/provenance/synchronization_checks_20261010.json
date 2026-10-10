@@ -1,0 +1,23 @@
+{
+  "date": "2026-10-10",
+  "repository": "mazk-omics/IBD_ecotype_analysis",
+  "server_archive_commit": "93aa6c6be5f75c88384750789591c70391138931",
+  "local_archive_commit": "d010d905ec1c72c678d8077034ddf46a6c461f9c",
+  "transfer": "Git bundles over the single existing Xiyou SSH session after local GitHub HTTPS reset/timeout",
+  "server_to_local_bundle_sha256": "cf8280cb5af34e91488c138e607ea99aa1cbf40d6be85f0a4e4159ec37576fe0",
+  "local_to_server_bundle_sha256": "9d61c169d425395ff172fa1d4531dc0949d8304eb6445e00db0e9ba502b13db2",
+  "imported_local_checks": {
+    "Python_AST": 100,
+    "R_parse_in_ecotyper_environment": 2,
+    "bash_syntax": 7
+  },
+  "remaining_server_source_check": {
+    "candidates": 16,
+    "already_archived_by_content": 15,
+    "temporary_transfer_utility_excluded": 1,
+    "distinct_sources_missing": 0
+  },
+  "research_scope": "code/config/environment/method progress; original research data and detailed outputs retained in place",
+  "analysis_execution": "none during Git closeout",
+  "final_remote_verification": "GitHub main is verified with git ls-remote after push; both checkouts fast-forward only"
+}
