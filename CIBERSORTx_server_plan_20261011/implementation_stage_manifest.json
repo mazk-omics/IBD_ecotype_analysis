@@ -1,0 +1,341 @@
+{
+  "date": "2026-10-11",
+  "status": "Independent numerical stages validated; full workflow incomplete",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python": "3.12.14",
+  "numpy": "2.5.3",
+  "pandas": "3.0.6",
+  "scipy": "1.18.1",
+  "r_environment": "R 4.4.1, nnls 1.6; exact loaded packages in each R result sessionInfo.txt",
+  "files": [
+    {
+      "path": "scripts/python/audit_hires_input_space_20261011.py",
+      "sha256": "05922203f5c0d0a8b2ceac8d375ba2a9dd127ac31425eb9100b6825bd73b392f"
+    },
+    {
+      "path": "scripts/R/reconstruct_hires_entry_statistics_20261011.R",
+      "sha256": "a8f0686eb9dcfcedf197869b54817115212b643399df5444e6979776049ccf4e"
+    },
+    {
+      "path": "scripts/R/reconstruct_hires_worker_statistics_20261011.R",
+      "sha256": "efe53c13ce4af3f03c924b9d4f6e42089c238b03a003f236d82469e431819e33"
+    },
+    {
+      "path": "scripts/R/benchmark_hires_numeric_core_20261011.R",
+      "sha256": "84213d4949eb333c56022493354fe9e43b26671d6e8e6e39edf23770dbab4229"
+    },
+    {
+      "path": "scripts/python/check_hires_statistics_and_input_fix_20261011.py",
+      "sha256": "05043ed21c085856a8610c60322c8f9d92d47280bec9205223a7a9a9e8c06328"
+    },
+    {
+      "path": "scripts/python/inventory_public_cibersortx_repositories_20261011.py",
+      "sha256": "32b8f6ce0053a092cfd0517f02af3bfd3c6ebeeb1e25940543f2dbed7598557a"
+    },
+    {
+      "path": "scripts/python/inspect_ecotyper_public_interfaces_20261011.py",
+      "sha256": "53c9ee97acef176bacdd33851e47ee517591c6ecfc0a182df7fa67555f652267"
+    },
+    {
+      "path": "scripts/bash/run_hires_core_smoke_20261011.sh",
+      "sha256": "8d88bef176c0a3064bc9cc64a74b720c3b8dc357786e0f4f07e81c3245375b75"
+    },
+    {
+      "path": "scripts/bash/run_hires_statistics_smoke_20261011.sh",
+      "sha256": "8978b81662b1f0f8fe2c57c72241a133749a972817e4960b2d429f46368b8923"
+    },
+    {
+      "path": "scripts/R/reconstruct_hires_refinement_20261011.R",
+      "sha256": "9fcbfb98c96545b9695dc40feb54c9242633cecd21ca0e066f7fb138c700d5d5"
+    },
+    {
+      "path": "scripts/R/check_hires_refinement_checkpoints_20261011.R",
+      "sha256": "0553c1e668c15934540d3425c79b70f8901d75fc8b4793bbf43ef3552df4d044"
+    },
+    {
+      "path": "scripts/python/audit_hires_refinement_20261011.py",
+      "sha256": "742825f970b0b07525cab06f1c8d82da53a76092cdb67ae156f8c9deaa043acc"
+    },
+    {
+      "path": "scripts/python/trace_hires_remaining_discrepancies_20261011.py",
+      "sha256": "24e935d8621fc3bead023ad5f57afe1606ec6f0b427a8cc45468b33f07e86a3d"
+    }
+  ],
+  "validation": {
+    "status": "input_correction_and_statistics_verified_not_full_hires",
+    "panel_genes": 24,
+    "samples": 120,
+    "types": 20,
+    "full_entry_genes": 17040,
+    "full_entry_pvalue_error": 7.993605777301127e-15,
+    "full_gene_bh_max_error": 9.52293799372228e-14,
+    "nnls_genes_passed": 24,
+    "nnls_max_relative_error": 3.48135580399796e-15,
+    "split_genes_passed": 24,
+    "worker_detectable_panel_genes": 21,
+    "worker_differential_pairs_below_0_05": 39,
+    "fisher_global_max_error": 9.43689570931383e-16,
+    "fisher_differential_max_error": 9.992007221626409e-16,
+    "z_p_max_error": 2.3314683517128287e-15,
+    "old_median_type_group_log2_mae": 0.905373853537223,
+    "corrected_median_type_group_log2_mae": 0.0961672817876684,
+    "mae_reduction_percent": 89.37816887333884,
+    "all_official_source_files_unchanged": true,
+    "unresolved": [
+      "Current website input routing not proven by numerical comparison alone",
+      "Original-versus-adjusted gene export filtering",
+      "Independent RNG versus official threaded RNG",
+      "Residual Spearman fallback, shrinkage, targeted refit, OLS, rare-type overrides and final NA/floor rules",
+      "Signature building, fractions and S-mode independent implementations",
+      "No complete HiRes or official-equivalent EcoTyper input produced"
+    ]
+  },
+  "refinement_validation": {
+    "status": "panel_refinement_validated_not_complete_official_hires",
+    "genes": 24,
+    "samples": 120,
+    "types": 20,
+    "nnls_fits_per_refinement_run": 15288,
+    "AS89_toy_cases_passed": 3,
+    "enumerated_permutations_per_case": 40320,
+    "residual_spearman_R_checks_passed": 420,
+    "refined_split_scipy_genes_passed": 21,
+    "weak_refit_scipy_genes_passed": 21,
+    "OLS_pairs_passed": 28,
+    "OLS_max_relative_prediction_error": 5.143509519777391e-15,
+    "official_variable_pairs": 26,
+    "official_constant_pairs": 301,
+    "official_all_NA_pairs": 153,
+    "refined_variable_official_variable_pairs": 24,
+    "median_variable_pair_core_log2_mae": 1.385402691539467,
+    "median_variable_pair_refined_log2_mae": 0.09216707528264483,
+    "median_variable_pair_core_log2_correlation": 0.8904312129714216,
+    "median_variable_pair_refined_log2_correlation_among_varying_predictions": 0.9917019932863287,
+    "pairs_correlation_at_least_0_95": 19,
+    "official_variable_but_predicted_constant": [
+      {
+        "GeneSymbol": "ACKR1",
+        "CellType": "DC"
+      },
+      {
+        "GeneSymbol": "POU2F3",
+        "CellType": "DC"
+      }
+    ],
+    "worst_5_by_log2_mae": [
+      {
+        "GeneSymbol": "POU2F3",
+        "CellType": "DC",
+        "refined_log2_mae": 3.097068998008529,
+        "refined_log2_correlation": null
+      },
+      {
+        "GeneSymbol": "ITLN1",
+        "CellType": "Goblet",
+        "refined_log2_mae": 0.49441392171858084,
+        "refined_log2_correlation": 0.9811613887698597
+      },
+      {
+        "GeneSymbol": "GNLY",
+        "CellType": "Ileal_absorptive",
+        "refined_log2_mae": 0.3650160518998355,
+        "refined_log2_correlation": 0.9926160477682535
+      },
+      {
+        "GeneSymbol": "POU2F3",
+        "CellType": "Tuft",
+        "refined_log2_mae": 0.3360352880109193,
+        "refined_log2_correlation": 0.992568829946829
+      },
+      {
+        "GeneSymbol": "SPP1",
+        "CellType": "Pericyte",
+        "refined_log2_mae": 0.28432786017474837,
+        "refined_log2_correlation": 0.9911977945104069
+      }
+    ],
+    "refinement_seed_changes_of_variation_status": 0,
+    "official_source_files_unchanged": true,
+    "unresolved": [
+      "Current website NA/reliability mask and optional range filter",
+      "Auxiliary Group-mode constant refill",
+      "Old numerical-version interpretation versus current website version",
+      "Full official random stream and upstream statistical randomness",
+      "Independent signature, fractions and S-mode"
+    ],
+    "clinical_use": "Research prototype only; no formal discovery or recovery input"
+  },
+  "remaining_discrepancies": {
+    "panel_gene_type_pairs": 480,
+    "missed_variable_pairs": [
+      {
+        "GeneSymbol": "ACKR1",
+        "CellType": "DC",
+        "local_branch": "weak_variation_residual_refit_constant"
+      },
+      {
+        "GeneSymbol": "POU2F3",
+        "CellType": "DC",
+        "local_branch": "excluded_by_global_detection"
+      }
+    ],
+    "extra_variable_pairs": [
+      {
+        "GeneSymbol": "C1QB",
+        "CellType": "Monocyte_Macrophage"
+      },
+      {
+        "GeneSymbol": "C1QB",
+        "CellType": "DC"
+      },
+      {
+        "GeneSymbol": "HIGD1B",
+        "CellType": "Fibroblast"
+      },
+      {
+        "GeneSymbol": "CCL5",
+        "CellType": "Paneth"
+      }
+    ],
+    "official_all_NA_pairs": 153,
+    "group_filtered_NA_pairs": 173,
+    "group_filtered_NA_but_hires_finite": 20,
+    "C1QB_Plasma_baseline_log2_correlation": -0.4980916185154342,
+    "C1QB_Plasma_alternate_stage_seed_correlations": [
+      0.6488433100406539,
+      0.7383638923723231
+    ],
+    "same_seed_exact_repeat_types": 20,
+    "source_files": [
+      {
+        "path": "D:\\IBD_ecotype\\IBD_ecotype_analysis\\CIBERSORTx_signature_audit\\MSCCR_Joint20v2_Job24_HiRes_review_20261009\\original_outputs\\CIBERSORTxGEP_Job24_GEPs_Filtered.txt",
+        "sha256": "f1217639c925146064e907ed61fd0b5180fde47f009b2267531558639c5b1cfd"
+      },
+      {
+        "path": "D:\\IBD_ecotype\\IBD_ecotype_analysis\\CIBERSORTx_signature_audit\\MSCCR_Joint20v2_Job24_HiRes_review_20261009\\original_outputs\\CIBERSORTxGEP_Job24_GEPs_Qvals.txt",
+        "sha256": "38992cc71aa4a88c472660d152aa5c0fa47ff65a5bd4599f066423ca3abbe821"
+      },
+      {
+        "path": "D:\\IBD_ecotype\\IBD_ecotype_analysis\\CIBERSORTx_signature_audit\\MSCCR_Joint20v2_Job24_HiRes_review_20261009\\original_outputs\\CIBERSORTxGEP_Job24_GEPs_Pvals.txt",
+        "sha256": "d93f888a00104f56e131d693d3fc9fd55ae940aee3692985b7f4ffab0b3e22fd"
+      }
+    ],
+    "interpretation": "All HiRes NA pairs in this panel are Group-filtered NA, but 20 other Group-filtered NA pairs are finite in HiRes; direct mask reuse fails.",
+    "limits": "Only refinement seeds varied; initial worker and full-gene entry statistics remain fixed. No independent full workflow or current-webpage equivalence."
+  },
+  "outer_refill_context_diagnostic": {
+    "panel_guard_NA_count": 115,
+    "official_full_context_guard_NA_count": 154,
+    "official_full_context_guard_mismatches": [
+      {
+        "GeneSymbol": "ITLN1",
+        "CellType": "Stem_TA_progenitor"
+      }
+    ],
+    "source_files": [
+      {
+        "path": "D:\\IBD_ecotype\\IBD_ecotype_analysis\\CIBERSORTx_signature_audit\\MSCCR_Joint20v2_Job24_HiRes_review_20261009\\original_outputs\\CIBERSORTxHiRes_Job24_B_Window60.txt",
+        "sha256": "9cdad5784464d9b360e4c86d276a492456841934153d5ebadc6acee7f00ad207"
+      },
+      {
+        "path": "D:\\IBD_ecotype\\IBD_ecotype_analysis\\CIBERSORTx_signature_audit\\MSCCR_Joint20v2_Job24_HiRes_review_20261009\\original_outputs\\CIBERSORTxHiRes_Job24_Plasma_Window60.txt",
+        "sha256": "f083eb796daa2d75eaecb5a94022a0c9ffce30bfb5336ad25d912dd1e85991d7"
+      },
+      {
+        "path": "D:\\IBD_ecotype\\IBD_ecotype_analysis\\CIBERSORTx_signature_audit\\MSCCR_Joint20v2_Job24_HiRes_review_20261009\\original_outputs\\CIBERSORTxHiRes_Job24_CD4_T_Window60.txt",
+        "sha256": "7c7ad0a8e75bbca8f180ac11b1a8ef06f942438352f7e879d7e879e0f3b7fdd1"
+      },
+      {
+        "path": "D:\\IBD_ecotype\\IBD_ecotype_analysis\\CIBERSORTx_signature_audit\\MSCCR_Joint20v2_Job24_HiRes_review_20261009\\original_outputs\\CIBERSORTxHiRes_Job24_CD8_T_Window60.txt",
+        "sha256": "fc1f1e028ee23e50069b8dfa1433f9cd766553e4b5bf5005753716542d1e8bb3"
+      },
+      {
+        "path": "D:\\IBD_ecotype\\IBD_ecotype_analysis\\CIBERSORTx_signature_audit\\MSCCR_Joint20v2_Job24_HiRes_review_20261009\\original_outputs\\CIBERSORTxHiRes_Job24_NK_Window60.txt",
+        "sha256": "5cd0f8da051ad0824bf1463de32b97410106df89f6242a34cbd93e6ff9afbc95"
+      },
+      {
+        "path": "D:\\IBD_ecotype\\IBD_ecotype_analysis\\CIBERSORTx_signature_audit\\MSCCR_Joint20v2_Job24_HiRes_review_20261009\\original_outputs\\CIBERSORTxHiRes_Job24_ILC_Window60.txt",
+        "sha256": "6c2930ae6c916a045d66cd29963d0907f3fdcab4eff04377b4e06e11b25fcc5e"
+      },
+      {
+        "path": "D:\\IBD_ecotype\\IBD_ecotype_analysis\\CIBERSORTx_signature_audit\\MSCCR_Joint20v2_Job24_HiRes_review_20261009\\original_outputs\\CIBERSORTxHiRes_Job24_Monocyte_Macrophage_Window60.txt",
+        "sha256": "899d64fba5f08e03d87896d15e3b35141c0794d227adffc400be20d4854e4536"
+      },
+      {
+        "path": "D:\\IBD_ecotype\\IBD_ecotype_analysis\\CIBERSORTx_signature_audit\\MSCCR_Joint20v2_Job24_HiRes_review_20261009\\original_outputs\\CIBERSORTxHiRes_Job24_DC_Window60.txt",
+        "sha256": "6c67061a7e880decae3681caf63fb8635f417c5444411f0848c356be1b20532f"
+      },
+      {
+        "path": "D:\\IBD_ecotype\\IBD_ecotype_analysis\\CIBERSORTx_signature_audit\\MSCCR_Joint20v2_Job24_HiRes_review_20261009\\original_outputs\\CIBERSORTxHiRes_Job24_Mast_Window60.txt",
+        "sha256": "bd32183621d128406a8d6d9a89928f8b5be9e354096831abbbce210ad5e03885"
+      },
+      {
+        "path": "D:\\IBD_ecotype\\IBD_ecotype_analysis\\CIBERSORTx_signature_audit\\MSCCR_Joint20v2_Job24_HiRes_review_20261009\\original_outputs\\CIBERSORTxHiRes_Job24_Fibroblast_Window60.txt",
+        "sha256": "b478f6d515008dd37903f751272138ed60d61981201dc9e2e847472910fc7986"
+      },
+      {
+        "path": "D:\\IBD_ecotype\\IBD_ecotype_analysis\\CIBERSORTx_signature_audit\\MSCCR_Joint20v2_Job24_HiRes_review_20261009\\original_outputs\\CIBERSORTxHiRes_Job24_Pericyte_Window60.txt",
+        "sha256": "a2bea9ab54125600d583fa37397a4e9caf1c3f0bccfef222d344e66d7374e126"
+      },
+      {
+        "path": "D:\\IBD_ecotype\\IBD_ecotype_analysis\\CIBERSORTx_signature_audit\\MSCCR_Joint20v2_Job24_HiRes_review_20261009\\original_outputs\\CIBERSORTxHiRes_Job24_Endothelial_Window60.txt",
+        "sha256": "fc1f1e028ee23e50069b8dfa1433f9cd766553e4b5bf5005753716542d1e8bb3"
+      },
+      {
+        "path": "D:\\IBD_ecotype\\IBD_ecotype_analysis\\CIBERSORTx_signature_audit\\MSCCR_Joint20v2_Job24_HiRes_review_20261009\\original_outputs\\CIBERSORTxHiRes_Job24_Ileal_absorptive_Window60.txt",
+        "sha256": "18153adf40406dbcddf7e765baf58de988e1a8bdb86280cc00d0592fa8c8eb9e"
+      },
+      {
+        "path": "D:\\IBD_ecotype\\IBD_ecotype_analysis\\CIBERSORTx_signature_audit\\MSCCR_Joint20v2_Job24_HiRes_review_20261009\\original_outputs\\CIBERSORTxHiRes_Job24_Colonic_absorptive_Window60.txt",
+        "sha256": "514db1869d0476d86a890aa31d94fbe1b256de8cf2d7f9e78da0c84704db002f"
+      },
+      {
+        "path": "D:\\IBD_ecotype\\IBD_ecotype_analysis\\CIBERSORTx_signature_audit\\MSCCR_Joint20v2_Job24_HiRes_review_20261009\\original_outputs\\CIBERSORTxHiRes_Job24_Goblet_Window60.txt",
+        "sha256": "79a1af0245d6138cc176cbdfc94eb2737ce2f3992aa23fef008f51ec5e40c62f"
+      },
+      {
+        "path": "D:\\IBD_ecotype\\IBD_ecotype_analysis\\CIBERSORTx_signature_audit\\MSCCR_Joint20v2_Job24_HiRes_review_20261009\\original_outputs\\CIBERSORTxHiRes_Job24_Stem_TA_progenitor_Window60.txt",
+        "sha256": "b89567e1105455287a780fc536a681ea9b39a7093471c0b2c9044e3a18323e5b"
+      },
+      {
+        "path": "D:\\IBD_ecotype\\IBD_ecotype_analysis\\CIBERSORTx_signature_audit\\MSCCR_Joint20v2_Job24_HiRes_review_20261009\\original_outputs\\CIBERSORTxHiRes_Job24_Paneth_Window60.txt",
+        "sha256": "496fde108927ad5025262d0a2732988e8fbe08606bd283980320fc6dc99a59c6"
+      },
+      {
+        "path": "D:\\IBD_ecotype\\IBD_ecotype_analysis\\CIBERSORTx_signature_audit\\MSCCR_Joint20v2_Job24_HiRes_review_20261009\\original_outputs\\CIBERSORTxHiRes_Job24_Enteroendocrine_Window60.txt",
+        "sha256": "b1d20f0a6ee01d0985178747d052e3a37b2353a795761004be24971cc0c1f732"
+      },
+      {
+        "path": "D:\\IBD_ecotype\\IBD_ecotype_analysis\\CIBERSORTx_signature_audit\\MSCCR_Joint20v2_Job24_HiRes_review_20261009\\original_outputs\\CIBERSORTxHiRes_Job24_Glial_Window60.txt",
+        "sha256": "0708c8b74bb533686f62ffe5c3126d8ea68596b2ef21ec467fb1c2d581cad036"
+      },
+      {
+        "path": "D:\\IBD_ecotype\\IBD_ecotype_analysis\\CIBERSORTx_signature_audit\\MSCCR_Joint20v2_Job24_HiRes_review_20261009\\original_outputs\\CIBERSORTxHiRes_Job24_Tuft_Window60.txt",
+        "sha256": "b61a54c3844f2e14c744e2567694f320eba5b25fcc53809af849d5fc81b0f543"
+      }
+    ],
+    "limits": "Official full-context all-one guard is an oracle diagnostic, not an independent prediction. No output mask or expression changed."
+  },
+  "server_status": "No SSH or Linux execution this round",
+  "implemented_stages": [
+    "fixed official fractions plus explicit original expression input",
+    "full gene-space entry bootstrap, analytic t and BH",
+    "panel global detection, two-segment NNLS, Z and randomized differential statistics",
+    "uncalibrated sliding core and independent numerical checks",
+    "residual Spearman AS89/rank-t and active-type refit",
+    "direction-specific squared shrinkage and weak-type residual NNLS",
+    "sliding smooth and OLS calibration, sample order and lower floor",
+    "same-seed repeatability and limited refinement seed sensitivity"
+  ],
+  "missing_stages": [
+    "independent signature construction",
+    "independent fractions, permutation diagnostics and S-mode",
+    "full-context auxiliary refill and final NA/reliability rules",
+    "full real-data coverage of rare-type override and official random stream",
+    "validated EcoTyper expression export and reusable full CLI"
+  ],
+  "official_parity": "Not established; old numerical evidence and paper methods remain distinct from current website version",
+  "latest_stage_report": "完整目标基因验证与回填修正.md",
+  "latest_stage_manifest": "full_target_stage_manifest.json",
+  "historical_manifest_note": "Previous-stage results retained; current canonical seed convention is documented in the latest manifest."
+}

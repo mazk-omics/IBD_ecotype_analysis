@@ -1,0 +1,178 @@
+{
+  "date": "2026-10-11",
+  "stage": 9,
+  "status": "Independent Group expression and CV filtering research prototype, fixed official fractions upstream; not web equivalence",
+  "report": "Group独立估计与版本疑点.md",
+  "scripts": [
+    {
+      "path": "scripts/R/reconstruct_group_expression_20261011.R",
+      "sha256": "aad8b45aaacf82bb31dd9ed6c7bd2fc450e5c74222d91b98606d061324ab6366"
+    },
+    {
+      "path": "scripts/R/export_group_math_checkpoints_20261011.R",
+      "sha256": "c90a7e86370bbc4fd5e189db2220eb80a44d88f0ab9b0460bd65baa5313ef6aa"
+    },
+    {
+      "path": "scripts/R/diagnose_group_legacy_residual_20261011.R",
+      "sha256": "8d07d92851a8a29594c05a16e069631b8432645bf112db80464f10a221be0c94"
+    },
+    {
+      "path": "scripts/R/reconstruct_hires_auxiliary_refill_20261011.R",
+      "sha256": "0328ac96122f7ecc9618300f4f59c703421e6faa92e63825d720561ef99b7ffe"
+    },
+    {
+      "path": "scripts/python/audit_group_reconstruction_20261011.py",
+      "sha256": "81c2c392081b67eac6f2e5b9a7e8d73f9a5cf87f84372b2b57de1081de849c55"
+    },
+    {
+      "path": "scripts/python/verify_group_math_20261011.py",
+      "sha256": "31f48bed11de399324299d12ee87f52945e925c30346acbc953ea8e973900f5f"
+    },
+    {
+      "path": "scripts/python/record_group_reconstruction_stage_20261011.py",
+      "sha256": "f01aa1561d7b86a026c690c175756596863e82c5b89fef9cc672176607a7b50b"
+    },
+    {
+      "path": "scripts/bash/run_fixed_fraction_expression_research_20261011.sh",
+      "sha256": "f5d948858d1cf4ee052cd02e421ea838365a6f3e2cc06bd6bbc18977003a3e4a"
+    }
+  ],
+  "static_evidence": [
+    {
+      "path": "vendor_reference/R_function_fragments/hires_f0bfeaddfa2e_runCIBERSORTxGEP.R",
+      "sha256": "1dd7df21ec47c3ef86e541540feb0ef39d31e87319879151e423692e80d1d385"
+    },
+    {
+      "path": "vendor_reference/R_function_fragments/hires_f0bfeaddfa2e_res.R",
+      "sha256": "77dfd39d00d3d8efbb9e758779aad249ca4f0c6e9538976140abb1011150d8ff"
+    },
+    {
+      "path": "vendor_reference/R_function_fragments/hires_f0bfeaddfa2e_QCplots.R",
+      "sha256": "76fe26204b4067284cdc6ceb2d1c9dae33198e22f6bd43d760ab57295d500d4b"
+    },
+    {
+      "path": "decompiled_numeric/CIBERSORTxHiRes/numeric_001279fa.c",
+      "sha256": "82cc1e72a838fa18319aa91534d6af1229fe32efc7615a61554165540d22420a"
+    },
+    {
+      "path": "paper_methods/CIBERSORTx_2019_Supplement_pages.txt",
+      "sha256": "16dd2692f92dcce914a906f3a05a29db480e11c65fa9ab42231f6d27aef00026"
+    }
+  ],
+  "protected_inputs": [
+    {
+      "path": "D:\\IBD_ecotype\\IBD_ecotype_analysis\\CIBERSORTx_ready_20261008\\04_MSCCR120_HiRes_gene_batches\\MSCCR_Platform120_CPM.txt",
+      "sha256": "5adbc922ba937ba8958c3c7c3bdadbac984c6e0d08503c580a547c22f7d73305"
+    },
+    {
+      "path": "D:\\IBD_ecotype\\IBD_ecotype_analysis\\CIBERSORTx_server_plan_20261011\\core_benchmark_inputs\\fractions_fixed.tsv",
+      "sha256": "8b3a5dab8ca26bc70c79fb70bd8120c6f0aee81e4eb6dbbec66b7e274d038be2"
+    },
+    {
+      "path": "D:\\IBD_ecotype\\IBD_ecotype_analysis\\CIBERSORTx_signature_audit\\MSCCR_Joint20v2_Job24_HiRes_review_20261009\\original_outputs\\CIBERSORTxHiRes_Job24_B_Window60.txt",
+      "sha256": "9cdad5784464d9b360e4c86d276a492456841934153d5ebadc6acee7f00ad207"
+    },
+    {
+      "path": "D:\\IBD_ecotype\\IBD_ecotype_analysis\\CIBERSORTx_server_plan_20261011\\entry_statistics_original_run1\\entry_statistics.rds",
+      "sha256": "0f90350285e07e719e35ac7af7020ab310063a07aca28817b0e5712b0d8f03a9"
+    }
+  ],
+  "run": [
+    {
+      "genes": 17040,
+      "samples": 120,
+      "types": 20,
+      "bootstrap_count": 30,
+      "subsample_count": 90,
+      "solver_count": 511200,
+      "strong_marker_genes": 3428,
+      "filtered_NA_pairs": 147549,
+      "seconds": 59.78
+    }
+  ],
+  "validation": {
+    "genes_Group": 17040,
+    "types": 20,
+    "conditional_filter_pairs": 340800,
+    "conditional_filter_mismatch": 0,
+    "conditional_BH_max_error": 1.4266365866433262e-13,
+    "strong_marker_gene_counts": {
+      "official_Group": 0,
+      "independent_full_residual": 3428,
+      "diagnostic_recycled_residual": 0
+    },
+    "before_guard_median_type_log2_correlation": 0.9868729929264132,
+    "Group_independent_filter_NA_mismatch": 30917,
+    "hires_pairs": 24980,
+    "official_NA": 8162,
+    "predicted_NA": 8183,
+    "hires_NA_missed": 838,
+    "hires_false_NA": 859,
+    "official_variable_pairs": 1536,
+    "covered_variable_pairs": 1504,
+    "variable_predictions_on_official_variable": 1408,
+    "median_log2_MAE_on_covered_variable_pairs": 0.08430685983718128,
+    "sources": [
+      {
+        "path": "D:\\IBD_ecotype\\IBD_ecotype_analysis\\CIBERSORTx_signature_audit\\MSCCR_Joint20v2_Job24_HiRes_review_20261009\\original_outputs\\CIBERSORTxGEP_Job24_GEPs.txt",
+        "sha256": "25cb3578ed19556edb62b6e5cf605011feba5a964b6ccf3248205ec3d272b86c"
+      },
+      {
+        "path": "D:\\IBD_ecotype\\IBD_ecotype_analysis\\CIBERSORTx_signature_audit\\MSCCR_Joint20v2_Job24_HiRes_review_20261009\\original_outputs\\CIBERSORTxGEP_Job24_GEPs_Filtered.txt",
+        "sha256": "f1217639c925146064e907ed61fd0b5180fde47f009b2267531558639c5b1cfd"
+      },
+      {
+        "path": "D:\\IBD_ecotype\\IBD_ecotype_analysis\\CIBERSORTx_signature_audit\\MSCCR_Joint20v2_Job24_HiRes_review_20261009\\original_outputs\\CIBERSORTxGEP_Job24_GEPs_CVs.txt",
+        "sha256": "22f512e80c8a27e9670a8719faab1f6d16ea968fff4681d382d2b7e020c56ae1"
+      },
+      {
+        "path": "D:\\IBD_ecotype\\IBD_ecotype_analysis\\CIBERSORTx_signature_audit\\MSCCR_Joint20v2_Job24_HiRes_review_20261009\\original_outputs\\CIBERSORTxGEP_Job24_GEPs_Pvals.txt",
+        "sha256": "d93f888a00104f56e131d693d3fc9fd55ae940aee3692985b7f4ffab0b3e22fd"
+      },
+      {
+        "path": "D:\\IBD_ecotype\\IBD_ecotype_analysis\\CIBERSORTx_signature_audit\\MSCCR_Joint20v2_Job24_HiRes_review_20261009\\original_outputs\\CIBERSORTxGEP_Job24_GEPs_Qvals.txt",
+        "sha256": "38992cc71aa4a88c472660d152aa5c0fa47ff65a5bd4599f066423ca3abbe821"
+      },
+      {
+        "path": "D:\\IBD_ecotype\\IBD_ecotype_analysis\\CIBERSORTx_signature_audit\\MSCCR_Joint20v2_Job24_HiRes_review_20261009\\original_outputs\\CIBERSORTxGEP_Job24_GEPs_StdErrs.txt",
+        "sha256": "48e7d0f7bd5c95111c16233b621becd601fbd0d7d8bea6cf2b5aa934a093d863"
+      }
+    ],
+    "limits": [
+      "CV conditional formula agreement is not independent CV estimation agreement.",
+      "Independent Group uses full residual and paper zero guard; legacy cached code has dimension and guard differences.",
+      "Fixed official fractions remain upstream; no independent signature, fractions or S-mode.",
+      "HiRes worker and refinement reused unchanged; differences in NA do not demonstrate better biological accuracy."
+    ]
+  },
+  "math": {
+    "all_formula_checks_passed": true,
+    "NNLS_checkpoints": 720,
+    "checked_genes": 24,
+    "maximum_relative_NNLS_difference": 6.491895310608171e-13,
+    "statistic_checks": 120,
+    "full_BH_and_filter_pairs": 340800,
+    "limit": "Formula consistency only; independent RNG/full residual differ from cached legacy and web outputs."
+  },
+  "python": "3.12.14",
+  "R_session": "group_independent_run1/sessionInfo.txt",
+  "paper_source": "https://www.nature.com/articles/s41587-019-0114-2",
+  "version_choices": [
+    "Full matched residual, not cached R short-vector recycling.",
+    "Paper zero guard, cached legacy one guard differs; Job24 branch did not trigger.",
+    "Independent per-gene L'Ecuyer-CMRG seed 20261015+raw row index.",
+    "Bootstrap SD and analytical regression SE exported separately."
+  ],
+  "missing": [
+    "Exact Group sampling/random-stream and web-version equivalence.",
+    "HiRes 128 missed variable and 82 extra variable pairs persist before auxiliary.",
+    "Signature construction, fractions and S-mode independent implementation.",
+    "Linux/server integrated execution, full-transcriptome HiRes and formal EcoTyper output validation."
+  ],
+  "execution_limits": [
+    "No vendor executable run or authentication modification.",
+    "No SSH connection, commit or push.",
+    "Bash syntax checked only; R stages run on local Windows.",
+    "Legacy recycled-residual diagnostic kept separate and not used as calculation input."
+  ]
+}

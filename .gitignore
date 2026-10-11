@@ -159,3 +159,8 @@ software/ecotyper/datasets/discovery/MSCCR_CORE12_*/
 /CIBERSORTx_ready_*/
 /ctspec_region_ibd/
 /signature_matrix/
+
+# 2026-10-11 numerical research: archive own scripts/reports, retain vendor and data locally
+/CIBERSORTx_server_plan_20261011/*
+!/CIBERSORTx_server_plan_20261011/*.md
+!/CIBERSORTx_server_plan_20261011/*_stage_manifest.json

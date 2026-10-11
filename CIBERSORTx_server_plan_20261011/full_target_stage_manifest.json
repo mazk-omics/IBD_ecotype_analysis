@@ -1,0 +1,243 @@
+{
+  "date": "2026-10-11",
+  "status": "Complete Job24 target-gene numerical benchmark; full independent CIBERSORTx incomplete",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python": "3.12.14",
+  "numpy": "2.5.3",
+  "pandas": "3.0.6",
+  "scipy": "1.18.1",
+  "r": "R 4.4.1, nnls 1.6; sessionInfo.txt retained for each run",
+  "scripts": [
+    {
+      "path": "scripts/python/prepare_hires_full_target_benchmark_20261011.py",
+      "sha256": "11b3b1c90619bc04510881a5ea5b24f0b69eed5a384126b070a0222fffbab456"
+    },
+    {
+      "path": "scripts/python/prepare_hires_seed_consistency_check_20261011.py",
+      "sha256": "e0d30b3871c4909684faaa48cc45b80294f4d6ce29c26bbf27401d7f5556a9c9"
+    },
+    {
+      "path": "scripts/R/reconstruct_hires_entry_statistics_20261011.R",
+      "sha256": "a8f0686eb9dcfcedf197869b54817115212b643399df5444e6979776049ccf4e"
+    },
+    {
+      "path": "scripts/R/reconstruct_hires_worker_statistics_20261011.R",
+      "sha256": "f306b85a4dc943c369c0fdc2ceda0304bff7776258a2b88c59e6b98632204f94"
+    },
+    {
+      "path": "scripts/R/reconstruct_hires_refinement_20261011.R",
+      "sha256": "2a954634a47c5700d795998ce6b89623bdf57691b7b9faf3bf71dd9939eaf6e2"
+    },
+    {
+      "path": "scripts/R/reconstruct_hires_auxiliary_refill_20261011.R",
+      "sha256": "cf7f693610a7ee81bc36f6b048c804ab5b2bdcdb360f2c76ba3c6def79bf25b6"
+    },
+    {
+      "path": "scripts/R/check_hires_refinement_checkpoints_20261011.R",
+      "sha256": "0553c1e668c15934540d3425c79b70f8901d75fc8b4793bbf43ef3552df4d044"
+    },
+    {
+      "path": "scripts/python/verify_hires_full_target_math_20261011.py",
+      "sha256": "5dd159b8ccfcf243bff20aeb19a21c45f98d6679a50284fb5790bdae9ef72db8"
+    },
+    {
+      "path": "scripts/python/audit_hires_full_target_20261011.py",
+      "sha256": "9afe148310a765f0fd05c151a7dcb323f8353a32fb5a648a027d2cb07cb39035"
+    },
+    {
+      "path": "scripts/bash/run_hires_full_target_benchmark_20261011.sh",
+      "sha256": "e99d2443dc0f0102422347697e81afdadf46e2102854f9809c43cf532ffadfba"
+    },
+    {
+      "path": "scripts/python/record_hires_full_target_stage_20261011.py",
+      "sha256": "f316215ba02f1fd6c5f2d4591d2074fbb5200b4dd9d0b3e49181d784923e5ff9"
+    }
+  ],
+  "benchmark": {
+    "status": "Full target numerical benchmark; auxiliary refill still depends on official Group input",
+    "genes": 1249,
+    "samples": 120,
+    "types": 20,
+    "gene_name_aliases": 94,
+    "frozen_24_exactly_preserved_types": 20,
+    "canonical_seed_correction": "Historical 24-gene worker seed indices were inherited from Adjusted export; canonical indices now use the original mixture. Same expression and thresholds.",
+    "missed_variation_branches": {
+      "excluded_by_global_detection": 68,
+      "weak_variation_constant_refit": 60
+    },
+    "stages": [
+      {
+        "stage": "refinement",
+        "pairs": 24980,
+        "official_variable_pairs": 1536,
+        "variable_pairs_all_samples_covered": 1536,
+        "variable_predictions_on_official_variable": 1408,
+        "correlation_at_least_0_95_on_official_variable": 977,
+        "median_variable_log2_mae_on_covered_pairs": 0.08744834295075143,
+        "official_NA_pairs": 8162,
+        "predicted_NA_pairs": 0,
+        "NA_missed": 8162,
+        "false_NA": 0,
+        "official_constant_predicted_variable": 82
+      },
+      {
+        "stage": "auxiliary_dependent_refill",
+        "pairs": 24980,
+        "official_variable_pairs": 1536,
+        "variable_pairs_all_samples_covered": 1506,
+        "variable_predictions_on_official_variable": 1408,
+        "correlation_at_least_0_95_on_official_variable": 977,
+        "median_variable_log2_mae_on_covered_pairs": 0.08430685983718128,
+        "official_NA_pairs": 8162,
+        "predicted_NA_pairs": 8156,
+        "NA_missed": 45,
+        "false_NA": 39,
+        "official_constant_predicted_variable": 82
+      }
+    ],
+    "worker_run": [
+      {
+        "genes": 1249,
+        "samples": 120,
+        "types": 20,
+        "detectable_genes": 1147,
+        "nnls_fits": 1100578,
+        "elapsed_seconds": 97.35
+      }
+    ],
+    "refinement_run": [
+      {
+        "genes": 1249,
+        "samples": 120,
+        "types": 20,
+        "nnls_fits": 835016,
+        "stage_seed": 20261012,
+        "elapsed_seconds": 53.08
+      }
+    ],
+    "sources": [
+      {
+        "path": "D:\\IBD_ecotype\\IBD_ecotype_analysis\\CIBERSORTx_signature_audit\\MSCCR_Joint20v2_Job24_HiRes_review_20261009\\original_outputs\\CIBERSORTxHiRes_Job24_B_Window60.txt",
+        "sha256": "9cdad5784464d9b360e4c86d276a492456841934153d5ebadc6acee7f00ad207"
+      },
+      {
+        "path": "D:\\IBD_ecotype\\IBD_ecotype_analysis\\CIBERSORTx_signature_audit\\MSCCR_Joint20v2_Job24_HiRes_review_20261009\\original_outputs\\CIBERSORTxHiRes_Job24_Plasma_Window60.txt",
+        "sha256": "f083eb796daa2d75eaecb5a94022a0c9ffce30bfb5336ad25d912dd1e85991d7"
+      },
+      {
+        "path": "D:\\IBD_ecotype\\IBD_ecotype_analysis\\CIBERSORTx_signature_audit\\MSCCR_Joint20v2_Job24_HiRes_review_20261009\\original_outputs\\CIBERSORTxHiRes_Job24_CD4_T_Window60.txt",
+        "sha256": "7c7ad0a8e75bbca8f180ac11b1a8ef06f942438352f7e879d7e879e0f3b7fdd1"
+      },
+      {
+        "path": "D:\\IBD_ecotype\\IBD_ecotype_analysis\\CIBERSORTx_signature_audit\\MSCCR_Joint20v2_Job24_HiRes_review_20261009\\original_outputs\\CIBERSORTxHiRes_Job24_CD8_T_Window60.txt",
+        "sha256": "fc1f1e028ee23e50069b8dfa1433f9cd766553e4b5bf5005753716542d1e8bb3"
+      },
+      {
+        "path": "D:\\IBD_ecotype\\IBD_ecotype_analysis\\CIBERSORTx_signature_audit\\MSCCR_Joint20v2_Job24_HiRes_review_20261009\\original_outputs\\CIBERSORTxHiRes_Job24_NK_Window60.txt",
+        "sha256": "5cd0f8da051ad0824bf1463de32b97410106df89f6242a34cbd93e6ff9afbc95"
+      },
+      {
+        "path": "D:\\IBD_ecotype\\IBD_ecotype_analysis\\CIBERSORTx_signature_audit\\MSCCR_Joint20v2_Job24_HiRes_review_20261009\\original_outputs\\CIBERSORTxHiRes_Job24_ILC_Window60.txt",
+        "sha256": "6c2930ae6c916a045d66cd29963d0907f3fdcab4eff04377b4e06e11b25fcc5e"
+      },
+      {
+        "path": "D:\\IBD_ecotype\\IBD_ecotype_analysis\\CIBERSORTx_signature_audit\\MSCCR_Joint20v2_Job24_HiRes_review_20261009\\original_outputs\\CIBERSORTxHiRes_Job24_Monocyte_Macrophage_Window60.txt",
+        "sha256": "899d64fba5f08e03d87896d15e3b35141c0794d227adffc400be20d4854e4536"
+      },
+      {
+        "path": "D:\\IBD_ecotype\\IBD_ecotype_analysis\\CIBERSORTx_signature_audit\\MSCCR_Joint20v2_Job24_HiRes_review_20261009\\original_outputs\\CIBERSORTxHiRes_Job24_DC_Window60.txt",
+        "sha256": "6c67061a7e880decae3681caf63fb8635f417c5444411f0848c356be1b20532f"
+      },
+      {
+        "path": "D:\\IBD_ecotype\\IBD_ecotype_analysis\\CIBERSORTx_signature_audit\\MSCCR_Joint20v2_Job24_HiRes_review_20261009\\original_outputs\\CIBERSORTxHiRes_Job24_Mast_Window60.txt",
+        "sha256": "bd32183621d128406a8d6d9a89928f8b5be9e354096831abbbce210ad5e03885"
+      },
+      {
+        "path": "D:\\IBD_ecotype\\IBD_ecotype_analysis\\CIBERSORTx_signature_audit\\MSCCR_Joint20v2_Job24_HiRes_review_20261009\\original_outputs\\CIBERSORTxHiRes_Job24_Fibroblast_Window60.txt",
+        "sha256": "b478f6d515008dd37903f751272138ed60d61981201dc9e2e847472910fc7986"
+      },
+      {
+        "path": "D:\\IBD_ecotype\\IBD_ecotype_analysis\\CIBERSORTx_signature_audit\\MSCCR_Joint20v2_Job24_HiRes_review_20261009\\original_outputs\\CIBERSORTxHiRes_Job24_Pericyte_Window60.txt",
+        "sha256": "a2bea9ab54125600d583fa37397a4e9caf1c3f0bccfef222d344e66d7374e126"
+      },
+      {
+        "path": "D:\\IBD_ecotype\\IBD_ecotype_analysis\\CIBERSORTx_signature_audit\\MSCCR_Joint20v2_Job24_HiRes_review_20261009\\original_outputs\\CIBERSORTxHiRes_Job24_Endothelial_Window60.txt",
+        "sha256": "fc1f1e028ee23e50069b8dfa1433f9cd766553e4b5bf5005753716542d1e8bb3"
+      },
+      {
+        "path": "D:\\IBD_ecotype\\IBD_ecotype_analysis\\CIBERSORTx_signature_audit\\MSCCR_Joint20v2_Job24_HiRes_review_20261009\\original_outputs\\CIBERSORTxHiRes_Job24_Ileal_absorptive_Window60.txt",
+        "sha256": "18153adf40406dbcddf7e765baf58de988e1a8bdb86280cc00d0592fa8c8eb9e"
+      },
+      {
+        "path": "D:\\IBD_ecotype\\IBD_ecotype_analysis\\CIBERSORTx_signature_audit\\MSCCR_Joint20v2_Job24_HiRes_review_20261009\\original_outputs\\CIBERSORTxHiRes_Job24_Colonic_absorptive_Window60.txt",
+        "sha256": "514db1869d0476d86a890aa31d94fbe1b256de8cf2d7f9e78da0c84704db002f"
+      },
+      {
+        "path": "D:\\IBD_ecotype\\IBD_ecotype_analysis\\CIBERSORTx_signature_audit\\MSCCR_Joint20v2_Job24_HiRes_review_20261009\\original_outputs\\CIBERSORTxHiRes_Job24_Goblet_Window60.txt",
+        "sha256": "79a1af0245d6138cc176cbdfc94eb2737ce2f3992aa23fef008f51ec5e40c62f"
+      },
+      {
+        "path": "D:\\IBD_ecotype\\IBD_ecotype_analysis\\CIBERSORTx_signature_audit\\MSCCR_Joint20v2_Job24_HiRes_review_20261009\\original_outputs\\CIBERSORTxHiRes_Job24_Stem_TA_progenitor_Window60.txt",
+        "sha256": "b89567e1105455287a780fc536a681ea9b39a7093471c0b2c9044e3a18323e5b"
+      },
+      {
+        "path": "D:\\IBD_ecotype\\IBD_ecotype_analysis\\CIBERSORTx_signature_audit\\MSCCR_Joint20v2_Job24_HiRes_review_20261009\\original_outputs\\CIBERSORTxHiRes_Job24_Paneth_Window60.txt",
+        "sha256": "496fde108927ad5025262d0a2732988e8fbe08606bd283980320fc6dc99a59c6"
+      },
+      {
+        "path": "D:\\IBD_ecotype\\IBD_ecotype_analysis\\CIBERSORTx_signature_audit\\MSCCR_Joint20v2_Job24_HiRes_review_20261009\\original_outputs\\CIBERSORTxHiRes_Job24_Enteroendocrine_Window60.txt",
+        "sha256": "b1d20f0a6ee01d0985178747d052e3a37b2353a795761004be24971cc0c1f732"
+      },
+      {
+        "path": "D:\\IBD_ecotype\\IBD_ecotype_analysis\\CIBERSORTx_signature_audit\\MSCCR_Joint20v2_Job24_HiRes_review_20261009\\original_outputs\\CIBERSORTxHiRes_Job24_Glial_Window60.txt",
+        "sha256": "0708c8b74bb533686f62ffe5c3126d8ea68596b2ef21ec467fb1c2d581cad036"
+      },
+      {
+        "path": "D:\\IBD_ecotype\\IBD_ecotype_analysis\\CIBERSORTx_signature_audit\\MSCCR_Joint20v2_Job24_HiRes_review_20261009\\original_outputs\\CIBERSORTxHiRes_Job24_Tuft_Window60.txt",
+        "sha256": "b61a54c3844f2e14c744e2567694f320eba5b25fcc53809af849d5fc81b0f543"
+      },
+      {
+        "path": "D:\\IBD_ecotype\\IBD_ecotype_analysis\\CIBERSORTx_signature_audit\\MSCCR_Joint20v2_Job24_HiRes_review_20261009\\original_outputs\\CIBERSORTxGEP_Job24_GEPs_Filtered.txt",
+        "sha256": "f1217639c925146064e907ed61fd0b5180fde47f009b2267531558639c5b1cfd"
+      }
+    ],
+    "limits": [
+      "Not independent full workflow: fixed official fractions and supplied official Group reliability output.",
+      "No vendor binary executed and no official authentication logic modified.",
+      "Raw numerical stage still has detection/shrinkage/randomness/version discrepancies.",
+      "Do not use these benchmark outputs as formal EcoTyper discovery/recovery."
+    ]
+  },
+  "math_checks": {
+    "AS89_toy_cases": 3,
+    "exhaustive_permutations_per_case": 40320,
+    "residual_Spearman_checks": 22940,
+    "shrink_gene_checks": 1147,
+    "scipy_split_checks": 1147,
+    "strict_cut_equal": 1135,
+    "structural_zero_design_ties": 12,
+    "scipy_weak_NNLS_checks": 1147,
+    "numpy_OLS_checks": 1529,
+    "OLS_max_relative_prediction_error": 1.5005936855998393e-14,
+    "all_objective_and_formula_checks_passed": true,
+    "limits": "12 cut indices differ across solvers for structural zero-design ties. Independent formula checks do not establish official version, RNG or upstream parity."
+  },
+  "method_corrections": [
+    "Explicit one-to-one gene-symbol mapping for dot/hyphen output aliases.",
+    "Canonical original-mixture row indices replace inherited Adjusted-export indices for gene-specific independent seeds.",
+    "Auxiliary refill all-one guard evaluated over all supplied target genes."
+  ],
+  "missing_stages": [
+    "Independent signature construction and cell fractions/S-mode",
+    "Independent Group estimation and adaptive reliability filtering",
+    "Official random stream and current-version detection/shrinkage parity",
+    "Remaining NA and constant/variable disagreements",
+    "Validated formal EcoTyper expression export"
+  ],
+  "source_boundary": "Research numerical reconstruction only; no vendor program execution or authentication patching.",
+  "server": "No SSH or Linux execution this round; Bash syntax checked only",
+  "formal_analysis": "No benchmark matrix used for formal discovery/recovery.",
+  "latest_stage_report": "Group独立估计与版本疑点.md",
+  "latest_stage_manifest": "group_reconstruction_stage_manifest.json",
+  "historical_snapshot_note": "Stage8 script hashes describe that run. Stage9 auxiliary script changes only provenance text; new Group results are separate."
+}

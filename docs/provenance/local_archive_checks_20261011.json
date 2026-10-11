@@ -1,0 +1,23 @@
+{
+  "date": "2026-10-11",
+  "selected_files_before_closeout_records": 76,
+  "total_source_bytes": 445231,
+  "python_AST_files": 29,
+  "Bash_syntax_files": 4,
+  "R_parse_files": 14,
+  "PowerShell_AST": "passed for 4 selected files",
+  "Java_Ghidra_scripts": "Archive own scripts; static analyses already recorded, no compilation rerun during closeout",
+  "publication_scan": "No credential candidates; selected files below 2 MiB",
+  "numerical_validation": {
+    "HiRes": "full_target_stage_manifest.json",
+    "Group": "group_reconstruction_stage_manifest.json"
+  },
+  "runtime_results": "Local Windows only; no SSH or Linux integrated rerun",
+  "excluded": "Vendor files, decompiled pseudocode, paper full text, original and derived matrices, sample-level files, unrelated untracked research",
+  "remote_precheck": "Fetched origin/main through existing Windows proxy; HEAD and origin/main equal before commit",
+  "environment_text_copy": "R sessionInfo archival copy has trailing whitespace removed; source run snapshot retained",
+  "staged_files": 78,
+  "source_inventory_blob_checks": "All 76 source/environment/report entries match current worktree SHA256 and staged Git blob",
+  "whitespace_check": "git diff --cached --check passed",
+  "staged_scope_check": "Exact pathspec, no vendor/cache/matrix/archives, no private key or GitHub token candidate"
+}

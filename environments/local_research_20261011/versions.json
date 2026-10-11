@@ -1,0 +1,14 @@
+{
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python": "3.12.14",
+  "R": "4.4.1",
+  "R_nnls": "1.6",
+  "packages": {
+    "numpy": "2.5.3",
+    "pandas": "3.0.6",
+    "scipy": "1.18.1",
+    "pyelftools": "0.33",
+    "capstone": "5.0.9"
+  },
+  "execution": "Local Windows numerical research only; Bash integrated entry syntax checked, no server execution"
+}

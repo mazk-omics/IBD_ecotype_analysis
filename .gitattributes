@@ -8,5 +8,6 @@
 *.yml text eol=lf
 *.yaml text eol=lf
 *.md text eol=lf
+*.java text eol=lf
 # Preserve the exact upstream patch and executed source snapshot.
 docs/software_versions/patches/** -text
