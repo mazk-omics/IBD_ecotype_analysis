@@ -1,0 +1,47 @@
+archive_date: 2026-10-21
+repository_visibility: public
+archive_policy: code_methods_provenance_only
+scientific_results_embargoed: true
+
+included:
+  - byte-identical analysis and audit scripts
+  - sanitized analysis scope and method description
+  - software and source-version provenance
+  - source-output SHA-256 fingerprints
+  - known limitations and reproduction prerequisites
+
+excluded:
+  - patient-level or sample-level records
+  - raw or normalized expression matrices
+  - cell, donor, sample, or profile manifests
+  - deconvolution matrices and model objects
+  - unpublished result tables and scientific figures
+  - literature full text and supplementary archives
+  - caches, environments, binaries, and temporary files
+  - credentials, tokens, cookies, and authenticated browser state
+
+analysis_boundaries:
+  frozen_bayesprism_core12_region_ibd:
+    status: completed_sensitivity_analysis
+    samples: 2025_biopsies
+    patients: 919
+    cell_states: 53
+    ecotypes: 7
+    interpretation: sensitivity_only_not_cibersortx_mainline
+  official_ecotyper_recovery_and_audits:
+    status: completed_with_documented_partial_and_blocked_modules
+  joint20_v2_signature_and_pseudomix_validation:
+    status: completed
+    cell_types: 20
+    training_cells: 9294
+    donors: 32
+    reference_profiles: 212
+  joint20_matched_bayesprism:
+    status: deconvolution_and_qc_completed
+    ecotyper_nmf_started: false
+  cibersortx_hires:
+    status: not_completed
+    included_in_archive: false
+  cibersortx_formal_discovery:
+    status: not_completed
+    included_in_archive: false

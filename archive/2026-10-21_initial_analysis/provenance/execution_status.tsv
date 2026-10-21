@@ -1,0 +1,13 @@
+module	status	archive_interpretation
+BayesPrism_CORE12_REGION_IBD	completed_sensitivity	Frozen 53-state/7-ecotype sensitivity route; not CIBERSORTx mainline
+Official_EcoTyper_discovery_recovery	completed_with_limits	Frozen model and recovery/audit code archived
+scRNA_coassociation	completed_audit	Association evidence only; not physical interaction
+clinical_association_audit	completed_audit	Patient/sample-level outputs excluded
+external_clinical_outcomes	completed_audit	Effect and significance tables excluded
+Joint20_v2_signature	completed	Signature construction provenance recorded without matrix
+Joint20_pseudomix_Job25_Job26	completed_validation	Code archived; predictions and result tables excluded
+Joint20_matched_BayesPrism	deconvolution_qc_complete	EcoTyper NMF not started
+CIBERSORTx_HiRes	not_completed_excluded	Do not conflate with completed sensitivity work
+CIBERSORTx_formal_Discovery	not_completed_excluded	Do not conflate with official frozen legacy discovery
+GlobalDetection	blocked	No substitute test claimed
+LigandReceptor	blocked	No substitute analysis claimed

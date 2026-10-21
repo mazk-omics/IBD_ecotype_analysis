@@ -1,0 +1,8 @@
+component	version_or_revision	scope	note
+repository_base	7f96eb8edca6d73114b69500d19fddea019977d3	local_and_origin_main	archive branch point
+EcoTyper	4a1c71498bca1802a9b374a3259bc7d3f0836fc8	server_software_tree	tree had documented experimental Region3 scaling modifications
+R	4.5.1	server_main_runtime	general server runtime observed during audit
+R	4.4.3	BayesPrism_runtime	BayesPrism 2.2.3 environment
+Python	3.11.16	ibd_refaudit_runtime	NumPy 2.4.6; pandas 2.3.3; SciPy 1.17.1
+Seurat	3.1.3	external_marker_workflow	R 4.0.3 environment recorded by source audit
+fgsea	1.14.0	paper_aligned_characterization	R 4.0.3 environment recorded by source audit
