@@ -1,0 +1,4 @@
+code/** -text
+*.md text eol=lf
+*.tsv text eol=lf
+*.yml text eol=lf
