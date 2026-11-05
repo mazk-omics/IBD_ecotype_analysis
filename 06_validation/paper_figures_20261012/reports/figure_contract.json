@@ -1,0 +1,25 @@
+{
+  "Backend": "Python rendering; R native umap and igraph numerical analysis",
+  "Claim": "Display frozen state heterogeneity, community membership and phenotype associations with the original paper panel semantics",
+  "Archetype": "Quantitative grids and aligned multi-block overview",
+  "FontFloorPt": 5,
+  "Export": [
+    "PDF",
+    "SVG",
+    "PNG"
+  ],
+  "Input": {
+    "States": 53,
+    "Ecotypes": 7,
+    "Biopsies": 2025,
+    "Fig4A_Assigned": 1712
+  },
+  "Boundaries": [
+    "BayesPrism sensitivity, not CIBERSORTx",
+    "No survival or mutation feature panels",
+    "No NMF or ecotype refitting",
+    "No inferred cell communication"
+  ],
+  "Fig5A_BH": 385,
+  "ScaleDisclosure": "Fig5A cell-type mean min-max scaling is a display choice; exact original formula not specified"
+}

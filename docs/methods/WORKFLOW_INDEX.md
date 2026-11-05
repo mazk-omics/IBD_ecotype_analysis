@@ -15,6 +15,7 @@
 | 初步状态解释 | `scripts/python/prepare_paper_annotation_inputs_20261010.py` → `scripts/R/interpretation_20261010/interpret_states_ecotypes_paper_20261010.R` → `check_paper_annotation_outputs_20261010.py` | 论文方法的实际适配、数据库版本、统计阈值、候选命名证据与限制 |
 | nonIBD/健康敏感性恢复 | `scripts/python/prepare_nonibd_recovery_20261010.py` → `scripts/bash/run_nonibd_recovery_20261010.sh` → `summarize_nonibd_recovery_20261010.py` 与 `scripts/R/nonibd_coassociation_20261010.R` | 全量上游是否包含对照，外部队列与同源对照的证据区分 |
 | 图件与交付检查 | `scripts/python/plot_*recovery_nature.py`、`assemble_*recovery_figures.py`、`present_*20261010.py`、`check_recovery_delivery_20261010.py` | 数据源、图件一致性与输出检查；最终研究图件仍保存在研究目录 |
+| 上一轮下游表征与论文式图件 | `docs/methods/ECOTYPER_DOWNSTREAM_ANALYSIS.md` → `06_validation/paper_aligned_recovery_characterization_20261012/README.md` → `06_validation/paper_figures_20261012/README.md` | 冻结模型、recovery、marker、LOOCV、表型、Hallmark、逐图源数据与 QA；明确 BayesPrism sensitivity 和 BLOCKED 模块 |
 
 ## 环境与版本
 
@@ -22,6 +23,7 @@
 - 官方 EcoTyper 基线、项目 HEAD 和实际工作树补丁：`docs/software_versions/ecotyper_server_20261010.json`。
 - 安装/修复环境的原脚本保留在 `scripts/archived/20261010_research_folder_sources/06_validation/ecotyper_original_method_annotation_20261010/`。这是历史执行步骤，不表示需要重复执行全部修复。
 - 当同名源码不同，服务器当前实际文件作为运行来源；本地历史副本放在 `scripts/archived/20261010_local_pre_server_sync/`，差异映射见 `docs/provenance/local_server_reconciliation_20261010.tsv`。
+- EcoTyper 下游新增或修改脚本同时遵循 `Profile/CODE_STYLE.md` 与 `docs/methods/ECOTYPER_DOWNSTREAM_CODE_STYLE.md`；历史执行脚本保留原始字节 SHA256，GitHub 副本只统一为 LF，不用风格整理改写方法。
 
 ## 尚未由此次归档验证的内容
 

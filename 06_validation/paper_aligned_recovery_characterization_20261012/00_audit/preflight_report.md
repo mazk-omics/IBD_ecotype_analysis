@@ -1,0 +1,13 @@
+# 只读预审
+
+现场核对53个唯一state、12个父类型、7个ecotype；与既有解释表的成员对应完全一致。新输出位于独立目录，官方Git工作树未改动。冻结结果37个审计文件SHA256已核验未变；完整IBDverse原件SHA256已补入输入清单。
+
+GSE214695实际9752个输入细胞/18样本/18供者，结直肠；IBDverse4818个输入细胞/30样本/30供者，回肠，缺失Glial。两者原始counts按冻结细胞ID精确匹配，完整基因读取后同名基因求和，不使用四千余投影基因作为DE全集。
+
+疾病/部位供者覆盖和不可评价状态见dataset_eligibility.tsv与disease_region_state_coverage.tsv。跨队列供者来源重叠仅能从既有上游参考清单初步排查，不能从不同命名空间ID就证明完全独立。MSCCR内部nonIBD不作为独立上游验证；健康子集不是新独立队列。
+
+已有两轮F1/F2、四套Spearman平均及1000次零分布Z已用Python独立重算并通过；官方状态Z复用30次shuffle结果，未冒充论文100次。
+
+环境为既有ecotyper_interpretation：R4.0.3/Seurat3.1.3/fgsea1.14.0。单线程与4 worker的真实B细胞17687条gene-state DEG逐行一致。
+
+分层marker/两版n4与LOOCV仍在后台计算，进度见logs/external_DE_parallel4.log。全局百万次联合统计及LR原版的关键定义未核实，只阻断各自模块，未制造对应结果。
