@@ -1,0 +1,61 @@
+CellType	Database	CellNameRegex	PreferredTissueRegex	InterpretationLimit
+B	CellMarker2	(^| )B cell|Follicular B|Memory B|Naive B	Colon|Colorectum|Ileum|Intestin|Rectum|Gastrointestinal	CellMarker labels and marker evidence vary by study
+B	PanglaoDB	^B cells($| memory| naive)	GI tract|Immune system|Blood	PanglaoDB is not intestine-specific
+B	HPA26	^b-cells$		HPA aggregates broad B-cell identity
+CD4_T	CellMarker2	CD4\+ T|T helper|Regulatory T|Treg	Colon|Colorectum|Ileum|Intestin|Rectum|Gastrointestinal	Subtype labels are supporting evidence only
+CD4_T	PanglaoDB	^T cells$|^T cells naive$	GI tract|Immune system|Blood	HPA and PanglaoDB do not resolve all intestinal CD4 states
+CD4_T	HPA26	^t-cells$		HPA does not separate CD4 and CD8 T cells
+CD8_T	CellMarker2	CD8\+ T|Cytotoxic T|Tissue resident memory T|Exhausted T	Colon|Colorectum|Ileum|Intestin|Rectum|Gastrointestinal	Subtype labels are supporting evidence only
+CD8_T	PanglaoDB	^T cells$|^T cells naive$	GI tract|Immune system|Blood	PanglaoDB does not resolve intestinal CD8 states
+CD8_T	HPA26	^t-cells$		HPA does not separate CD4 and CD8 T cells
+Colonic_absorptive	CellMarker2	Coloncyte|Colonocyte|Enterocyte	Colon|Colon epithelium|Colorectum|Large Intestine|Large intestine|Rectum	Enterocyte markers can be shared across gut regions
+Colonic_absorptive	PanglaoDB	^Enterocytes$	GI tract	PanglaoDB enterocytes are not region-specific
+Colonic_absorptive	HPA26	^colonocytes$		HPA colonocytes provide broad lineage support
+DC	CellMarker2	Dendritic cell|Myeloid dendritic|Plasmacytoid dendritic	Colon|Colorectum|Ileum|Intestin|Rectum|Gastrointestinal	Myeloid cross-lineage overlap must be retained
+DC	PanglaoDB	^Dendritic cells$|^Plasmacytoid dendritic cells$	GI tract|Immune system|Blood	Myeloid cross-lineage overlap must be retained
+DC	HPA26	^cdcs$|^pdcs$		HPA separates cDC and pDC only at broad level
+Endothelial	CellMarker2	Endothelial cell	Colon|Colorectum|Ileum|Intestin|Rectum|Gastrointestinal	Vascular subtypes may be tissue-specific
+Endothelial	PanglaoDB	^Endothelial cells	GI tract|Vasculature	PanglaoDB includes non-intestinal endothelial markers
+Endothelial	HPA26	vascular endothelial cells|lymphatic endothelial cells		HPA provides broad vascular identity
+Enteroendocrine	CellMarker2	Enteroendocrine cell|Endocrine cell	Colon|Colon epithelium|Colorectum|Ileum|Intestin|Rectum|Gastrointestinal	Hormone-defined subtypes require primary gut literature
+Enteroendocrine	PanglaoDB	^Enteroendocrine cells$	GI tract	PanglaoDB provides broad EEC identity
+Enteroendocrine	HPA26	^enteroendocrine cells$		HPA provides broad EEC identity
+Fibroblast	CellMarker2	Fibroblast|Myofibroblast|Stromal cell	Colon|Colorectum|Ileum|Intestin|Rectum|Gastrointestinal	Cancer-associated fibroblast markers are excluded from primary interpretation
+Fibroblast	PanglaoDB	^Fibroblasts$|^Myofibroblasts$	GI tract|Connective tissue	PanglaoDB includes non-intestinal fibroblasts
+Fibroblast	HPA26	^fibroblasts$		HPA provides broad fibroblast identity
+Glial	CellMarker2	Glial cell|Enteric glial	Colon|Colorectum|Ileum|Intestin|Rectum|Gastrointestinal	Non-enteric glial markers are secondary evidence
+Glial	PanglaoDB	Satellite glial cells	GI tract	PanglaoDB lacks a dedicated enteric glial category
+Glial	HPA26	^schwann cells$		HPA lacks a dedicated enteric glial category
+Goblet	CellMarker2	Goblet cell	Colon|Colon epithelium|Colorectum|Ileum|Intestin|Rectum|Gastrointestinal	Airway goblet markers are excluded
+Goblet	PanglaoDB	^Goblet cells$	GI tract	PanglaoDB provides broad goblet identity
+Goblet	HPA26	^goblet cells$		HPA provides broad goblet identity
+ILC	CellMarker2	Innate lymphoid|ILC1|ILC2|ILC3	Colon|Colorectum|Ileum|Intestin|Rectum|Gastrointestinal	Sparse database coverage cannot rescue failed HiRes specificity
+ILC	PanglaoDB	^Innate lymphoid cells$	GI tract|Immune system	PanglaoDB marker table may lack ILC entries
+ILC	HPA26	^innate lymphoid cells$		HPA provides broad ILC identity only
+Ileal_absorptive	CellMarker2	Enterocyte	Ileum|Small intestine|Small intestinal crypt|Fetal ileums|Gastrointestinal	Enterocyte markers can be shared across gut regions
+Ileal_absorptive	PanglaoDB	^Enterocytes$	GI tract	PanglaoDB enterocytes are not region-specific
+Ileal_absorptive	HPA26	^enterocytes$		HPA provides broad enterocyte identity
+Mast	CellMarker2	Mast cell	Colon|Colorectum|Ileum|Intestin|Rectum|Gastrointestinal	Granulocyte cross-lineage evidence must be retained
+Mast	PanglaoDB	^Mast cells$	GI tract|Immune system|Blood	PanglaoDB includes non-intestinal mast cells
+Mast	HPA26	^mast cells$		HPA provides broad mast-cell identity
+Monocyte_Macrophage	CellMarker2	Macrophage|Monocyte	Colon|Colorectum|Ileum|Intestin|Rectum|Gastrointestinal	M1 and M2 labels are not treated as definitive intestinal states
+Monocyte_Macrophage	PanglaoDB	Macrophages$|^Monocytes$	GI tract|Immune system|Blood	PanglaoDB includes non-intestinal myeloid cells
+Monocyte_Macrophage	HPA26	^macrophages$|^monocytes$		HPA provides broad myeloid identity
+NK	CellMarker2	Natural killer cell|NK cell	Colon|Colorectum|Ileum|Intestin|Rectum|Gastrointestinal	NKT labels are excluded from primary NK interpretation
+NK	PanglaoDB	^NK cells$	GI tract|Immune system|Blood	PanglaoDB provides broad NK identity
+NK	HPA26	^nk-cells$		HPA provides broad NK identity
+Paneth	CellMarker2	Paneth cell	Colon|Colon epithelium|Colorectum|Ileum|Intestin|Rectum|Gastrointestinal	Colon Paneth markers may represent metaplasia
+Paneth	PanglaoDB	^Paneth cells$	GI tract	PanglaoDB does not distinguish native and metaplastic Paneth cells
+Paneth	HPA26	^paneth cells$		HPA provides broad Paneth identity
+Pericyte	CellMarker2	Pericyte|Mural cell|Smooth muscle cell	Colon|Colorectum|Ileum|Intestin|Rectum|Gastrointestinal	Smooth-muscle overlap must be reported
+Pericyte	PanglaoDB	^Pericytes$	GI tract|Vasculature	PanglaoDB provides broad pericyte identity
+Pericyte	HPA26	^pericytes$|^vascular smooth muscle cells$		HPA pericyte and smooth-muscle evidence must be separated
+Plasma	CellMarker2	Plasma cell	Colon|Colorectum|Ileum|Intestin|Rectum|Gastrointestinal	B-cell overlap must be reported
+Plasma	PanglaoDB	^Plasma cells$	GI tract|Immune system|Blood	PanglaoDB provides broad plasma-cell identity
+Plasma	HPA26	^plasma cells$		HPA provides broad plasma-cell identity
+Stem_TA_progenitor	CellMarker2	Intestinal stem cell|Colonic stem cell|Progenitor cell|Transit-amplifying cell	Colon|Colon epithelium|Colorectum|Ileum|Intestin|Rectum|Gastrointestinal	Cancer stem-cell entries are excluded
+Stem_TA_progenitor	PanglaoDB	^Crypt cells$|^Transient cells$	GI tract	PanglaoDB lacks a complete intestinal stem-to-TA taxonomy
+Stem_TA_progenitor	HPA26	^enteric stem cells$|^enteric transient amplifying cells$		HPA provides broad stem and TA identities
+Tuft	CellMarker2	Brush cell \(Tuft cell\)|Tuft cell	Colon|Colon epithelium|Colorectum|Ileum|Intestin|Rectum|Gastrointestinal	Respiratory tuft markers are excluded where tissue is available
+Tuft	PanglaoDB	^Tuft cells$	GI tract	PanglaoDB provides broad tuft identity
+Tuft	HPA26	^tuft cells$		HPA provides broad tuft identity

@@ -1,0 +1,4 @@
+# EcoTyper interpretation 环境的历史编译器前缀已缺失；仅为项目级旧版 umap 编译指定系统 g++。
+CXX = g++
+CXX11 = g++
+CXX11STD = -std=gnu++11

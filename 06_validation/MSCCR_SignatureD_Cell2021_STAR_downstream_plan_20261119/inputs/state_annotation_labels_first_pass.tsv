@@ -1,0 +1,86 @@
+CellState	FinalStateLabel	FinalStateLabel_CN	AnnotationConfidence	AnnotationBasis	AnnotationCaveat
+B_S01	T-cell-signaling-associated B program	T细胞信号相关B细胞程序	MODERATE	CD247/TXK/STAT4 and antigen-receptor signaling genes	Cross-lineage signaling label; not a conventional B-cell subtype
+B_S02	Cytokine-responsive metabolic B program	细胞因子响应与代谢型B细胞程序	MODERATE	IL12RB1/TCIRG1/SERINC5 with stress and metabolic genes	Broad functional label
+B_S03	Canonical mature/activated B-cell program	经典成熟/活化B细胞程序	HIGH	CR2/TCL1A/MS4A1/CD19/CD22 and B-cell activation pathways	May contain naive-like and activated features
+B_S04	Structural-signaling B program	结构与信号调节型B细胞程序	LOW	AKT2/FGFR1/HDAC7/PIEZO1-associated signaling	No dominant canonical B-cell subtype markers
+CD4_T_S01	Activated TCR/CCR4 CD4 T program	TCR活化与CCR4相关CD4 T细胞程序	HIGH	ZAP70/CD28/ICOS/CCR4 and TCR signaling	Functional state rather than a fixed CD4 subtype
+CD4_T_S02	Growth-factor/ERK-responsive CD4 T program	生长因子与ERK响应型CD4 T细胞程序	MODERATE	EGFR/GAB1/SPRED2 and growth-factor response	Atypical CD4 program
+CD4_T_S03	Atypical sensory-GPCR CD4 T program	非典型感觉GPCR相关CD4 T细胞程序	LOW	TAS2R family and GPCR/taste-signaling enrichment	Exploratory program; possible technical or cross-lineage signal
+CD8_T_S01	IL2RB/JAK3 lymphoid activation program	IL2RB/JAK3淋巴活化程序	HIGH	IL2RB/JAK3/PIK3CD/CD7	Broad activated CD8 program
+CD8_T_S02	ZNF683-positive hypoxia-associated CD8 program	ZNF683阳性缺氧相关CD8程序	MODERATE	ZNF683 with hypoxia enrichment	Compatible with tissue-resident features but not labeled as a definitive TRM subtype
+CD8_T_S03	IL22/CXCL9 inflammatory effector CD8 program	IL22/CXCL9炎症效应型CD8程序	MODERATE	IL22/CXCL9/IFI6 and leukocyte signaling genes	Broad inflammatory effector label
+CD8_T_S04	Homeostatic CD8 T program	稳态型CD8 T细胞程序	LOW	ANXA6/LANCL1 and regulatory genes	No dominant canonical effector program
+CD8_T_S05	Contractile-like cross-lineage CD8 program	收缩样跨谱系CD8程序	LOW	MYL9/MRVI1/LIMS2 and muscle-system pathway	Likely cross-lineage or contamination-associated signal
+CD8_T_S06	Proteostasis-associated CD8 T program	蛋白稳态相关CD8 T细胞程序	LOW	CABIN1/CNOT3/DNAJC4/POFUT2	Broad housekeeping program
+Colonic_absorptive_S01	Transcriptional-regulatory colonocyte program	转录调控型结肠吸收细胞程序	MODERATE	CHD9/EPC1/PIAS2 and regulatory genes	No dominant mature absorptive marker set
+Colonic_absorptive_S02	Mitochondrial/junctional colonocyte program	线粒体与连接相关结肠吸收细胞程序	MODERATE	Mitochondrial genes with LSR/MARK2/SPRED2	Broad epithelial homeostasis label
+Colonic_absorptive_S03	Oxidative-phosphorylation colonocyte program	氧化磷酸化型结肠吸收细胞程序	HIGH	COX8A/COX5A/ALDH2 and oxidative phosphorylation	Metabolic state
+DC_S01	OLFM4-positive epithelial-like DC signal	OLFM4阳性上皮样DC信号	LOW	OLFM4/NPSR1/TMEM45A	Exploratory cross-lineage state; not a definitive DC subtype
+DC_S02	S100A8/A9 inflammatory myeloid program	S100A8/A9炎症髓系程序	HIGH	S100A8/S100A9/FCN1/FPR1/FPR2 and innate immune pathways	May represent inflammatory DC/monocyte-like cells
+DC_S03	Activated antigen-presenting DC program	活化抗原呈递DC程序	HIGH	CD83/PTPRC/REL/NFKBID and immune activation	Broad activated DC label
+DC_S04	RNA-processing DC program	RNA加工相关DC程序	LOW	U2AF1/ZCCHC2/RNF111	No dominant canonical DC subtype markers
+DC_S05	Transcriptional-regulatory DC program	转录调控型DC程序	LOW	MNT/PHC2/RFX2/DHX34	No dominant canonical DC subtype markers
+Endothelial_S01	ACKR1-like venous endothelial program	ACKR1样静脉内皮程序	HIGH	DARC/ACKR1-like signal with VWF/CDH5/RAMP3	Broad venous/inflammatory endothelial interpretation
+Endothelial_S02	Cytoskeletal vascular-homeostasis program	细胞骨架与血管稳态程序	MODERATE	WASF2/MPRIP/DAG1 and trafficking genes	No definitive endothelial subtype markers
+Endothelial_S03	Interferon/IL18-responsive endothelial program	干扰素与IL18响应型内皮程序	MODERATE	IL18/USP18/TRIM69 with adhesion genes	Activated endothelial state
+Enteroendocrine_S01	Regulatory enteroendocrine program	调控型肠内分泌细胞程序	LOW	MAP3K1/PRKD3/ERP27 and regulatory genes	No dominant hormone-defined subtype markers
+Enteroendocrine_S02	VEGF/mesenchymal-like enteroendocrine program	VEGF与间质样肠内分泌程序	MODERATE	AXL/MYL9/LTBP4 and VEGF signaling	Possible cross-lineage program
+Enteroendocrine_S03	INSL5/OR51E2 enteroendocrine program	INSL5/OR51E2肠内分泌程序	HIGH	INSL5/OR51E2/HOXD genes	Compatible with distal enteroendocrine features
+Enteroendocrine_S04	Cycling enteroendocrine program	增殖型肠内分泌细胞程序	HIGH	LMNB1/FEN1/UBE2T/DTL/EXO1 and cell-cycle pathways	Proliferative state
+Enteroendocrine_S05	Heme/metabolic enteroendocrine program	血红素与代谢型肠内分泌程序	MODERATE	Heme-metabolism enrichment with mitochondrial transport genes	Broad metabolic state
+Enteroendocrine_S06	Homeostatic enteroendocrine program	稳态型肠内分泌细胞程序	LOW	ERGIC3/ST13/EPS8/RAF1	No dominant hormone-defined subtype markers
+Fibroblast_S01	Translational/MYC fibroblast program	翻译与MYC相关成纤维细胞程序	MODERATE	Ribosomal/translation genes and MYC target enrichment	Broad biosynthetic state
+Fibroblast_S02	Mitochondrial-homeostatic fibroblast program	线粒体稳态型成纤维细胞程序	LOW	OPA1/BCL2L13/IP6K2 and housekeeping genes	No dominant stromal subtype markers
+Fibroblast_S03	CTHRC1-positive ECM-remodeling fibroblast program	CTHRC1阳性基质重塑成纤维细胞程序	HIGH	CTHRC1/WISP1/WNT5A/CTSK/COL12A1 and ECM pathways	Activated remodeling fibroblast state
+Fibroblast_S04	LTBP4/PTCH1 stromal-signaling program	LTBP4/PTCH1基质信号程序	MODERATE	LTBP4/PTCH1/COL4A6/GSTM5	Broad signaling fibroblast state
+Fibroblast_S05	Complement-associated fibroblast program	补体相关成纤维细胞程序	MODERATE	C4A/C4B with stromal regulatory genes	Broad immune-interacting stromal state
+Glial_S01	Vesicle-trafficking/regulatory glial program	囊泡运输与调控型胶质程序	MODERATE	RAB4A/CCDC93/IRF2BP2	No definitive enteric glial subtype markers
+Glial_S02	Mitochondrial glial program	线粒体型胶质程序	MODERATE	TOMM20/LYRM7 and mitochondrial genes	Broad metabolic state
+Goblet_S01	Metabolic goblet program	代谢型杯状细胞程序	MODERATE	HIGD1A/CMAS/MAL2 with metabolic enrichment	Broad metabolic state
+Goblet_S02	RNA/protein-processing goblet program	RNA与蛋白加工型杯状细胞程序	LOW	DDX26B/KAT2A/POLR3D/LSM14B	No dominant secretory subtype markers
+Goblet_S03	Epithelial-homeostatic goblet program	上皮稳态型杯状细胞程序	MODERATE	TMEM219/EMC10/CES2/MAPK3	Broad homeostatic state
+Goblet_S04	Cycling goblet program	增殖型杯状细胞程序	HIGH	MELK/CDC6/MCM7/RRM2/CCNB1 and mitotic pathways	Proliferative state
+Goblet_S05	MUC5AC/REG4 metaplastic-secretory program	MUC5AC/REG4化生分泌程序	HIGH	MUC5AC/TFF1/S100P/REG4	Metaplastic-like secretory state
+ILC_S01	Uncharacterized ILC program	未特异ILC程序	LOW	Weak noncanonical marker set	Exploratory state
+ILC_S02	Interferon/antiviral ILC program	干扰素与抗病毒ILC程序	MODERATE	NFKBIZ/HIF1A/DTX3L and interferon/virus-response pathways	Exploratory lineage interpretation
+ILC_S03	Stimulus-sensing ILC program	刺激感知型ILC程序	LOW	SCIN/TRHDE and stimulus-sensing channels	Exploratory state
+ILC_S04	Membrane-localization/stress ILC program	膜定位与应激型ILC程序	LOW	EIF2AK2/PAK2 and membrane-localization pathway	Exploratory state
+ILC_S05	Cycling ILC program	增殖型ILC程序	MODERATE	MCM10/CDC6/EXO1 and G2M/DNA-replication pathways	Proliferative state with exploratory lineage support
+ILC_S06	Homeostatic ILC program	稳态型ILC程序	LOW	PRKAR1A/TMEM43/TINF2	Exploratory state
+Ileal_absorptive_S01	Regulatory ileal enterocyte program	调控型回肠吸收细胞程序	LOW	MAP3K2/DENND1B/ARHGAP5	No dominant mature absorptive markers
+Ileal_absorptive_S02	Mature transport-associated ileal enterocyte program	成熟转运型回肠吸收细胞程序	HIGH	FCGRT/GUCA2A/GUCA2B/GPX4	Mature absorptive state
+Ileal_absorptive_S03	VDR/receptor-signaling ileal enterocyte program	VDR与受体信号型回肠吸收细胞程序	HIGH	VDR/SEMA6A and receptor-tyrosine-kinase signaling	Broad signaling state
+Ileal_absorptive_S04	Interferon-responsive ileal enterocyte program	干扰素响应型回肠吸收细胞程序	HIGH	ISG20/TRAFD1 and interferon signaling	Inflammatory epithelial state
+Ileal_absorptive_S05	Lipid/amino-acid metabolic ileal enterocyte program	脂质与氨基酸代谢型回肠吸收细胞程序	MODERATE	ALOX12/CSAD and metabolic genes	Broad metabolic state
+Mast_S01	Matrix-remodeling mast program	基质重塑型肥大细胞程序	MODERATE	MMP19/PCOLCE/CTSK/TIMP1 and EMT-like enrichment	Possible stromal cross-lineage signal
+Mast_S02	Eosinophil-like granulocyte program	嗜酸粒细胞样粒细胞程序	MODERATE	CLC/CCR3/ALOX15/CEBPE/PRSS33	Cross-lineage granulocyte state
+Mast_S03	Canonical TPSAB1-positive mast program	经典TPSAB1阳性肥大细胞程序	HIGH	GATA2/TPSAB1/THBS1	Canonical mast-cell state
+Mast_S04	Starvation/metabolic mast program	饥饿应答与代谢型肥大细胞程序	MODERATE	Mitochondrial/proteostasis genes and starvation response	Broad metabolic state
+Monocyte_Macrophage_S01	C1QC tissue-macrophage program	C1QC组织巨噬细胞程序	HIGH	C1QC/LGMN/CST3/NR1H3/GPR34	Tissue-resident macrophage-like state
+Monocyte_Macrophage_S02	Epithelial-like stress myeloid program	上皮样应激髓系程序	LOW	CLDN4/ITGA3/RIPK3	Possible epithelial cross-lineage signal
+Monocyte_Macrophage_S03	Migratory immune-signaling myeloid program	迁移与免疫信号型髓系程序	MODERATE	GPR183/GPR132/S1PR4/VAV1/RAC1 pathway	Broad migratory immune state
+Monocyte_Macrophage_S04	NOS2/CXCL inflammatory macrophage program	NOS2/CXCL炎症巨噬细胞程序	HIGH	NOS2/CXCL1/CXCL6/IDO1/GBP1 and TNF-NFKB signaling	Inflammatory macrophage-like state
+NK_S01	Homeostatic NK program	稳态型NK细胞程序	LOW	SH2B1/GIT1/TSC2 and trafficking genes	No dominant cytotoxic markers
+NK_S02	IL2RB lymphoid-effector NK program	IL2RB淋巴效应型NK程序	HIGH	IL2RB/PSTPIP1/SH2D2A and lymphocyte-mediated immunity	Activated lymphoid state
+NK_S03	Interferon/inflammatory NK program	干扰素与炎症型NK程序	HIGH	NOS2/DUOX2/CXCL2/SOCS1 and interferon response	Possible epithelial inflammatory cross-lineage signal
+Paneth_S01	Bile-acid/absorptive-like Paneth program	胆汁酸与吸收样Paneth程序	MODERATE	FABP6/SLC10A2/FMO1/GSTA1	Absorptive cross-lineage features
+Paneth_S02	Epithelial biosynthetic Paneth program	上皮生物合成型Paneth程序	MODERATE	EPCAM with ribose-phosphate/cell-cycle-related pathways	Broad epithelial state
+Paneth_S03	Junctional epithelial Paneth program	连接与上皮稳态型Paneth程序	MODERATE	TJP3/CLCN2/FGFR3	Broad epithelial state
+Paneth_S04	Immune-signaling-like Paneth program	免疫信号样Paneth程序	LOW	TBC1D10C/HMHA1/IL27RA and immune activation	Likely immune cross-lineage signal
+Paneth_S05	Mesenchymal/developmental-like Paneth program	间质与发育样Paneth程序	LOW	TNXB/SCUBE1 and tube-development enrichment	Likely cross-lineage state
+Pericyte_S01	Proliferative/cytoskeletal pericyte program	增殖与细胞骨架型周细胞程序	MODERATE	MYO1E/SPTBN1 and mitotic-spindle enrichment	Broad structural state
+Pericyte_S02	NOTCH3/TGFBI vascular-remodeling pericyte program	NOTCH3/TGFBI血管重塑周细胞程序	HIGH	NOTCH3/TGFBI/PAPPA/ADAMTS9/NOS3	Activated vascular-support state
+Pericyte_S03	Neurovascular-signaling pericyte program	神经血管信号型周细胞程序	LOW	AGER/SYNGAP1/IGSF9B/CELSR1	Broad signaling state
+Pericyte_S04	Contractile smooth-muscle-like pericyte program	收缩型平滑肌样周细胞程序	HIGH	CNN1/ACTA2/TAGLN/LMOD1/DES and muscle contraction	Canonical contractile pericyte state
+Plasma_S01	Ribosome-biogenesis plasma program	核糖体生成型浆细胞程序	HIGH	HEATR1/DDX31/DDX10 and rRNA-processing pathways	Biosynthetic state
+Plasma_S02	Mitochondrial/secretory-homeostasis plasma program	线粒体与分泌稳态型浆细胞程序	MODERATE	ATP5L/EMC3/TIMM8B/STX12	Broad homeostatic state
+Plasma_S03	Cycling/MYC plasma program	增殖与MYC相关浆细胞程序	HIGH	TUBA1B/ZWILCH/HSPD1/AGR2 with MYC and M-phase pathways	Proliferative state
+Plasma_S04	Secretory-trafficking/mTOR plasma program	分泌运输与mTOR相关浆细胞程序	MODERATE	SEC16A/ATP2A2/MTOR/AP1G1	Broad secretory state
+Plasma_S05	Epithelial-inflammatory plasma-like program	上皮炎症样浆细胞程序	LOW	TCN1/MMP7/KRT6B/KRT17/DUOXA2	Likely epithelial cross-lineage signal
+Stem_TA_progenitor_S01	Notch/CDC42 regulatory progenitor program	Notch与CDC42调控型祖细胞程序	HIGH	NOTCH2NL/FMNL2/TRIO and CDC42 pathway	Regulatory progenitor state
+Stem_TA_progenitor_S02	Metabolic differentiation progenitor program	代谢与分化型祖细胞程序	MODERATE	MOGAT2/ACSS2/ABAT/NR3C2	Broad differentiating state
+Stem_TA_progenitor_S03	Cycling RNA-biogenesis progenitor program	增殖与RNA生成型祖细胞程序	HIGH	E2F target and ribonucleoprotein/RNA-metabolism pathways	Proliferative progenitor state
+Tuft_S01	Uncharacterized tuft program	未特异Tuft细胞程序	LOW	Weak noncanonical marker set	No dominant canonical tuft markers
+Tuft_S02	PI3K/protein-localization tuft program	PI3K与蛋白定位型Tuft程序	MODERATE	TRAF3IP2/TXN2 with PI3K and G2M-related pathways	Broad signaling state
+Tuft_S03	Mitochondrial sensory tuft program	线粒体与感觉型Tuft程序	MODERATE	Mitochondrial genes with sensory/olfactory pathways	Compatible with sensory epithelial function
+Tuft_S04	Metabolic-signaling tuft program	代谢与信号型Tuft程序	MODERATE	GNA11/APPL1/IYD/CES2	Broad metabolic-signaling state

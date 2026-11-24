@@ -1,0 +1,18 @@
+Gate	Required_before_start	Pass_condition	Failure_action
+G0_FROZEN_INPUTS	Formal task status ACCEPTED	All formal files, configs, source code, images, annotations and environments have hashes and immutable model ID	Stop; do not read partial or moving outputs
+G1_MODEL_IDENTITY	G0	Sample/gene/state/ecotype identity reconciles; metric columns excluded; no forced ties	Correct parser in new version; never alter source files
+G2_STATE_QC	G1	Marker-count, AFI and dropout filters all independently reproduced; discarded winners remain unassigned	Stop downstream; create a new model version if QC changes retained states
+G3_ECOTYPE_AUDIT	G2	Jaccard and official 1-Jaccard partition reproduced; alternative partitions completed; STAR-literal Euclidean comparison recorded as non-blocking sensitivity	Keep official partition primary; report material discrepancy without automatic rerun
+G4_SCRNA_INPUTS	G2	Dataset, sample, donor, parent type, disease/region and gene mapping frozen; leakage statement written	Mark missing strata non-evaluable; do not zero-impute
+G5_STATE_RECOVERY	G4	100-shuffle recovery completed with stored cells/seeds/nulls and per-dataset denominators	Retain negative results; no automatic rerun or marker tuning
+G6_MARKER_LODO	G5	Seven metrics and complete dataset-level leave-one-out recomputed without held-out leakage	Stop marker claims until leakage and denominator checks pass
+G6A_STATE_VIS_ANNOTATION	G6	Cell 2021 H-star UMAP is frozen; marker and literature annotation are separated from LOOCV evidence; database versions and unresolved labels are retained	Do not use annotation or UMAP to redefine states or inflate validation accuracy
+G7_PHENOTYPE	G5	Exact 1000-permutation enrichment and patient-aware IBD extension both complete and separated	Do not substitute Wilcoxon/Fisher for exact track
+G7A_STATE_REPRESENTATION	G7	S2G-S2H-matched representation tables and figures report Disease, Inflammation, Region3, dataset and IBD/nonIBD with explicit assigned and Unassigned denominators	Do not claim tumor-type exactness; label phenotype mapping as IBD extension
+G8_ECOTYPE_DETECTION	G5	F1/F2/C1:C4/C complete; 1000 individual and 1e6 global tests pass formula regression checks	Keep global module blocked if formula/NA rules are not verified
+G9_FEATURES	G3	Feature manifest and BH families frozen before testing; ecotype assignment semantics retained	Do not select features after seeing P/Q
+G10_IBD_CONSERVATION	G7;G8	Disease/region/dataset leave-out and patient bootstrap complete with frozen model	Limit claim to evaluated strata; no pooled-only conservation claim
+G11_CLINICAL	G5	Endpoint manifest, baseline timing, cohort recovery, events and estimand are valid	Mark NOT_APPLICABLE rather than substitute a different estimand
+G11A_BULK_VALIDATION	G6	Independent IBD and nonIBD bulk cohorts pass scale, overlap, recovery, coverage and phenotype audits; discovery samples are excluded from validation denominators	Stop bulk validation claims; never mix discovery and external denominators
+G11B_NONIBD_SCRNA	G6	Independent nonIBD scRNA cohorts use frozen mappings and model; recovery, marker support, phenotype representation and non-evaluable denominators are complete	Retain negative recovery; do not refit states on healthy cells
+G12_RELEASE	G2:G11 as applicable	Inputs, code, environment, randomness, outputs, negative results and QA all closed	Do not label package COMPLETE

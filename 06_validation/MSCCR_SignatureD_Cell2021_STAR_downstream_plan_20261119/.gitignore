@@ -1,0 +1,6 @@
+output/
+retrieved_figures/
+inputs/reference_databases/
+logs/
+*.RData
+*.rds
