@@ -34,6 +34,8 @@
 - `scripts/25_plot_marker_validation_and_z.R`：用 R 输出 marker LODO 热图、四队列 recovery Z、Stouffer Meta Z，以及 exact/患者感知 phenotype Z 图和逐图 source data。
 - `scripts/26_plot_cell_state_representation.R`：用 R 输出 pooled 与逐数据集的 Disease、Inflammation、Region3、dataset dominant-state Fisher representation 热图；无 nonIBD 时不伪造对照图。
 - `scripts/27_summarize_G7_G7A_validation.R`：汇总 recovery、marker LODO、exact/患者感知 phenotype enrichment 和 dominant-state representation，输出分母清楚的中文审阅报告。
+- `scripts/52_run_discovery_state_representation_Cell2021.R`：严格使用 discovery bulk 样本级 state assignment，按 Cell 2021 的单侧 Fisher 和表型水平内跨全部 state 的 BH 校正计算 representation specificity；Disease 与 Region3 独立计算，禁止机械交叉。
+- `scripts/53_plot_discovery_Cell2021_S2GH_boxplots.R`：从 discovery representation 结果分别输出 Disease 和 Region3 两套 Cell 2021 Fig. S2G/S2H 主箱线图，Inflammation 为次级图；四套 scRNA 图不替代此主图。
 - `scripts/28_audit_and_freeze_nonIBD_scRNA_cells.R`：从四队列健康供者中按同一 Joint20 规则冻结 nonIBD eligible pools 和 recovery 细胞；不修改既有 IBD 输入或 85-state 模型。
 - `METHOD_IDENTITY_CORRECTION_20261123.md`：记录 G7/G7A 当前结果是算法对齐的 IBD 内部扩展，而非正常/疾病完整复现，并冻结 nonIBD 补齐边界。
 - `NONIBD_BULK_VALIDATION_PLAN_20261123.md`：冻结 MSCCR Control、GSE57945 及其他候选 nonIBD bulk 在当前 85-state/8-ecotype 模型中的输入尺度、独立性和 recovery 方案。
@@ -61,3 +63,4 @@
 - MSCCR Control 三部位官方 bulk recovery 已验收：60/60 state abundance、60/60 state assignment、3/3 ecotype abundance 和 3/3 ecotype assignment。
 - 85 个正式 state 中 82 个在 MSCCR 三部位均观察到，84 个至少在两个部位观察到；8 个 ecotype 在三个部位均观察到。
 - 外部 GSE57945 bulk 与至少一套 scRNA 同时 `Z > 1.96` 的 state 为 `CD8_T_S06`、`Fibroblast_S02` 和 `Ileal_absorptive_S02`。MSCCR 只作为内部覆盖证据，不计入该显著性判定。
+- discovery bulk 的 Fig. S2G/S2H representation 已按原文统计单位补齐：Disease 和 Region3 分开计算与作图，全部可评估组合均进入箱线图，不按 OR 或显著性预筛选；不再保留 Disease × Region3 机械交叉图。

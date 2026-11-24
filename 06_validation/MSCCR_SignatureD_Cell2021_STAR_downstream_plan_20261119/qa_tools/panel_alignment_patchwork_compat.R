@@ -36,7 +36,7 @@ write_patchwork_panel_layout <- function(
   grid::grid.force()
 
   viewport_index <- grid::grid.ls(viewports = TRUE, grobs = FALSE, print = FALSE)
-  viewport_names <- grep("^panel;", viewport_index$name, value = TRUE)
+  viewport_names <- grep("^(panel;|panel-[0-9]+[.])", viewport_index$name, value = TRUE)
   if (length(viewport_names) < 2L) stop("At least two patchwork panel viewports are required for alignment QA", call. = FALSE)
 
   panel_boxes <- vector("list", length(viewport_names))
