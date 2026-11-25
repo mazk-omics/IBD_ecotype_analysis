@@ -74,6 +74,7 @@ label_table <- copy(block_table)
 label_table$Symbol <- ""
 label_table$Symbol[label_table$Panel==panel_levels[2]] <- ifelse(results$P_normal_greater<0.05 & results$AvgDif>results$NullMean, "*", "")
 label_table$Label <- paste0(label_table$Ecotype, label_table$Symbol)
+bottom_labels <- data.frame(Panel=factor(panel_levels, levels=panel_levels), X=0.5, Y=1.075, Label="79 cell states")
 
 fwrite(heatmap_table, file.path(out, "Figure4D_bulk_and_pooled_scRNA_source.tsv.gz"), sep="\t")
 fwrite(label_table, file.path(out, "Figure4D_ecotype_annotations.tsv"), sep="\t")
@@ -83,11 +84,12 @@ figure_d <- ggplot(heatmap_table, aes(x=ColNorm, y=RowNorm, fill=DisplayValue)) 
     geom_rect(data=block_table, aes(xmin=StartNorm, xmax=EndNorm, ymin=StartNorm, ymax=EndNorm), inherit.aes=FALSE, fill=NA, colour="black", linewidth=0.35) +
     geom_rect(data=block_table, aes(xmin=StartNorm, xmax=EndNorm, ymin=-0.060, ymax=0), inherit.aes=FALSE, fill=block_table$Colour, colour=NA) +
     geom_text(data=label_table, aes(x=CenterNorm, y=-0.105, label=Label), inherit.aes=FALSE, size=1.75, family=font_family) +
+    geom_text(data=bottom_labels, aes(x=X, y=Y, label=Label), inherit.aes=FALSE, size=2.25, family=font_family) +
     scale_fill_gradientn(colours=c("#FFFFD9", "#D9F0A3", "#78C679", "#2C7FB8", "#253494"), limits=c(0, 1), na.value="#D9D9D9", breaks=c(0, 1), labels=c("Low", "High"), name="Co-occurrence index") +
     facet_wrap(~Panel, nrow=1) +
-    scale_y_reverse(limits=c(1, -0.150), expand=c(0, 0)) +
+    scale_y_reverse(limits=c(1.135, -0.150), expand=c(0, 0)) +
     coord_equal(xlim=c(0, 1), expand=FALSE, clip="off") +
-    labs(tag="D", title="Cross-correlation of cell state abundances", x="79 cell states", y="79 cell states", caption="* P < 0.05") +
+    labs(tag="D", title="Cross-correlation of cell state abundances", x=NULL, y="79 cell states", caption="* P < 0.05") +
     theme_classic(base_family=font_family, base_size=6.5) +
     theme(axis.line=element_blank(), axis.ticks=element_blank(), axis.text=element_blank(), strip.background=element_blank(), strip.text=element_text(size=7.2), axis.title=element_text(size=6.8), legend.position="bottom", legend.title=element_text(size=6.0), legend.text=element_text(size=5.8), plot.tag=element_text(size=10, face="bold"), plot.tag.position=c(0.025, 0.965), plot.title=element_text(size=8.0, face="plain", hjust=0.54, margin=margin(b=2)), plot.title.position="plot", plot.caption=element_text(size=6.0, hjust=1), plot.caption.position="plot", panel.spacing=grid::unit(3.2, "mm"), plot.margin=margin(3, 2, 2, 2)) +
     guides(fill=guide_colourbar(title.position="top", title.hjust=0.5, barwidth=grid::unit(17, "mm"), barheight=grid::unit(2.2, "mm"), ticks=FALSE))
@@ -196,7 +198,7 @@ dataset_strip$Ecotype <- factor(selected_ecotypes[length(selected_ecotypes)], le
 figure_e <- ggplot(composition, aes(x=X, y=Contribution, fill=CellType)) +
     geom_col(width=0.86, colour="black", linewidth=0.12) +
     geom_vline(xintercept=separators, linewidth=0.35) +
-    geom_segment(data=dataset_strip, aes(x=X-0.43, xend=X+0.43, y=-0.045, yend=-0.045, colour=Dataset), inherit.aes=FALSE, linewidth=4) +
+    geom_segment(data=dataset_strip, aes(x=X-0.50, xend=X+0.50, y=-0.035, yend=-0.035, colour=Dataset), inherit.aes=FALSE, linewidth=3, lineend="butt") +
     facet_grid(Ecotype~., switch="y") +
     scale_fill_manual(values=celltype_colours, labels=celltype_labels, drop=TRUE, name="Cell type") +
     scale_colour_manual(values=dataset_colours, labels=dataset_labels, drop=TRUE, name="scRNA-seq dataset") +
