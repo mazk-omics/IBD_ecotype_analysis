@@ -13,11 +13,36 @@
 }
 
 .nature_alignment_panel_rows <- function(grob) {
-  rows <- grob$layout[grepl("^panel(?:-[0-9]+)?$", grob$layout$name, perl = TRUE), , drop = FALSE]
+  panel_name <- grepl("^(panel(?:-[0-9]+)?|panel;)", grob$layout$name, perl = TRUE)
+  rows <- grob$layout[panel_name & grob$layout$name != "panel-area", , drop = FALSE]
   if (nrow(rows) < 2) {
     stop("At least two patchwork panel cells are required for alignment QA", call. = FALSE)
   }
   rows[order(rows$t, rows$l), , drop = FALSE]
+}
+
+.nature_alignment_resolve_units <- function(units, total_pt, axis) {
+  unit_types <- grid::unitType(units)
+  null_units <- unit_types == "null"
+  resolved <- numeric(length(units))
+
+  if (any(!null_units)) {
+    if (axis == "width") {
+      resolved[!null_units] <- grid::convertWidth(units[!null_units], "pt", valueOnly = TRUE)
+    } else {
+      resolved[!null_units] <- grid::convertHeight(units[!null_units], "pt", valueOnly = TRUE)
+    }
+  }
+
+  if (any(null_units)) {
+    null_weights <- as.numeric(units[null_units])
+    remaining <- total_pt - sum(resolved[!null_units])
+    if (!is.finite(remaining) || remaining <= 0 || sum(null_weights) <= 0) {
+      stop("Patchwork null units could not be resolved to positive physical dimensions", call. = FALSE)
+    }
+    resolved[null_units] <- remaining * null_weights/sum(null_weights)
+  }
+  resolved
 }
 
 write_patchwork_panel_layout <- function(
@@ -67,8 +92,8 @@ write_patchwork_panel_layout <- function(
   grid::grid.draw(grob)
   grid::grid.force()
 
-  widths_pt <- grid::convertWidth(grob$widths, "pt", valueOnly = TRUE)
-  heights_pt <- grid::convertHeight(grob$heights, "pt", valueOnly = TRUE)
+  widths_pt <- .nature_alignment_resolve_units(grob$widths, width_in * 72, "width")
+  heights_pt <- .nature_alignment_resolve_units(grob$heights, height_in * 72, "height")
   if (any(!is.finite(widths_pt)) || any(!is.finite(heights_pt))) {
     stop("Patchwork panel dimensions could not be converted to physical points", call. = FALSE)
   }
