@@ -1,6 +1,6 @@
 #!/usr/bin/env Rscript
-# 本脚本把现成的 scRNA inflamed/noninflamed exact 与供者感知结果并入注释证据。
-# 只增加外部表型敏感性列，不改 state、ecotype、标签或证据等级。
+# 本脚本把外部 scRNA inflamed/noninflamed exact 与供者感知结果并入注释证据。
+# 该结果不替代 discovery Fig. S2G/S2H；只增加外部敏感性列，不改模型或等级。
 options(stringsAsFactors = FALSE, warn = 1)
 
 # Step1. 读取审阅表和表型结果

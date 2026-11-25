@@ -29,7 +29,7 @@
 
 ## 3. Inflamed/noninflamed 供者感知敏感性
 
-`scripts/56_integrate_inflammation_patient_sensitivity.R` 复用已完成的 scRNA known-phenotype 结果，对逐细胞 exact 轨道和供者感知轨道进行并列汇总，不重新计算 EcoTyper。
+正式 inflammation 分析使用 discovery bulk，完全沿用 Fig. S2G/S2H 的 dominant-state、单侧 Fisher 和表型水平内 BH 方法。`scripts/56_integrate_inflammation_patient_sensitivity.R` 仅复用外部 scRNA known-phenotype 结果，对逐细胞 exact 轨道和供者感知轨道进行补充敏感性汇总，不重新计算 EcoTyper。
 
 - 供者感知轨道中共有 11 个 state 在至少一个可评估数据集显著；
 - 其中 10 个与 discovery bulk 的 inflamed/noninflamed 方向一致；

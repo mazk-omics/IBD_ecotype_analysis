@@ -35,7 +35,7 @@
 - `scripts/26_plot_cell_state_representation.R`：用 R 输出 pooled 与逐数据集的 Disease、Inflammation、Region3、dataset dominant-state Fisher representation 热图；无 nonIBD 时不伪造对照图。
 - `scripts/27_summarize_G7_G7A_validation.R`：汇总 recovery、marker LODO、exact/患者感知 phenotype enrichment 和 dominant-state representation，输出分母清楚的中文审阅报告。
 - `scripts/52_run_discovery_state_representation_Cell2021.R`：严格使用 discovery bulk 样本级 state assignment，按 Cell 2021 的单侧 Fisher 和表型水平内跨全部 state 的 BH 校正计算 representation specificity；Disease 与 Region3 独立计算，禁止机械交叉。
-- `scripts/53_plot_discovery_Cell2021_S2GH_boxplots.R`：从 discovery representation 结果分别输出 Disease 和 Region3 两套 Cell 2021 Fig. S2G/S2H 主箱线图，Inflammation 为次级图；四套 scRNA 图不替代此主图。
+- `scripts/53_plot_discovery_Cell2021_S2GH_boxplots.R`：从 discovery representation 结果分别输出 Disease、Region3 和 Inflammation 三套正式 Cell 2021 Fig. S2G/S2H 箱线图；四套 scRNA 图不替代发现队列主图。
 - `scripts/54_build_state_annotation_priority_master.R`：合并文献标签、published-signature、四套 scRNA recovery、bulk/nonIBD、MSCCR 覆盖、marker LODO、通路和 discovery Inflammation 证据，生成 85-state 注释优先级主表；不自动改名。
 - `inputs/state_annotation_priority_review_v4.tsv`：首批 10 个高证据但未解析的 ecotype 成员逐条人工审阅记录，保存正向、冲突、文献和解释边界。
 - `scripts/55_integrate_priority_state_annotation_review.R`：将首批人工审阅决定写入 v4 注释证据表；不升级 D 级 state，不改变 85-state/8-ecotype 模型。
@@ -77,5 +77,5 @@
 - 85 个 state 的多模态注释证据已合并为 v4 优先级主表；原有 A/B/C/D 数量保持为 7/18/30/30。
 - 首批审阅了 10 个“高恢复证据但谱系身份未解析”的 ecotype 成员，全部保持 D 级且仅用于补充材料；没有修改 state、ecotype 或验证结果。
 - `NK_S03` 与 `Plasma_S05` 记录为可重复的跨谱系炎症上皮信号并进入 ecotype 敏感性清单，但没有从 E2 中删除。
-- scRNA inflammation 的逐细胞 exact 结果较宽松；控制重复供者后有 11 个 state 显著，其中 10 个与 discovery 方向一致。该供者感知结果只作为补充证据，不替代 discovery 样本级 Cell 2021 representation。
+- Inflammation 已与 Disease、Region3 并列为 discovery bulk 的正式 Fig. S2G/S2H representation 轴。scRNA 逐细胞 exact 与供者感知结果只作为外部敏感性证据，不替代 discovery 样本级主分析。
 - 第二批 26 个优先 state 已冻结解释边界：11 个 D 级状态保持补充材料未解析状态，15 个 C 级状态保持功能程序，均不解释为新的稳定细胞亚型。

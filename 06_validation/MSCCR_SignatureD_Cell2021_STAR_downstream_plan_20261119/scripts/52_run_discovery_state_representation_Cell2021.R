@@ -149,8 +149,8 @@ completion <- list(
   parent_cell_types = nrow(rank_data),
   formal_states = nrow(formal_states),
   axes = axes,
-  primary_axes = c("Disease", "Region3"),
-  secondary_axes = "Inflammation",
+  primary_axes = c("Disease", "Region3", "Inflammation"),
+  secondary_axes = character(),
   unit = "discovery bulk sample",
   method = "dominant discovery state; one-sided Fisher greater; BH within phenotype level across all cell states",
   non_positive_rows_retained = TRUE

@@ -242,8 +242,8 @@ fwrite(summary_table, file.path(source_dir, "discovery_FigS2GH_boxplot_summary.t
 completion <- list(
   status = "PASS_DISCOVERY_CELL2021_S2GH_BOXPLOTS",
   generated_at = format(Sys.time(), "%Y-%m-%dT%H:%M:%S%z"),
-  primary_axes = c("Disease", "Region3"),
-  secondary_axes = "Inflammation",
+  primary_axes = c("Disease", "Region3", "Inflammation"),
+  secondary_axes = character(),
   source = "discovery bulk state assignments",
   non_positive_rows_retained = TRUE,
   score = "-log10(BH q-value), capped at 10"
