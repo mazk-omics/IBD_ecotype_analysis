@@ -40,6 +40,8 @@
 - `inputs/state_annotation_priority_review_v4.tsv`：首批 10 个高证据但未解析的 ecotype 成员逐条人工审阅记录，保存正向、冲突、文献和解释边界。
 - `scripts/55_integrate_priority_state_annotation_review.R`：将首批人工审阅决定写入 v4 注释证据表；不升级 D 级 state，不改变 85-state/8-ecotype 模型。
 - `scripts/56_integrate_inflammation_patient_sensitivity.R`：把现成的 scRNA inflamed/noninflamed exact 与供者感知结果并入注释证据，只增加外部表型敏感性列。
+- `inputs/state_annotation_priority_review_v4_batch2.tsv`：第二批 11 个 D 级未解析状态和 15 个 C 级功能程序的文章使用边界与敏感性标记。
+- `scripts/57_integrate_state_annotation_review_batch2.R`：冻结第二批 26 个 state 的使用边界；不改变标签、等级或模型定义。
 - `STATE_ANNOTATION_V4_REVIEW_20261125.md`：记录本轮注释优先级、首批审阅和供者感知 inflammation 敏感性结果及使用边界。
 - `scripts/28_audit_and_freeze_nonIBD_scRNA_cells.R`：从四队列健康供者中按同一 Joint20 规则冻结 nonIBD eligible pools 和 recovery 细胞；不修改既有 IBD 输入或 85-state 模型。
 - `METHOD_IDENTITY_CORRECTION_20261123.md`：记录 G7/G7A 当前结果是算法对齐的 IBD 内部扩展，而非正常/疾病完整复现，并冻结 nonIBD 补齐边界。
@@ -76,3 +78,4 @@
 - 首批审阅了 10 个“高恢复证据但谱系身份未解析”的 ecotype 成员，全部保持 D 级且仅用于补充材料；没有修改 state、ecotype 或验证结果。
 - `NK_S03` 与 `Plasma_S05` 记录为可重复的跨谱系炎症上皮信号并进入 ecotype 敏感性清单，但没有从 E2 中删除。
 - scRNA inflammation 的逐细胞 exact 结果较宽松；控制重复供者后有 11 个 state 显著，其中 10 个与 discovery 方向一致。该供者感知结果只作为补充证据，不替代 discovery 样本级 Cell 2021 representation。
+- 第二批 26 个优先 state 已冻结解释边界：11 个 D 级状态保持补充材料未解析状态，15 个 C 级状态保持功能程序，均不解释为新的稳定细胞亚型。

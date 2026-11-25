@@ -1,0 +1,27 @@
+CellState	ReviewDecision	FinalUse	ModelSensitivityFlag	ReviewBoundary
+B_S04	KEEP_D_UNRESOLVED	SUPPLEMENT_ONLY	FALSE	Parent lineage and biological program are not independently supported
+CD4_T_S03	KEEP_D_UNRESOLVED	SUPPLEMENT_ONLY	FALSE	Parent lineage and biological program are not independently supported
+Colonic_absorptive_S01	KEEP_D_UNRESOLVED	SUPPLEMENT_ONLY	FALSE	Parent lineage and biological program are not independently supported
+Enteroendocrine_S02	KEEP_D_CROSS_LINEAGE	SUPPLEMENT_ONLY	TRUE	Mesenchymal or vascular signal conflicts with enteroendocrine identity
+Enteroendocrine_S06	KEEP_D_UNRESOLVED	SUPPLEMENT_ONLY	FALSE	No hormone-defined enteroendocrine program is supported
+Glial_S01	KEEP_D_UNRESOLVED	SUPPLEMENT_ONLY	FALSE	Canonical human enteric-glial identity is not independently supported
+Glial_S02	KEEP_D_UNRESOLVED	SUPPLEMENT_ONLY	FALSE	Mitochondrial activity is descriptive but enteric-glial identity is unsupported
+ILC_S04	KEEP_D_UNRESOLVED	SUPPLEMENT_ONLY	FALSE	Stress program is nonspecific and ILC identity is not independently supported
+Monocyte_Macrophage_S02	KEEP_D_CROSS_LINEAGE	SUPPLEMENT_ONLY	TRUE	Epithelial junction signal conflicts with monocyte or macrophage identity
+Paneth_S04	KEEP_D_CROSS_LINEAGE	SUPPLEMENT_ONLY	TRUE	Immune signal conflicts with Paneth identity and Paneth antimicrobials are absent
+Tuft_S02	KEEP_D_UNRESOLVED	SUPPLEMENT_ONLY	FALSE	No canonical tuft or chemosensory program is supported
+B_S01	KEEP_C_FUNCTIONAL	FUNCTIONAL_PROGRAM	TRUE	Use as a lymphoid signaling program with a lineage caveat, not a B-cell subtype
+B_S02	KEEP_C_FUNCTIONAL	FUNCTIONAL_PROGRAM	FALSE	Use as a cytokine-response program, not a B-cell subtype
+CD8_T_S06	KEEP_C_FUNCTIONAL	FUNCTIONAL_PROGRAM	FALSE	Use as a housekeeping or proteostasis program, not a CD8 T-cell subtype
+DC_S03	KEEP_C_FUNCTIONAL	FUNCTIONAL_PROGRAM	TRUE	Use as an activated antigen-presentation program with a lineage caveat
+Endothelial_S02	KEEP_C_FUNCTIONAL	FUNCTIONAL_PROGRAM	FALSE	Use as a cytoskeletal or homeostatic program, not an endothelial subtype
+Endothelial_S03	KEEP_C_FUNCTIONAL	FUNCTIONAL_PROGRAM	TRUE	Use as an interferon or IL18-response program with an epithelial-admixture caveat
+Fibroblast_S02	KEEP_C_FUNCTIONAL	FUNCTIONAL_PROGRAM	FALSE	Use as a mitochondrial program, not a fibroblast subtype
+Goblet_S01	KEEP_C_FUNCTIONAL	FUNCTIONAL_PROGRAM	FALSE	Use as a metabolic program, not a goblet subtype
+Goblet_S02	KEEP_C_FUNCTIONAL	FUNCTIONAL_PROGRAM	FALSE	Use as an RNA or protein-processing program, not a goblet subtype
+Goblet_S03	KEEP_C_FUNCTIONAL	FUNCTIONAL_PROGRAM	FALSE	Use as an epithelial-homeostatic program, not a goblet subtype
+ILC_S02	KEEP_C_FUNCTIONAL	FUNCTIONAL_PROGRAM	FALSE	Use as an antiviral or stress program, not an ILC subtype
+ILC_S03	KEEP_C_FUNCTIONAL	FUNCTIONAL_PROGRAM	FALSE	Use as an ID2-associated program, not an ILC subtype
+Ileal_absorptive_S03	KEEP_C_FUNCTIONAL	FUNCTIONAL_PROGRAM	FALSE	Use as a VDR or receptor-signaling program, not an enterocyte subtype
+Mast_S01	KEEP_C_FUNCTIONAL	FUNCTIONAL_PROGRAM	TRUE	Use as a matrix-remodeling program with a stromal-lineage caveat
+Mast_S04	KEEP_C_FUNCTIONAL	FUNCTIONAL_PROGRAM	FALSE	Use as a metabolic or translation program, not a mast-cell subtype

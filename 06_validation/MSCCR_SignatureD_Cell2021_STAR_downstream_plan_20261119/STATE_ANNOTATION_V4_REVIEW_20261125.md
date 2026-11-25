@@ -38,11 +38,21 @@
 
 供者感知比较只在 SCP1884 和 SCP259 可评估。IBDverse 的逐细胞 exact 结果不能自动视为独立供者复现；本结果作为补充敏感性证据，不替代 discovery 样本级 Cell 2021 Fisher/BH representation。
 
-## 4. 当前文章使用边界
+## 4. 第二批解释边界审阅
+
+第二批覆盖 11 个恢复较稳定但仍未解析的 D 级 state，以及 15 个属于 ecotype 的 C 级功能程序。决策表位于 `inputs/state_annotation_priority_review_v4_batch2.tsv`，由 `scripts/57_integrate_state_annotation_review_batch2.R` 验证并整合。
+
+- 11 个 D 级 state 全部保持补充材料使用，不因 recovery Meta Z 较高而升级；
+- 15 个 C 级 state 全部保持功能程序，不解释为稳定细胞亚型；
+- `Enteroendocrine_S02`、`Monocyte_Macrophage_S02` 和 `Paneth_S04` 保留跨谱系敏感性标记；
+- `B_S01`、`DC_S03`、`Endothelial_S03` 和 `Mast_S01` 可作为功能程序，但保留谱系解释警示；
+- 标签、证据等级、state 和 ecotype 定义均未改变。
+
+## 5. 当前文章使用边界
 
 - A-B：可作为正文命名状态使用；
 - C：只作为 marker 支持的功能程序使用，不宣称为稳定亚型；
 - D：只放补充材料，保留未解析或跨谱系警示；
 - state 和 ecotype 的原始定义保持不变；任何成员排除只能作为预先声明的敏感性轨道。
 
-服务器验收状态为 `PASS_STATE_ANNOTATION_PRIORITY_REVIEW_V4_BATCH1` 和 `PASS_STATE_ANNOTATION_INFLAMMATION_SENSITIVITY`。
+服务器验收状态为 `PASS_STATE_ANNOTATION_PRIORITY_REVIEW_V4_BATCH1`、`PASS_STATE_ANNOTATION_INFLAMMATION_SENSITIVITY` 和 `PASS_STATE_ANNOTATION_PRIORITY_REVIEW_V4_BATCH2`。
