@@ -81,6 +81,11 @@ lineage_map <- data.table(
 display_names <- setNames(gsub("_", " ", cell_type_levels, fixed = TRUE), cell_type_levels)
 display_names["Monocyte_Macrophage"] <- "Mono/Mac"
 display_names["Stem_TA_progenitor"] <- "Stem/TA progenitor"
+cell_type_display_order <- c(
+  "Colonic_absorptive", "Ileal_absorptive", "Goblet", "Paneth", "Enteroendocrine", "Tuft", "Stem_TA_progenitor",
+  "Fibroblast", "Pericyte", "Endothelial", "Glial", "DC", "Monocyte_Macrophage", "Mast",
+  "B", "Plasma", "CD4_T", "CD8_T", "NK", "ILC"
+)
 
 # Step3. 逐表型轴计算原文 G/H 汇总量
 summary_parts <- list()
@@ -88,28 +93,29 @@ summary_parts <- list()
 for (axis_name in axes) {
   axis_data <- representation[Axis == axis_name]
   if (!nrow(axis_data)) next
+  if (axis_name == "Inflammation") {
+    axis_data[, PlotEnrichmentScore := -log10(pmax(FDR_BH_across_cell_states, .Machine$double.xmin))]
+  } else {
+    axis_data[, PlotEnrichmentScore := EnrichmentScore]
+  }
 
   expected_levels <- sort(unique(axis_data$Level))
   expected_states <- uniqueN(axis_data$CellState)
   g_data <- axis_data[, .(
-    AverageEnrichment = mean(EnrichmentScore),
+    AverageEnrichment = mean(PlotEnrichmentScore),
     PhenotypeLevels = uniqueN(Level),
-    MinimumEnrichment = min(EnrichmentScore),
-    MaximumEnrichment = max(EnrichmentScore)
+    MinimumEnrichment = min(PlotEnrichmentScore),
+    MaximumEnrichment = max(PlotEnrichmentScore)
   ), by = .(CellType, State, CellState)]
   if (nrow(g_data) != expected_states || any(g_data$PhenotypeLevels != length(expected_levels))) stop("Fig. S2G aggregation lost discovery contexts: ", axis_name, call. = FALSE)
 
   h_data <- axis_data[, .(
-    AverageEnrichment = mean(EnrichmentScore),
+    AverageEnrichment = mean(PlotEnrichmentScore),
     StatesAveraged = .N
   ), by = .(Level, CellType)]
   if (uniqueN(h_data$Level) != length(expected_levels) || uniqueN(h_data$CellType) != 20L) stop("Fig. S2H aggregation lost discovery groups: ", axis_name, call. = FALSE)
 
-  g_order_table <- g_data[, .(MedianEnrichment = median(AverageEnrichment)), by = CellType]
-  g_order_table <- merge(g_order_table, lineage_map, by = "CellType", sort = FALSE)
-  g_order_table[, Lineage := factor(Lineage, levels = names(lineage_colours))]
-  setorder(g_order_table, Lineage, -MedianEnrichment, CellType)
-  g_order <- g_order_table$CellType
+  g_order <- cell_type_display_order[cell_type_display_order %in% unique(g_data$CellType)]
   h_order <- h_data[, .(MedianEnrichment = median(AverageEnrichment)), by = Level][order(-MedianEnrichment, Level)]$Level
   g_data[, CellTypeDisplay := factor(display_names[CellType], levels = display_names[g_order])]
   observed_states <- names(state_colours)[names(state_colours) %in% sort(unique(g_data$State))]
@@ -121,6 +127,9 @@ for (axis_name in axes) {
   h_max <- max(h_data$AverageEnrichment)
   g_plot_max <- max(g_max, 0.1)
   h_plot_max <- max(h_max, 0.1)
+  g_axis_max <- 1.08 * g_plot_max
+  figure_title <- if (axis_name == "Inflammation") "Enrichment of cell states by inflammation status" else "Enrichment of cell states in discovery phenotypes"
+  g_subtitle <- if (axis_name == "Inflammation") "(averaged across Inflamed and Non-inflamed)" else paste0("(averaged across ", length(expected_levels), " ", axis_titles[[axis_name]], ")")
   lineage_track <- merge(data.table(CellType = g_order), lineage_map, by = "CellType", sort = FALSE)
   lineage_track[, CellTypeDisplay := factor(display_names[CellType], levels = display_names[g_order])]
   lineage_track[, TrackY := -0.065 * g_plot_max]
@@ -131,11 +140,11 @@ for (axis_name in axes) {
     geom_tile(data = lineage_track, aes(x = CellTypeDisplay, y = TrackY, fill = Lineage), inherit.aes = FALSE, width = 0.98, height = 0.055 * g_plot_max) +
     scale_colour_manual(values = state_colours[observed_states], drop = FALSE, name = "Cell state") +
     scale_fill_manual(values = lineage_colours, drop = FALSE, name = "Cell lineage") +
-    scale_y_continuous(limits = c(-0.11 * g_plot_max, 1.04 * g_plot_max), breaks = pretty(c(0, g_plot_max), n = 5), expand = expansion(mult = c(0, 0.02))) +
+    scale_y_continuous(limits = c(-0.11 * g_plot_max, g_axis_max), breaks = pretty(c(0, g_axis_max), n = 6), expand = expansion(mult = c(0, 0.02))) +
     labs(
       tag = "G",
-      title = "Enrichment of cell states in discovery phenotypes",
-      subtitle = paste0("(averaged across ", length(expected_levels), " ", axis_titles[[axis_name]], ")"),
+      title = figure_title,
+      subtitle = g_subtitle,
       x = NULL,
       y = expression(paste("Average enrichment (", -log[10], " q-value)"))
     ) +
@@ -166,7 +175,7 @@ for (axis_name in axes) {
     scale_y_continuous(limits = c(0, 1.04 * h_plot_max), breaks = pretty(c(0, h_plot_max), n = 5), expand = expansion(mult = c(0, 0.02))) +
     labs(
       tag = "H",
-      title = "Enrichment of cell states in discovery phenotypes",
+      title = figure_title,
       subtitle = "(averaged by cell type)",
       x = NULL,
       y = expression(paste("Average enrichment (", -log[10], " q-value)"))
@@ -246,7 +255,7 @@ completion <- list(
   secondary_axes = character(),
   source = "discovery bulk state assignments",
   non_positive_rows_retained = TRUE,
-  score = "-log10(BH q-value), capped at 10"
+  score = "-log10(BH q-value); Inflammation displayed without the analysis-table cap of 10"
 )
 jsonlite::write_json(completion, file.path(output_dir, "discovery_Cell2021_S2GH_boxplots_complete.json"), pretty = TRUE, auto_unbox = TRUE)
 writeLines(capture.output(sessionInfo()), file.path(output_dir, "R_sessionInfo.txt"))
