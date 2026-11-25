@@ -36,6 +36,11 @@
 - `scripts/27_summarize_G7_G7A_validation.R`：汇总 recovery、marker LODO、exact/患者感知 phenotype enrichment 和 dominant-state representation，输出分母清楚的中文审阅报告。
 - `scripts/52_run_discovery_state_representation_Cell2021.R`：严格使用 discovery bulk 样本级 state assignment，按 Cell 2021 的单侧 Fisher 和表型水平内跨全部 state 的 BH 校正计算 representation specificity；Disease 与 Region3 独立计算，禁止机械交叉。
 - `scripts/53_plot_discovery_Cell2021_S2GH_boxplots.R`：从 discovery representation 结果分别输出 Disease 和 Region3 两套 Cell 2021 Fig. S2G/S2H 主箱线图，Inflammation 为次级图；四套 scRNA 图不替代此主图。
+- `scripts/54_build_state_annotation_priority_master.R`：合并文献标签、published-signature、四套 scRNA recovery、bulk/nonIBD、MSCCR 覆盖、marker LODO、通路和 discovery Inflammation 证据，生成 85-state 注释优先级主表；不自动改名。
+- `inputs/state_annotation_priority_review_v4.tsv`：首批 10 个高证据但未解析的 ecotype 成员逐条人工审阅记录，保存正向、冲突、文献和解释边界。
+- `scripts/55_integrate_priority_state_annotation_review.R`：将首批人工审阅决定写入 v4 注释证据表；不升级 D 级 state，不改变 85-state/8-ecotype 模型。
+- `scripts/56_integrate_inflammation_patient_sensitivity.R`：把现成的 scRNA inflamed/noninflamed exact 与供者感知结果并入注释证据，只增加外部表型敏感性列。
+- `STATE_ANNOTATION_V4_REVIEW_20261125.md`：记录本轮注释优先级、首批审阅和供者感知 inflammation 敏感性结果及使用边界。
 - `scripts/28_audit_and_freeze_nonIBD_scRNA_cells.R`：从四队列健康供者中按同一 Joint20 规则冻结 nonIBD eligible pools 和 recovery 细胞；不修改既有 IBD 输入或 85-state 模型。
 - `METHOD_IDENTITY_CORRECTION_20261123.md`：记录 G7/G7A 当前结果是算法对齐的 IBD 内部扩展，而非正常/疾病完整复现，并冻结 nonIBD 补齐边界。
 - `NONIBD_BULK_VALIDATION_PLAN_20261123.md`：冻结 MSCCR Control、GSE57945 及其他候选 nonIBD bulk 在当前 85-state/8-ecotype 模型中的输入尺度、独立性和 recovery 方案。
@@ -64,3 +69,10 @@
 - 85 个正式 state 中 82 个在 MSCCR 三部位均观察到，84 个至少在两个部位观察到；8 个 ecotype 在三个部位均观察到。
 - 外部 GSE57945 bulk 与至少一套 scRNA 同时 `Z > 1.96` 的 state 为 `CD8_T_S06`、`Fibroblast_S02` 和 `Ileal_absorptive_S02`。MSCCR 只作为内部覆盖证据，不计入该显著性判定。
 - discovery bulk 的 Fig. S2G/S2H representation 已按原文统计单位补齐：Disease 和 Region3 分开计算与作图，全部可评估组合均进入箱线图，不按 OR 或显著性预筛选；不再保留 Disease × Region3 机械交叉图。
+
+## 2026-11-25 更新
+
+- 85 个 state 的多模态注释证据已合并为 v4 优先级主表；原有 A/B/C/D 数量保持为 7/18/30/30。
+- 首批审阅了 10 个“高恢复证据但谱系身份未解析”的 ecotype 成员，全部保持 D 级且仅用于补充材料；没有修改 state、ecotype 或验证结果。
+- `NK_S03` 与 `Plasma_S05` 记录为可重复的跨谱系炎症上皮信号并进入 ecotype 敏感性清单，但没有从 E2 中删除。
+- scRNA inflammation 的逐细胞 exact 结果较宽松；控制重复供者后有 11 个 state 显著，其中 10 个与 discovery 方向一致。该供者感知结果只作为补充证据，不替代 discovery 样本级 Cell 2021 representation。
