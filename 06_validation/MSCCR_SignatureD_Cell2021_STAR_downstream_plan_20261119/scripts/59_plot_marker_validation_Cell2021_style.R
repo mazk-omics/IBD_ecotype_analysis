@@ -30,6 +30,7 @@ state_colours <- c(S01="#C53E73", S02="#5796B7", S03="#6FA64A", S04="#6C50A3", S
 dataset_colours <- c(GSE214695="#A65E2E", SCP1884="#7FBF6B", SCP259="#9ECAE1", IBDverse_E_MTAB_16999="#B21872")
 expression_colours <- c("#F7FBFF", "#D9EAF4", "#9ECAE1", "#4292C6", "#084081")
 expression_limits <- c(-0.4, 0.9)
+expression_colour_power <- 1.5
 font_family <- "Helvetica"
 
 stopifnot(file.exists(ranking_file), file.exists(recovery_file))
@@ -123,6 +124,7 @@ recovery_display_flag <- recovery_pass[, .(Dataset, CellType, ExpressionState=St
 expression_grid <- merge(expression_grid, recovery_display_flag, by=c("Dataset", "CellType", "ExpressionState"), all.x=TRUE, sort=FALSE)
 expression_grid[is.na(DisplayEligible), DisplayEligible := FALSE]
 expression_grid[, DisplayExpression := pmax(expression_limits[[1L]], pmin(expression_limits[[2L]], MeanUnitVarianceExpression))]
+expression_grid[, ColourIntensity := ((DisplayExpression-expression_limits[[1L]])/diff(expression_limits))^expression_colour_power]
 expression_grid[, `:=`(CellTypeOrder=match(CellType, cell_type_order), DatasetOrder=match(Dataset, dataset_order))]
 setorder(expression_grid, CellTypeOrder, MarkerState, WithinStateOrder, DatasetOrder, ExpressionState)
 fwrite(expression_grid, file.path(out, "Figure2C_marker_expression_source_data.tsv.gz"), sep="\t", quote=FALSE, na="")
@@ -167,13 +169,13 @@ for (cell_type in cell_type_order) {
     diagonal_boxes <- columns[, .(XMin=min(X)-0.5, XMax=max(X)+0.5), by=ExpressionState]
     diagonal_boxes <- merge(diagonal_boxes, row_blocks, by.x="ExpressionState", by.y="MarkerState", all=FALSE, sort=FALSE)
 
-    panel_list[[cell_type]] <- ggplot(plot_data, aes(x=X, y=Y, fill=DisplayExpression)) +
+    panel_list[[cell_type]] <- ggplot(plot_data, aes(x=X, y=Y, fill=ColourIntensity)) +
         geom_tile(width=0.98, height=0.98) +
         geom_tile(data=row_annotation, aes(x=0.30, y=Y), inherit.aes=FALSE, width=0.62, height=0.98, fill=row_annotation$Colour) +
         geom_tile(data=column_annotation, aes(x=X, y=Y), inherit.aes=FALSE, width=0.98, height=0.38, fill=column_annotation$Colour) +
         geom_rect(data=diagonal_boxes, aes(xmin=XMin, xmax=XMax, ymin=YMin, ymax=YMax), inherit.aes=FALSE, fill=NA, colour="#3A3A3A", linewidth=0.42) +
         geom_text(data=label_data, aes(x=-0.22, y=Y, label=Gene), inherit.aes=FALSE, family=font_family, fontface="italic", size=1.80, hjust=1) +
-        scale_fill_gradientn(colours=expression_colours, values=c(0, 0.25, 0.5, 0.75, 1), limits=expression_limits, na.value="#BDBDBD", guide="none") +
+        scale_fill_gradientn(colours=expression_colours, values=c(0, 0.25, 0.5, 0.75, 1), limits=c(0, 1), na.value="#BDBDBD", guide="none") +
         coord_cartesian(xlim=c(-4.9, max(columns$X)+0.55), ylim=c(0.45, nrow(marker_one)+1.15), expand=FALSE, clip="off") +
         labs(title=unname(cell_type_title[cell_type])) +
         theme_void(base_family=font_family, base_size=7) +
@@ -201,7 +203,9 @@ legend_plot <- ggplot() +
 
 state_legend <- data.table(X=seq(0.15, 0.52, length.out=6L), State=names(state_colours), Colour=unname(state_colours), Label=sub("^S0", "S", names(state_colours)))
 dataset_legend <- data.table(X=c(0.20, 0.36, 0.51, 0.65), Dataset=dataset_order, Colour=unname(dataset_colours), Label=c("GSE214695", "SCP1884", "SCP259", "IBDverse"))
-gradient_legend <- data.table(X=seq(0.80, 0.97, length.out=101L), Colour=colorRampPalette(expression_colours)(101L))
+gradient_fraction <- seq(0, 1, length.out=101L)
+gradient_palette <- colorRampPalette(expression_colours)(101L)
+gradient_legend <- data.table(X=seq(0.80, 0.97, length.out=101L), Colour=gradient_palette[round(gradient_fraction^expression_colour_power*100)+1L])
 
 legend_plot <- legend_plot +
     geom_point(data=state_legend, aes(x=X, y=0.74), inherit.aes=FALSE, shape=22, size=3.1, stroke=0.2, colour="#777777", fill=state_legend$Colour) +
@@ -266,6 +270,7 @@ method_notes <- c(
     "Expression: raw counts -> log2(CPM+1) -> per-gene centering and unit-variance scaling within each held-out parent-cell dataset -> assigned-state mean.",
     "Expression eligibility: displayed recovered state means require at least five assigned cells; unavailable genes remain NA and are shown in grey.",
     "Display: values are clipped to [-0.4, 0.9] only for the color scale, approximately the 1st and 95th percentiles of displayed values; unclipped means are retained in source data.",
+    "Color contrast: clipped values are normalized to [0,1] and mapped with gamma=1.5, deepening higher values while retaining lighter low-value cells without changing value order or forcing diagonal cells to be high.",
     "White rectangles: marker-state by matching expression-state diagonal blocks."
 )
 writeLines(method_notes, file.path(out, "Figure2C_marker_validation_method_notes.txt"))
