@@ -28,6 +28,8 @@ cell_type_order <- c("B", "Plasma", "CD8_T", "CD4_T", "NK", "Monocyte_Macrophage
 cell_type_title <- c(B="B cells", Plasma="Plasma cells", CD8_T="CD8 T cells", CD4_T="CD4 T cells", NK="NK cells", Monocyte_Macrophage="Mono/Mac", DC="Dendritic cells", Mast="Mast cells", ILC="ILC", Fibroblast="Fibroblasts", Endothelial="Endothelial cells", Pericyte="Pericytes", Glial="Glial cells", Colonic_absorptive="Colonic absorptive", Ileal_absorptive="Ileal absorptive", Goblet="Goblet cells", Stem_TA_progenitor="Stem/TA", Paneth="Paneth cells", Enteroendocrine="Enteroendocrine", Tuft="Tuft cells")
 state_colours <- c(S01="#C53E73", S02="#5796B7", S03="#6FA64A", S04="#6C50A3", S05="#D46A1D", S06="#E3AE1A")
 dataset_colours <- c(GSE214695="#A65E2E", SCP1884="#7FBF6B", SCP259="#9ECAE1", IBDverse_E_MTAB_16999="#B21872")
+expression_colours <- c("#F7FBFF", "#D9EAF4", "#9ECAE1", "#4292C6", "#084081")
+expression_limits <- c(-0.4, 0.9)
 font_family <- "Helvetica"
 
 stopifnot(file.exists(ranking_file), file.exists(recovery_file))
@@ -120,7 +122,7 @@ expression_grid <- merge(expression_grid, expression_observed, by=c("Dataset", "
 recovery_display_flag <- recovery_pass[, .(Dataset, CellType, ExpressionState=State, DisplayEligible=TRUE)]
 expression_grid <- merge(expression_grid, recovery_display_flag, by=c("Dataset", "CellType", "ExpressionState"), all.x=TRUE, sort=FALSE)
 expression_grid[is.na(DisplayEligible), DisplayEligible := FALSE]
-expression_grid[, DisplayExpression := pmax(-0.2, pmin(0.2, MeanUnitVarianceExpression))]
+expression_grid[, DisplayExpression := pmax(expression_limits[[1L]], pmin(expression_limits[[2L]], MeanUnitVarianceExpression))]
 expression_grid[, `:=`(CellTypeOrder=match(CellType, cell_type_order), DatasetOrder=match(Dataset, dataset_order))]
 setorder(expression_grid, CellTypeOrder, MarkerState, WithinStateOrder, DatasetOrder, ExpressionState)
 fwrite(expression_grid, file.path(out, "Figure2C_marker_expression_source_data.tsv.gz"), sep="\t", quote=FALSE, na="")
@@ -171,7 +173,7 @@ for (cell_type in cell_type_order) {
         geom_tile(data=column_annotation, aes(x=X, y=Y), inherit.aes=FALSE, width=0.98, height=0.38, fill=column_annotation$Colour) +
         geom_rect(data=diagonal_boxes, aes(xmin=XMin, xmax=XMax, ymin=YMin, ymax=YMax), inherit.aes=FALSE, fill=NA, colour="white", linewidth=0.32) +
         geom_text(data=label_data, aes(x=-0.22, y=Y, label=Gene), inherit.aes=FALSE, family=font_family, fontface="italic", size=1.80, hjust=1) +
-        scale_fill_gradientn(colours=c("#352A87", "#2448B8", "#2C7FB8", "#49A65A", "#FDE725"), values=c(0, 0.25, 0.5, 0.75, 1), limits=c(-0.2, 0.2), na.value="#D9D9D9", guide="none") +
+        scale_fill_gradientn(colours=expression_colours, values=c(0, 0.25, 0.5, 0.75, 1), limits=expression_limits, na.value="#BDBDBD", guide="none") +
         coord_cartesian(xlim=c(-4.9, max(columns$X)+0.55), ylim=c(0.45, nrow(marker_one)+1.15), expand=FALSE, clip="off") +
         labs(title=unname(cell_type_title[cell_type])) +
         theme_void(base_family=font_family, base_size=7) +
@@ -199,7 +201,7 @@ legend_plot <- ggplot() +
 
 state_legend <- data.table(X=seq(0.15, 0.52, length.out=6L), State=names(state_colours), Colour=unname(state_colours), Label=sub("^S0", "S", names(state_colours)))
 dataset_legend <- data.table(X=c(0.20, 0.36, 0.51, 0.65), Dataset=dataset_order, Colour=unname(dataset_colours), Label=c("GSE214695", "SCP1884", "SCP259", "IBDverse"))
-gradient_legend <- data.table(X=seq(0.80, 0.97, length.out=101L), Colour=colorRampPalette(c("#352A87", "#2448B8", "#2C7FB8", "#49A65A", "#FDE725"))(101L))
+gradient_legend <- data.table(X=seq(0.80, 0.97, length.out=101L), Colour=colorRampPalette(expression_colours)(101L))
 
 legend_plot <- legend_plot +
     geom_point(data=state_legend, aes(x=X, y=0.74), inherit.aes=FALSE, shape=22, size=3.1, stroke=0.2, colour="#777777", fill=state_legend$Colour) +
@@ -208,8 +210,8 @@ legend_plot <- legend_plot +
     geom_text(data=dataset_legend, aes(x=X+0.017, y=0.28, label=Label), inherit.aes=FALSE, family=font_family, size=2.20, hjust=0) +
     geom_tile(data=gradient_legend, aes(x=X, y=0.32), inherit.aes=FALSE, width=0.0022, height=0.18, fill=gradient_legend$Colour) +
     annotate("text", x=0.885, y=0.76, label="Relative log2\nexpression", family=font_family, size=2.40, hjust=0.5, lineheight=0.9) +
-    annotate("text", x=0.80, y=0.11, label="-0.2", family=font_family, size=2.15, hjust=0.5) +
-    annotate("text", x=0.97, y=0.11, label="0.2", family=font_family, size=2.15, hjust=0.5)
+    annotate("text", x=0.80, y=0.11, label="-0.4", family=font_family, size=2.15, hjust=0.5) +
+    annotate("text", x=0.97, y=0.11, label="0.9", family=font_family, size=2.15, hjust=0.5)
 
 panel_grid <- patchwork::wrap_plots(panel_list, ncol=4)
 figure <- title_plot / panel_grid / legend_plot + patchwork::plot_layout(heights=c(0.045, 1, 0.075))
@@ -263,7 +265,7 @@ method_notes <- c(
     paste0("States with no significant recovery in any validation dataset are omitted from this marker-validation display: ", paste(excluded_states, collapse=", "), "."),
     "Expression: raw counts -> log2(CPM+1) -> per-gene centering and unit-variance scaling within each held-out parent-cell dataset -> assigned-state mean.",
     "Expression eligibility: displayed recovered state means require at least five assigned cells; unavailable genes remain NA and are shown in grey.",
-    "Display: values are clipped to [-0.2, 0.2] only for the color scale; unclipped means are retained in source data.",
+    "Display: values are clipped to [-0.4, 0.9] only for the color scale, approximately the 1st and 95th percentiles of displayed values; unclipped means are retained in source data.",
     "White rectangles: marker-state by matching expression-state diagonal blocks."
 )
 writeLines(method_notes, file.path(out, "Figure2C_marker_validation_method_notes.txt"))
