@@ -171,7 +171,7 @@ for (cell_type in cell_type_order) {
         geom_tile(width=0.98, height=0.98) +
         geom_tile(data=row_annotation, aes(x=0.30, y=Y), inherit.aes=FALSE, width=0.62, height=0.98, fill=row_annotation$Colour) +
         geom_tile(data=column_annotation, aes(x=X, y=Y), inherit.aes=FALSE, width=0.98, height=0.38, fill=column_annotation$Colour) +
-        geom_rect(data=diagonal_boxes, aes(xmin=XMin, xmax=XMax, ymin=YMin, ymax=YMax), inherit.aes=FALSE, fill=NA, colour="white", linewidth=0.32) +
+        geom_rect(data=diagonal_boxes, aes(xmin=XMin, xmax=XMax, ymin=YMin, ymax=YMax), inherit.aes=FALSE, fill=NA, colour="#3A3A3A", linewidth=0.42) +
         geom_text(data=label_data, aes(x=-0.22, y=Y, label=Gene), inherit.aes=FALSE, family=font_family, fontface="italic", size=1.80, hjust=1) +
         scale_fill_gradientn(colours=expression_colours, values=c(0, 0.25, 0.5, 0.75, 1), limits=expression_limits, na.value="#BDBDBD", guide="none") +
         coord_cartesian(xlim=c(-4.9, max(columns$X)+0.55), ylim=c(0.45, nrow(marker_one)+1.15), expand=FALSE, clip="off") +
